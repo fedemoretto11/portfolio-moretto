@@ -1,0 +1,212 @@
+@import 'variables';
+
+body {
+  overflow-x: hidden;
+  font-family: $fuente;
+}
+
+.mainContainer {
+  min-height: calc(100vh - 80px);
+  background-color: $colorNegro;
+}
+
+.header {
+  background-color: $colorNegro;
+  transition: opacity 400ms ease;
+  position: relative;
+  z-index: 10;
+  &__nav {
+    color: $colorBlanco;
+    &__link {
+      transition: 300ms;
+      &--active {
+        border-bottom: 2px solid $colorPrimario;
+      }
+    }
+  }
+  &__burguerMenu {
+    &__icon {
+      color: $colorPrimario;
+    }
+  }
+}
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: $colorBlanco;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $colorPrimario;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.sidebar {
+  height: 5rem;
+  background-color: $colorNegro;
+  & a {
+    transition: 100ms;
+  }
+  & a:hover {
+    transform: scale(1.1);
+  }
+  &__icon {
+    color: $colorPrimario;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sidebar {
+    height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
+  }
+}
+
+.hero {
+  padding: 24px;
+  background-color: $colorNegro;
+  height: calc(100vh - 82px);
+  &__subtitle {
+    color: $colorBlanco;
+  }
+  &__title {
+    color: $colorPrimario;
+  }
+  &__description {
+    color: $colorGris;
+  }
+}
+
+.about {
+  padding: 24px;
+  background-color: $colorNegro;
+  color: $colorBlanco;
+  &__text {
+    &__title {
+      border-bottom: 2px solid $colorPrimario;
+    }
+    &__description {
+      color: $colorGris;
+      & span {
+        color: $colorPrimario;
+      }
+    }
+  }
+  &__image {
+    &__img {
+      border: 2px solid $colorPrimario;
+    }
+  }
+}
+
+.skills {
+  min-height: calc(100vh - 300px);
+  padding: 24px;
+  background-color: $colorNegro;
+  color: $colorBlanco;
+  &__title {
+    padding-right: 240px;
+    &__title {
+      border-bottom: 2px solid  $colorPrimario;
+    }
+  }
+  &__list {
+    &__techList {
+      & h4 {
+        border-bottom: 3px solid $colorSecundario;
+        margin-bottom: 32px;
+      }
+    & p {
+      color: $colorGris;
+      & span {
+        color: $colorPrimario;
+      }
+    }
+    }
+  }
+}
+
+.projectsList {
+  padding: 24px;
+}
+
+.project {
+  color: $colorBlanco;
+  border: 1px solid $colorPrimario;
+  &__description {
+    color: $colorGris;
+  }
+  &__links{
+    &__icons {
+      color: $colorSecundario;
+      transition: 300ms;
+      &:hover {
+        color: $colorPrimario;
+      }
+    }
+  }
+}
+
+.projectView {
+  padding: 24px;
+  &__text {
+    padding-left: 100px;
+    &__title {
+      border-bottom: 2px solid $colorPrimario;
+    }
+  }
+  &__filter {
+    &__btn {
+      transition: 300ms;
+      &--active {
+        color: $colorPrimario;
+      }
+      &:hover {
+        color: $colorPrimario;
+      }
+    }
+  }
+}
+
+.contact {
+  min-height: calc(100vh - 300px);
+  color: $colorBlanco;
+  &__title {
+    border-bottom: 2px solid $colorPrimario;
+  }
+  &__description {
+    color: $colorGris;
+  }
+  &__btn {
+    color: $colorPrimario;
+    border: 1px solid $colorPrimario;
+    transition: 400ms;
+    &:hover {
+      background-color: $colorSecundario;
+    }
+  }
+}
+
+.footer {
+  background-color: $colorNegro;
+  color: $colorPrimario;
+}
+
+
+
