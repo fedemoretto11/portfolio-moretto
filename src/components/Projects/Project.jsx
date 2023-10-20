@@ -7,7 +7,8 @@ function Project({ project }) {
     <article className="project w-full flex flex-col justify-between items-center gap-2 p-3">
 
       <h3 className="project__title text-xl self-start">{project.title}</h3>
-      <img src={`/${project.title}.webp`} alt={project.title} className="w-6/6 h-30" />
+      {/* <img src={`/${project.title}.webp`} alt={project.title} className="w-6/6 h-30" /> */}
+      <img src={`${project.img}`} alt={project.title} className="w-6/6 h-30" />
       <p className="project__description text-sm">{project.description}</p>
       <div className="project__links flex gap-8">
         <a href={project.webLink} target="_blank">
