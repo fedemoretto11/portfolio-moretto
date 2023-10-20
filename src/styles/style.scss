@@ -1,5 +1,9 @@
 @import 'variables';
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: $fuente;
