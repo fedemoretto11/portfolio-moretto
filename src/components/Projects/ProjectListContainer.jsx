@@ -25,7 +25,6 @@ function ProjectListContainer({ type }) {
           return {id: project.id, ...project.data()}
         })
         setProjectsList(projectsMapped)
-        console.log(projectsMapped)
       })
   },[type])
 
