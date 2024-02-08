@@ -11,7 +11,7 @@ function About() {
           </p>
         </div>
         <figure className="hidden sm:flex justify-center about__image w-2/6 lg:w-2/6">
-          <img src={fede} alt="fede" className='about__image__img w-30 lg:w-60 h-30 lg:h-60'/>
+          <img src={fede} alt="fede" className='about__image__img w-30 lg:w-64 h-30 lg:h-74'/>
         </figure>
     </section>
   )
