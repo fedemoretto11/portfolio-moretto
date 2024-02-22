@@ -1,0 +1,35 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "technology": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "description": "Passionate Software Developer dedicated to creating solutions."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am Federico Moretto, a passionate FrontEnd Developer and Bachelor of Computer Science student. Currently, I work as a freelance developer and have over 3 years of experience in foreign trade, in which I also obtained a bachelor's degree. With technical skills in HTML, CSS, JavaScript, TypeScript, and frameworks like React.JS, Next.JS, and React Native, I excel as a web developer specialized in creating fluid and engaging user experiences. Additionally, I have experience in responsive design and web performance optimization. My focus on FrontEnd development is complemented by knowledge in Java and Python for backend development, making me a versatile candidate capable of working on Full Stack projects. I am a creative and results-oriented individual, always seeking new ways to solve problems and improve efficiency. I stand out as a team player and enjoy collaborating with others to achieve common goals."
+  },
+  "skills": {
+    "title": "Skilss",
+    "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.JS", "Next.JS", "React Native"],
+    "backend": ["Java", "SpringBoot", "Python"],
+    "other": ["MySql", "FireBase", "Git", "GitHub"]
+  },
+  "projects": {
+    "title": "Projects",
+    "filter": ["All", "Others", "Wen Sites"]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "firstDescription": "I am open to new job opportunities. You can contact me through my social media or by sending me an email.",
+    "secondDescription": "I'll leave you a download link for my resume."
+  },
+  "footer": {
+    "develop": "Developed by Federico Moretto",
+    "rights": "All Rights reserved"
+  }
+}
