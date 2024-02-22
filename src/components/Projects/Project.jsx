@@ -18,12 +18,18 @@ function Project({ project }) {
       <img src={`/${project.title}.webp`} alt={project.title} className={`w-6/6 h-30 ${project.isFinished ? '' : 'blur-sm'}`} />
       <p className={`project__description text-sm ${project.isFinished ? '' : 'blur-sm'}`}>{project.description}</p>
       <div className="project__links flex gap-8">
-        <a href={project.webLink} target="_blank">
-          <i className="project__links__icons bi bi-laptop text-3xl"></i>
-        </a>
-        <a href={project.githubLink} target="_blank">
-          <i className="project__links__icons bi bi-github text-3xl"></i>
-        </a>
+        {
+          project.webLink && 
+          <a href={project.webLink} target="_blank">
+            <i className="project__links__icons bi bi-laptop text-3xl"></i>
+          </a>
+        }
+        {
+          project.githubLink && 
+          <a href={project.githubLink} target="_blank">
+            <i className="project__links__icons bi bi-github text-3xl"></i>
+          </a>
+        }
       </div>
 
 
