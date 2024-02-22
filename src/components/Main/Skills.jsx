@@ -11,9 +11,12 @@ function Skills() {
           <h4 className="text-xl">FrontEnd</h4>
           <p><span>=></span> HTML</p>
           <p><span>=></span> CSS</p>
-          <p><span>=></span> Tailwind CSS</p>
           <p><span>=></span> JavaScript</p>
-          <p><span>=></span> React JS</p>
+          <p><span>=></span> TypeScript</p>
+          <p><span>=></span> Tailwind CSS</p>
+          <p><span>=></span> React.JS</p>
+          <p><span>=></span> Next.JS</p>
+          <p><span>=></span> React Native</p>
         </div>
         <div className="skills__list__techList backend">
           <h4 className="text-xl">BackEnd</h4>
