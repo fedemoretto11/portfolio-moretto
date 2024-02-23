@@ -1,35 +1,25 @@
 {
-  "header": {
-    "home": "Inicio",
-    "about": "Sobre Mi",
-    "technology": "Tecnolgias",
-    "projects": "Proyectos",
-    "contact": "Contacto"
-  },
-  "hero": {
-    "description": "Desarrollador de Software apasionado por la creacion de soluciones"
-  },
-  "about": {
-    "title": "Sobre Mi",
-    "description": "Soy Federico Moretto, un apasionado Desarrollador FrontEnd y estudiante de Licenciatura en Informática. Actualmente, me desempeño como desarrollador freelance y cuento con más de 3 años de experiencia en el comercio exterior, área en la que también obtuve una licenciatura. Con habilidades técnicas en HTML, CSS, JavaScript, TypeScripty frameworks como React.JS, Next.JS, y React Native, me destaco como desarrollador web especializado en crear experiencias de usuario fluidas y atractivas. Además, poseo experiencia en el diseño responsivo y la optimización del rendimiento web. Mi enfoque en el desarrollo FrontEnd se complementa con conocimientos en Java y Python para desarrollo de backend, lo que me convierte en un candidato versátil capaz de trabajar en proyectos Full Stack. Soy una persona creativa y orientada a resultados, siempre buscando nuevas formas de resolver problemas y mejorar la eficiencia. Me destaco como jugador de equipo y disfruto colaborar con otros para alcanzar objetivos comunes."
-  },
-  "skills": {
-    "title": "Skilss",
-    "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.JS", "Next.JS", "React Native"],
-    "backend": ["Java", "SpringBoot", "Python"],
-    "other": ["MySql", "FireBase", "Git", "GitHub"]
-  },
-  "projects": {
-    "title": "Proyectos",
-    "filter": ["Todos", "Varios", "Sitios Web"]
-  },
-  "contact": {
-    "title": "Contactame",
-    "firstDescription": "Estoy abierto a nuevas oportunidades laborales. Puedes contactarme a través de mis redes sociales o enviándome un email.",
-    "secondDescription": "Te dejo un link de descarga de mi CV"
-  },
-  "footer": {
-    "develop": "Desarrollado por Federico Moretto",
-    "rights": "Todos los derechos reservados"
-  }
+  "hola.fede": "Gasdaskldsa",
+  "header.about": "Sobre Mi",
+  "header.home": "Inicio",
+  "header.technology": "Tecnolgias",
+  "header.projects": "Proyectos",
+  "header.contact": "Contacto",
+  "hero.description": "Desarrollador de Software apasionado por la creacion de soluciones",
+  "about.title": "Sobre Mi",
+  "about.description": "Soy Federico Moretto, un apasionado Desarrollador FrontEnd y estudiante de <span>Licenciatura en Informática</span>. Actualmente, me desempeño como desarrollador freelance y cuento con más de 3 años de experiencia en el comercio exterior, área en la que también obtuve una licenciatura.<br /><br /> Con habilidades técnicas en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>TypeScript</span>y frameworks como <span>React.JS</span>, <span>Next.JS</span>, y <span>React Native</span>, me destaco como desarrollador web especializado en crear experiencias de usuario fluidas y atractivas. Además, poseo experiencia en el diseño responsivo y la optimización del rendimiento web.<br /><br /> Mi enfoque en el desarrollo FrontEnd se complementa con conocimientos en <span>Java</span> y <span>Python</span> para desarrollo de backend, lo que me convierte en un candidato versátil capaz de trabajar en proyectos Full Stack.<br /><br /> Soy una persona creativa y orientada a resultados, siempre buscando nuevas formas de resolver problemas y mejorar la eficiencia. Me destaco como jugador de equipo y disfruto colaborar con otros para alcanzar objetivos comunes.",
+  "skills.title": "Skills",
+  "skills.frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.JS", "Next.JS", "React Native"],
+  "skills.backend": ["Java", "SpringBoot", "Python"],
+  "skills.other": ["MySql", "FireBase", "Git", "GitHub"],
+  "projects.title": "Proyectos",
+  "projects.all": "Todos",
+  "projects.others": "Varios",
+  "projects.webSites": "Sitios Web",
+  "contact.title": "Contactame",
+  "contact.firstDescription": "Estoy abierto a nuevas oportunidades laborales. Puedes contactarme a través de mis redes sociales o enviándome un email.",
+  "contact.secondDescription": "Te dejo un link de descarga de mi CV",
+  "footer.develop": "Desarrollado por Federico Moretto",
+  "footer.rights": "Todos los derechos reservados",
+  "changeLanguage": "Ingles"
 }
