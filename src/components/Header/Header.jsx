@@ -16,11 +16,13 @@ function Header() {
     setActive(linkName)
   }
   
-  const [lang, setLang] = useState('es')
+  const [lang, setLang] = useState('en')
+
   const onChangeLanguage = () => {
-    lang === 'es' ? setLang("en") : setLang("es")
     i18n.changeLanguage(lang)
+    lang === 'es' ? setLang("en") : setLang("es")
   }
+
 
   // Revisar cuando el link pasa a active que no queda linea roja debajo sino que se reenderiza todo nuevamente a inicio
 
