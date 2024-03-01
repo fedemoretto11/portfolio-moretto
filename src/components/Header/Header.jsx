@@ -97,7 +97,7 @@ function Header() {
 
         <button 
           onClick={onChangeLanguage}
-          className='hover-underline-animation'
+          className='hover-underline-animation emoji-button'
         >
         {t('changeLanguage')}
         </button>

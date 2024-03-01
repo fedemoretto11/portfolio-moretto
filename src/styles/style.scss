@@ -10,6 +10,10 @@ body {
   
 }
 
+.emoji-button {
+  font-family: $fuenteEmoji;
+}
+
 .mainContainer {
   min-height: calc(100vh - 80px);
   background-color: $colorNegro;
