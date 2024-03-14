@@ -161,6 +161,11 @@ body {
   &__description {
     color: $colorGris;
   }
+  &__techs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
   &__links{
     &__icons {
       color: $colorSecundario;
@@ -170,6 +175,10 @@ body {
       }
     }
   }
+}
+
+.chip {
+  padding: 0;
 }
 
 .projectView {

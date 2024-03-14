@@ -14,7 +14,7 @@ function ProjectList({ projects }) {
       {projects.map((project) => {
         return (
           <Project 
-            key={project.id}s
+            key={project.id}
             project={project}
           />
         )
