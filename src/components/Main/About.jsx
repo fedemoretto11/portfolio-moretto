@@ -8,7 +8,7 @@ function About() {
   return (
     <section id="about" className="about flex justify-center items-start gap-6 sm:ml-[82px]">
         <div className="about__text sm:w-3/6">
-          <h3 className='about__text__title w-64 text-2xl '>{t('about.title')}</h3>
+          <h2 className='about__text__title w-64 text-2xl '>{t('about.title')}</h2>
           <p className='about__text__description pt-6' dangerouslySetInnerHTML={{ __html: t('about.description') }} />
         </div>
         <figure className="hidden sm:flex justify-center about__image w-2/6 lg:w-2/6">

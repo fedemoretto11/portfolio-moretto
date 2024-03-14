@@ -8,9 +8,6 @@ function Project({ project }) {
 
   const {i18n} = useTranslation()
 
-  console.log(CHIPS)
-
-
   return (
     <article className={`project w-full flex flex-col justify-between items-center gap-2 p-3`}>
       {
@@ -56,13 +53,13 @@ function Project({ project }) {
       <div className="project__links flex gap-8">
         {
           project.webLink && 
-          <a href={project.webLink} target="_blank">
+          <a href={project.webLink} aria-label="Go to Project WebSite" target="_blank">
             <i className="project__links__icons bi bi-laptop text-3xl"></i>
           </a>
         }
         {
           project.githubLink && 
-          <a href={project.githubLink} target="_blank">
+          <a href={project.githubLink} aria-label="Go to Project Github Repo" target="_blank">
             <i className="project__links__icons bi bi-github text-3xl"></i>
           </a>
         }
