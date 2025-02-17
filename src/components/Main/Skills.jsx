@@ -9,9 +9,7 @@ function Skills() {
       <div className="skills__list flex flex-col md:flex-row gap-8 md:justify-between md:items-start w-full lg:px-[240px]">
         <div className="skills__list__techList frontend">
           <h4 className="text-xl">FrontEnd</h4>
-          <p><span>=></span> HTML</p>
-          <p><span>=></span> CSS</p>
-          <p><span>=></span> JavaScript</p>
+          <p><span>=></span> Vue.JS</p>
           <p><span>=></span> TypeScript</p>
           <p><span>=></span> Tailwind CSS</p>
           <p><span>=></span> React.JS</p>
@@ -20,16 +18,17 @@ function Skills() {
         </div>
         <div className="skills__list__techList backend">
           <h4 className="text-xl">BackEnd</h4>
+          <p><span>=></span> C# .NET</p>
           <p><span>=></span> Java</p>
           <p><span>=></span> SpringBoot</p>
           <p><span>=></span> Python</p>
         </div>
         <div className="skills__list__techList other">
           <h4 className="text-xl">Other</h4>
-          <p><span>=></span> MySQL</p>
+          <p><span>=></span> SQL</p>
           <p><span>=></span> FireStore</p>
           <p><span>=></span> Git</p>
-          <p><span>=></span> GitHub</p>
+          <p><span>=></span> Azure</p>
         </div>
       </div>
 
