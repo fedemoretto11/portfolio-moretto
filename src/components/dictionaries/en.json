@@ -7,15 +7,15 @@
   "header.contact": "Contact",
   "header.openMenu": "Open menu",
   "header.closeMenu": "Close menu",
-  "hero.tagline": "Product-focused engineer",
+  "hero.tagline": "Software Developer",
   "hero.title": "Crafting reliable experiences with a human touch",
   "hero.description": "I design, ship, and maintain digital products that balance delightful interfaces with resilient architecture.",
   "hero.secondary": "Currently safeguarding mission-critical systems and building new capabilities at Asince SRL.",
   "hero.ctaContact": "Let's collaborate",
   "hero.ctaProjects": "See projects",
   "hero.highlights": [
-    { "label": "Years in tech", "value": "5+" },
-    { "label": "Launches delivered", "value": "30+" },
+    { "label": "Years in tech", "value": "2+" },
+    { "label": "Launches delivered", "value": "5+" },
     { "label": "Based in", "value": "Argentina" }
   ],
   "about.subtitle": "Story",
@@ -37,11 +37,11 @@
     "AI-assisted tooling to accelerate debugging and support workflows.",
     "Design systems that keep multi-language products consistent.",
     "Cloud-native observability and incident response strategies.",
-    "Scalable APIs with .NET, Spring Boot, and serverless runtimes."
+    "Scalable APIs with .NET, and serverless runtimes."
   ],
   "skills.subtitle": "Toolkit",
   "skills.title": "Skills & technologies",
-  "skills.description": "A mix of front-end craft, back-end foundations, and DevOps practices built with fast-paced teams.",
+  "skills.description": "Passionate about backend development — turning logic and data into reliable, high-performance solutions.",
   "skills.groups": [
     {
       "title": "Front-end",
@@ -71,11 +71,12 @@
       "period": "2022 — Present",
       "summary": "I keep the core platform stable while delivering roadmap features for fintech and ERP products.",
       "achievements": [
-        "Implemented a hotfix workflow that reduced incident resolution time by 35%.",
-        "Developed Vue and React modules that improved user onboarding metrics.",
-        "Introduced monitoring dashboards that surface anomalies before they escalate."
+        "Management and resolution of technical support tickets.",
+        "Development and implementation of hotfixes for production issues.",
+        "Monitoring and maintenance of servers and databases.",
+        "Development of new features for web applications."
       ],
-      "technologies": ["React", "Vue", "TypeScript", "C# .NET", "Azure"]
+      "technologies": ["C# .NET",  "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
     },
     {
       "role": "Freelance Full-stack Developer",

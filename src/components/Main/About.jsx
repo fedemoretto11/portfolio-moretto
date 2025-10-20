@@ -67,7 +67,7 @@ function About() {
           <img
             src={fede}
             alt="Federico Moretto portrait"
-            className="relative z-10 h-full max-h-96 w-full max-w-sm rounded-3xl border border-slate-700 object-cover shadow-xl shadow-slate-950/50"
+            className="relative z-10 h-auto w-full max-w-sm rounded-3xl border border-slate-700 object-scale-down shadow-xl shadow-slate-950/50"
           />
         </figure>
       </div>

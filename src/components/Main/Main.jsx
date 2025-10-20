@@ -10,8 +10,8 @@ function Main() {
     <main className="flex w-full flex-col gap-16 pb-24 pt-10 sm:pt-16">
       <Hero />
       <About />
-      <Skills />
       <Works />
+      <Skills />
       <ProjectsView />
       <Contact />
     </main>

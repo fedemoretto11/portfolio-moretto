@@ -9,8 +9,8 @@ function Header() {
   const navLinks = [
     { id: "home", label: t("header.home"), href: "#index" },
     { id: "about", label: t("header.about"), href: "#about" },
-    { id: "tech", label: t("header.technology"), href: "#tech" },
     { id: "works", label: t("header.works"), href: "#works" },
+    { id: "tech", label: t("header.technology"), href: "#tech" },
     { id: "projects", label: t("header.projects"), href: "#projects" },
     { id: "contact", label: t("header.contact"), href: "#contact" },
   ]

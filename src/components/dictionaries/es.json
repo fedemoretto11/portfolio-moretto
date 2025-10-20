@@ -7,19 +7,19 @@
   "header.contact": "Contacto",
   "header.openMenu": "Abrir menú",
   "header.closeMenu": "Cerrar menú",
-  "hero.tagline": "Ingeniero orientado al producto",
+  "hero.tagline": "Software Developer",
   "hero.title": "Creando experiencias confiables con un enfoque humano",
   "hero.description": "Diseño, entrego y mantengo productos digitales que equilibran interfaces atractivas con arquitecturas resilientes.",
   "hero.secondary": "Actualmente mantengo estables los sistemas críticos y desarrollo nuevas capacidades en Asince SRL.",
   "hero.ctaContact": "Colaboremos",
   "hero.ctaProjects": "Ver proyectos",
   "hero.highlights": [
-    { "label": "Años en tecnología", "value": "5+" },
-    { "label": "Lanzamientos entregados", "value": "30+" },
+    { "label": "Años en tecnología", "value": "2+" },
+    { "label": "Lanzamientos entregados", "value": "5+" },
     { "label": "Con base en", "value": "Argentina" }
   ],
   "about.subtitle": "Historia",
-  "about.title": "De soporte técnico a solucionador full-stack",
+  "about.title": "De soporte técnico a solucionador Full-Stack",
   "about.description": [
     "¡Hola! Soy Federico Moretto, un desarrollador que disfruta transformar ideas complejas en productos simples y mantenibles.",
     "En Asince SRL combino respuesta a incidentes con entrega de producto: investigo tickets, publico hotfixes y lanzo nuevas funcionalidades sin perder de vista el rendimiento.",
@@ -27,7 +27,7 @@
   ],
   "about.highlightsTitle": "En qué confía mi equipo",
   "about.highlights": [
-    "Diagnosticar y resolver incidentes en producción antes de que afecten a las personas usuarias.",
+    "Diagnosticar y resolver incidentes en producción antes de que afecten a los usuarios.",
     "Diseñar automatizaciones que acortan los ciclos de soporte y reducen tareas manuales.",
     "Entregar mejoras de interfaz respetando accesibilidad e identidad de marca.",
     "Monitorear la salud de la infraestructura en servicios cloud y bases de datos."
@@ -35,13 +35,13 @@
   "about.focusTitle": "Explorando actualmente",
   "about.focusAreas": [
     "Herramientas asistidas por IA para acelerar debugging y flujos de soporte.",
-    "Design systems que mantengan la consistencia en productos multilenguaje.",
+    "Diseñar sistemas que mantengan la consistencia en productos multilenguaje.",
     "Observabilidad nativa en la nube y estrategias de respuesta a incidentes.",
-    "APIs escalables con .NET, Spring Boot y entornos serverless."
+    "APIs escalables con .NET y entornos serverless."
   ],
   "skills.subtitle": "Toolkit",
   "skills.title": "Skills y tecnologías",
-  "skills.description": "Una mezcla de craft front-end, bases back-end y prácticas DevOps trabajadas en equipos de ritmo acelerado.",
+  "skills.description": "Apasionado por el desarrollo backend: transformar la lógica y los datos en soluciones robustas y eficientes.",
   "skills.groups": [
     {
       "title": "Front-end",
@@ -71,11 +71,12 @@
       "period": "2022 — Actualidad",
       "summary": "Mantengo estable la plataforma principal mientras entrego features del roadmap para productos fintech y ERP.",
       "achievements": [
-        "Implementé un flujo de hotfix que redujo el tiempo de resolución de incidentes en un 35%.",
-        "Desarrollé módulos en Vue y React que mejoraron los indicadores de onboarding.",
-        "Incorporé tableros de monitoreo que detectan anomalías antes de que escalen."
+        "Gestón y resolución de tickets de soporte técnico.",
+        "Desarro lo e implementación de hotfixes para errores en producción.",
+        " Monitoreo y mantenimiento de servidores y bases de datos.",
+        "Desarro lo de nuevas funcionalidades en aplicaciones web."
       ],
-      "technologies": ["React", "Vue", "TypeScript", "C# .NET", "Azure"]
+      "technologies": ["C# .NET",  "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
     },
     {
       "role": "Desarrollador full-stack freelance",
