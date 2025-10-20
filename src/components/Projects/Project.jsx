@@ -11,7 +11,7 @@ function Project({ project }) {
       : project?.descriptionEnglish ?? project?.description ?? ""
 
   const imageSrc = project?.imageUrl || project?.img || (project?.title ? `/${project.title}.webp` : "")
-  const technologies = Array.isArray(project?.technologies) ? project.technologies : []
+  const technologies = Array.isArray(project?.techs) ? project.techs : []
 
   const typeLabels = {
     sitioWeb: t("projects.typeLabels.website"),
