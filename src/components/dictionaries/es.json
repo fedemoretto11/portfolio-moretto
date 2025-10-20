@@ -1,21 +1,101 @@
 {
-  "hola.fede": "Gasdaskldsa",
-  "header.about": "Sobre Mi",
   "header.home": "Inicio",
-  "header.technology": "Tecnologias",
+  "header.about": "Sobre mí",
+  "header.technology": "Skills",
+  "header.works": "Experiencia",
   "header.projects": "Proyectos",
   "header.contact": "Contacto",
-  "hero.description": "Desarrollador de Software apasionado por la creacion de soluciones",
-  "about.title": "Sobre Mi",
-  "about.description": "<p>¡Hola! Soy Federico Moretto, un desarrollador apasionado y profesional con experiencia en desarrollo de software y soporte técnico.</br></br> Actualmente, trabajo en <span>Asince SRL</span> como <span>Technical Support</span>, donde mis principales responsabilidades incluyen:</p></br><ul><li>-Lectura, análisis y resolución de tickets de error.</li><li>-Implementación de hotfixes para garantizar la estabilidad del sistema.</li><li>-Desarrollo de nuevas funcionalidades y mejoras en aplicaciones.</li><li>-Monitoreo y gestión del estado de servidores y bases de datos.</li></ul></br><p>Cuento con habilidades técnicas en <span>C#.NET</span>, <span>Vue.js</span>, <span>TypeScript</span>, <span>Oracle PL/SQL</span> y <span>Azure</span>, las cuales también aplico en proyectos personales en mi tiempo libre, explorando soluciones innovadoras y prácticas para desafíos reales.</p></br><p>Además, poseo una sólida experiencia en <span>comercio exterior</span>, con más de 3 años en el sector, y una licenciatura que complementa mi enfoque metódico y estructurado en el desarrollo de software.</p></br><p>Me apasiona trabajar en equipo, resolver problemas complejos y contribuir al desarrollo de sistemas robustos y de alto impacto. Busco constantemente aprender y crecer en el ámbito tecnológico, incluyendo áreas como <span>inteligencia artificial</span> y <span>nuevas tecnologías</span>.</p></br><p>Estoy abierto a conectar con otros profesionales, compartir conocimientos y explorar <span>nuevas oportunidades</span> que me permitan seguir desarrollándome tanto personal como profesionalmente.</p>",
-  "skills.title": "Skills",
-  "skills.frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.JS", "Next.JS", "React Native"],
-  "skills.backend": ["Java", "SpringBoot", "Python"],
-  "skills.other": ["MySql", "FireBase", "Git", "GitHub"],
+  "header.openMenu": "Abrir menú",
+  "header.closeMenu": "Cerrar menú",
+  "hero.tagline": "Ingeniero orientado al producto",
+  "hero.title": "Creando experiencias confiables con un enfoque humano",
+  "hero.description": "Diseño, entrego y mantengo productos digitales que equilibran interfaces atractivas con arquitecturas resilientes.",
+  "hero.secondary": "Actualmente mantengo estables los sistemas críticos y desarrollo nuevas capacidades en Asince SRL.",
+  "hero.ctaContact": "Colaboremos",
+  "hero.ctaProjects": "Ver proyectos",
+  "hero.highlights": [
+    { "label": "Años en tecnología", "value": "5+" },
+    { "label": "Lanzamientos entregados", "value": "30+" },
+    { "label": "Con base en", "value": "Argentina" }
+  ],
+  "about.subtitle": "Historia",
+  "about.title": "De soporte técnico a solucionador full-stack",
+  "about.description": [
+    "¡Hola! Soy Federico Moretto, un desarrollador que disfruta transformar ideas complejas en productos simples y mantenibles.",
+    "En Asince SRL combino respuesta a incidentes con entrega de producto: investigo tickets, publico hotfixes y lanzo nuevas funcionalidades sin perder de vista el rendimiento.",
+    "Mi experiencia en comercio exterior fortaleció mi pensamiento analítico y la colaboración con equipos multidisciplinarios."
+  ],
+  "about.highlightsTitle": "En qué confía mi equipo",
+  "about.highlights": [
+    "Diagnosticar y resolver incidentes en producción antes de que afecten a las personas usuarias.",
+    "Diseñar automatizaciones que acortan los ciclos de soporte y reducen tareas manuales.",
+    "Entregar mejoras de interfaz respetando accesibilidad e identidad de marca.",
+    "Monitorear la salud de la infraestructura en servicios cloud y bases de datos."
+  ],
+  "about.focusTitle": "Explorando actualmente",
+  "about.focusAreas": [
+    "Herramientas asistidas por IA para acelerar debugging y flujos de soporte.",
+    "Design systems que mantengan la consistencia en productos multilenguaje.",
+    "Observabilidad nativa en la nube y estrategias de respuesta a incidentes.",
+    "APIs escalables con .NET, Spring Boot y entornos serverless."
+  ],
+  "skills.subtitle": "Toolkit",
+  "skills.title": "Skills y tecnologías",
+  "skills.description": "Una mezcla de craft front-end, bases back-end y prácticas DevOps trabajadas en equipos de ritmo acelerado.",
+  "skills.groups": [
+    {
+      "title": "Front-end",
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React", "Next.js", "React Native"]
+    },
+    {
+      "title": "Back-end",
+      "items": ["C# .NET", "Java", "Spring Boot", "Python", "Node.js"]
+    },
+    {
+      "title": "Herramientas",
+      "items": ["SQL", "Firebase", "Git", "GitHub", "Azure", "Jira"]
+    }
+  ],
+  "skills.highlights": [
+    "Configuro pipelines de CI y controles de calidad automáticos para mantener lanzamientos predecibles.",
+    "Impulso el desarrollo basado en componentes con patrones reutilizables y foco en accesibilidad.",
+    "Trabajo junto a personas clave para traducir reglas de negocio en features mantenibles."
+  ],
+  "works.subtitle": "Carrera",
+  "works.title": "Roles y colaboraciones recientes",
+  "works.description": "Un repaso por los equipos con los que trabajé y los resultados que alcanzamos.",
+  "works.items": [
+    {
+      "role": "Soporte técnico y desarrollador de software",
+      "company": "Asince SRL",
+      "period": "2022 — Actualidad",
+      "summary": "Mantengo estable la plataforma principal mientras entrego features del roadmap para productos fintech y ERP.",
+      "achievements": [
+        "Implementé un flujo de hotfix que redujo el tiempo de resolución de incidentes en un 35%.",
+        "Desarrollé módulos en Vue y React que mejoraron los indicadores de onboarding.",
+        "Incorporé tableros de monitoreo que detectan anomalías antes de que escalen."
+      ],
+      "technologies": ["React", "Vue", "TypeScript", "C# .NET", "Azure"]
+    },
+    {
+      "role": "Desarrollador full-stack freelance",
+      "company": "Proyectos independientes",
+      "period": "2019 — 2022",
+      "summary": "Diseñé experiencias web a medida para pequeñas empresas, desde la idea hasta la puesta en producción.",
+      "achievements": [
+        "Construí sitios responsivos y PWAs que incrementaron la generación de leads para clientes locales.",
+        "Automatizé flujos administrativos con Firebase, reduciendo tareas manuales hasta un 50%.",
+        "Acompañé a perfiles no técnicos a incorporar analítica y pruebas iterativas."
+      ],
+      "technologies": ["Next.js", "Firebase", "Tailwind", "Node.js"]
+    }
+  ],
+  "projects.subtitle": "Showcase",
   "projects.title": "Proyectos",
+  "projects.description": "Aplicaciones seleccionadas que combinan UX cuidada, arquitectura robusta y resultados medibles.",
   "projects.all": "Todos",
   "projects.others": "Varios",
-  "projects.webSites": "Sitios Web",
+  "projects.webSites": "Web",
   "projects.inProgress": "En desarrollo",
   "projects.noImage": "Imagen en preparación",
   "projects.error": "No pudimos cargar los proyectos. Intenta nuevamente más tarde.",
@@ -24,10 +104,15 @@
   "projects.typeLabels.website": "Sitio web",
   "projects.typeLabels.misc": "Otros",
   "projects.empty": "Aún no hay proyectos para mostrar. ¡Vuelve pronto!",
-  "contact.title": "Contactame",
-  "contact.firstDescription": "Estoy abierto a nuevas oportunidades laborales. Puedes contactarme a través de mis redes sociales o enviándome un email.",
-  "contact.secondDescription": "Te dejo un link de descarga de mi CV",
+  "contact.subtitle": "Colaboración",
+  "contact.title": "Construyamos algo memorable",
+  "contact.description": [
+    "Estoy abierto a nuevas oportunidades, colaboraciones remotas y charlas sobre crecimiento de producto.",
+    "¿Preferís asincrónico? Escribime o descargá mi CV actualizado."
+  ],
+  "contact.ctaEmail": "Enviar email",
+  "contact.ctaResume": "Descargar CV",
   "footer.develop": "Desarrollado por Federico Moretto",
   "footer.rights": "Todos los derechos reservados",
-  "changeLanguage": "🇺🇸"
+  "changeLanguage": "EN / ES"
 }

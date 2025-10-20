@@ -21,7 +21,7 @@ function Project({ project }) {
   const secondaryInfo = project?.role || typeLabels[project?.type] || project?.type
 
   return (
-    <article className="project relative flex h-full flex-col gap-4 rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur">
+    <article className="project relative flex h-full flex-col gap-4 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-xl shadow-slate-950/40 backdrop-blur">
       {isInProgress && (
         <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-red-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
           <span className="h-2 w-2 rounded-full bg-white" />
@@ -35,7 +35,7 @@ function Project({ project }) {
             src={imageSrc}
             alt={project?.title}
             loading="lazy"
-            className="h-48 w-full object-cover"
+            className="h-48 w-full object-cover transition duration-500 hover:scale-105"
           />
         ) : (
           <div className="flex h-48 w-full items-center justify-center text-slate-500">
