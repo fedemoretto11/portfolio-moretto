@@ -1,46 +1,116 @@
+import PropTypes from "prop-types"
 import { useTranslation } from "react-i18next"
 
-
-
-
 function Project({ project }) {
+  const { t, i18n } = useTranslation()
 
-  const {i18n} = useTranslation()
+  const isInProgress = project?.isFinished === false
+  const description =
+    i18n.language === "es"
+      ? project?.descriptionSpanish ?? project?.description ?? ""
+      : project?.descriptionEnglish ?? project?.description ?? ""
 
+  const imageSrc = project?.imageUrl || project?.img || (project?.title ? `/${project.title}.webp` : "")
+  const technologies = Array.isArray(project?.technologies) ? project.technologies : []
+
+  const typeLabels = {
+    sitioWeb: t("projects.typeLabels.website"),
+    varios: t("projects.typeLabels.misc"),
+  }
+
+  const secondaryInfo = project?.role || typeLabels[project?.type] || project?.type
 
   return (
-    <article className={`project w-full flex flex-col justify-between items-center gap-2 p-3`}>
-      {
-        project.isFinished ? '' : 
-        <h3
-          className="en_proceso blur-none absolute text-5xl text-red-600 -rotate-45 translate-y-36 z-20"
-        >
-          {i18n.language == 'es' ? "En Proceso" : "In Progress"}
-        </h3>
-      
-      }
+    <article className="project relative flex h-full flex-col gap-4 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-xl shadow-slate-950/40 backdrop-blur">
+      {isInProgress && (
+        <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-red-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+          <span className="h-2 w-2 rounded-full bg-white" />
+          {t("projects.inProgress")}
+        </span>
+      )}
 
+      <figure className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-900">
+        {imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={project?.title}
+            loading="lazy"
+            className="h-48 w-full object-cover transition duration-500 hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-48 w-full items-center justify-center text-slate-500">
+            {t("projects.noImage")}
+          </div>
+        )}
+      </figure>
 
-      <h3 className={`project__title text-xl self-start ${project.isFinished ? '' : 'blur-sm'}`}>{project.title}</h3>
-      <img src={`/${project.title}.webp`} alt={project.title} className={`w-6/6 h-30 ${project.isFinished ? '' : 'blur-sm'}`} />
-      <p className={`project__description text-sm ${project.isFinished ? '' : 'blur-sm'}`}>{i18n.language == 'es' ? project.descriptionSpanish : project.descriptionEnglish}</p>
-      <div className="project__links flex gap-8">
-        {
-          project.webLink && 
-          <a href={project.webLink} target="_blank">
-            <i className="project__links__icons bi bi-laptop text-3xl"></i>
-          </a>
-        }
-        {
-          project.githubLink && 
-          <a href={project.githubLink} target="_blank">
-            <i className="project__links__icons bi bi-github text-3xl"></i>
-          </a>
-        }
+      <div className="flex flex-col gap-2">
+        <div>
+          <h3 className="text-xl font-semibold text-white">{project?.title}</h3>
+          {secondaryInfo && <p className="text-sm text-slate-400">{secondaryInfo}</p>}
+        </div>
+
+        {technologies.length > 0 && (
+          <ul className="flex flex-wrap gap-2">
+            {technologies.map((tech) => (
+              <li
+                key={tech}
+                className="rounded-full border border-sky-500/60 bg-sky-500/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-sky-200"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {description && <p className="text-sm leading-relaxed text-slate-200">{description}</p>}
       </div>
 
-
+      <div className="mt-auto flex flex-wrap gap-3">
+        {project?.webLink && (
+          <a
+            href={project.webLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-emerald-500/60 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:bg-emerald-500/10"
+          >
+            <i className="bi bi-laptop text-lg" aria-hidden="true" />
+            <span>{t("projects.links.demo")}</span>
+          </a>
+        )}
+        {project?.githubLink && (
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-500/80 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-500/10"
+          >
+            <i className="bi bi-github text-lg" aria-hidden="true" />
+            <span>{t("projects.links.repository")}</span>
+          </a>
+        )}
+      </div>
     </article>
   )
 }
+
 export default Project
+
+Project.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    descriptionEnglish: PropTypes.string,
+    descriptionSpanish: PropTypes.string,
+    imageUrl: PropTypes.string,
+    img: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.string),
+    isFinished: PropTypes.bool,
+    role: PropTypes.string,
+    type: PropTypes.string,
+    webLink: PropTypes.string,
+    githubLink: PropTypes.string,
+  }).isRequired,
+}
+

@@ -1,24 +1,118 @@
 {
   "header.home": "Home",
-  "header.about": "About Me",
-  "header.technology": "Technologies",
+  "header.about": "About",
+  "header.technology": "Skills",
+  "header.works": "Experience",
   "header.projects": "Projects",
   "header.contact": "Contact",
-  "hero.description": "Passionate Software Developer dedicated to creating solutions.",
-  "about.title": "About Me",
-  "about.description": "<p>Hello! I am Federico Moretto, a passionate and professional developer with experience in software development and technical support.<br /><br />Currently, I work at <span>Asince SRL</span> as <span>Technical Support</span>, where my main responsibilities include:</p><br /><ul><li>-Reading, analyzing, and resolving error tickets.</li><li>-Implementing hotfixes to ensure system stability.</li><li>-Developing new features and application improvements.</li><li>-Monitoring and managing the status of servers and databases.</li></ul><br /><p>I have technical skills in <span>C#.NET</span>, <span>Vue.js</span>, <span>TypeScript</span>, <span>Oracle PL/SQL</span>, and <span>Azure</span>, which I also apply in personal projects during my free time, exploring innovative and practical solutions for real-world challenges.</p><br /><p>In addition, I have solid experience in foreign trade, with more than 3 years in the field, and a bachelor’s degree that complements my methodical and structured approach to software development.</p><br /><p>I am passionate about teamwork, solving complex problems, and contributing to the development of robust and high-impact systems. I constantly seek to learn and grow in the technological field, including areas such as artificial intelligence and emerging technologies.</p><br /><p>I am open to connecting with other professionals, sharing knowledge, and exploring new opportunities that allow me to continue developing both personally and professionally.</p>",
-  "skills.title": "Skills",
-  "skills.frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React.JS", "Next.JS", "React Native"],
-  "skills.backend": ["Java", "SpringBoot", "Python"],
-  "skills.other": ["MySql", "FireBase", "Git", "GitHub"],
+  "header.openMenu": "Open menu",
+  "header.closeMenu": "Close menu",
+  "hero.tagline": "Product-focused engineer",
+  "hero.title": "Crafting reliable experiences with a human touch",
+  "hero.description": "I design, ship, and maintain digital products that balance delightful interfaces with resilient architecture.",
+  "hero.secondary": "Currently safeguarding mission-critical systems and building new capabilities at Asince SRL.",
+  "hero.ctaContact": "Let's collaborate",
+  "hero.ctaProjects": "See projects",
+  "hero.highlights": [
+    { "label": "Years in tech", "value": "5+" },
+    { "label": "Launches delivered", "value": "30+" },
+    { "label": "Based in", "value": "Argentina" }
+  ],
+  "about.subtitle": "Story",
+  "about.title": "From support engineer to full-stack problem solver",
+  "about.description": [
+    "Hi! I'm Federico Moretto, a developer who loves transforming complex ideas into simple, maintainable products.",
+    "At Asince SRL I combine incident response with product delivery: I investigate tickets, release hotfixes, and push new features while keeping performance on track.",
+    "My background in foreign trade sharpened my analytical mindset and my ability to collaborate with multidisciplinary teams."
+  ],
+  "about.highlightsTitle": "What teammates rely on me for",
+  "about.highlights": [
+    "Diagnosing and resolving production incidents before they impact users.",
+    "Designing automations that shorten support cycles and reduce manual tasks.",
+    "Delivering UI enhancements that respect accessibility and brand guidelines.",
+    "Monitoring infrastructure health across cloud services and databases."
+  ],
+  "about.focusTitle": "Currently exploring",
+  "about.focusAreas": [
+    "AI-assisted tooling to accelerate debugging and support workflows.",
+    "Design systems that keep multi-language products consistent.",
+    "Cloud-native observability and incident response strategies.",
+    "Scalable APIs with .NET, Spring Boot, and serverless runtimes."
+  ],
+  "skills.subtitle": "Toolkit",
+  "skills.title": "Skills & technologies",
+  "skills.description": "A mix of front-end craft, back-end foundations, and DevOps practices built with fast-paced teams.",
+  "skills.groups": [
+    {
+      "title": "Front-end",
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React", "Next.js", "React Native"]
+    },
+    {
+      "title": "Back-end",
+      "items": ["C# .NET", "Java", "Spring Boot", "Python", "Node.js"]
+    },
+    {
+      "title": "Tools",
+      "items": ["SQL", "Firebase", "Git", "GitHub", "Azure", "Jira"]
+    }
+  ],
+  "skills.highlights": [
+    "Set up CI pipelines and automated quality gates to keep releases predictable.",
+    "Champion component-driven development with reusable patterns and accessibility-first thinking.",
+    "Pair with stakeholders to translate business rules into maintainable features."
+  ],
+  "works.subtitle": "Career",
+  "works.title": "Recent roles & collaborations",
+  "works.description": "Highlights from the teams I've partnered with and the outcomes we achieved together.",
+  "works.items": [
+    {
+      "role": "Technical Support & Software Developer",
+      "company": "Asince SRL",
+      "period": "2022 — Present",
+      "summary": "I keep the core platform stable while delivering roadmap features for fintech and ERP products.",
+      "achievements": [
+        "Implemented a hotfix workflow that reduced incident resolution time by 35%.",
+        "Developed Vue and React modules that improved user onboarding metrics.",
+        "Introduced monitoring dashboards that surface anomalies before they escalate."
+      ],
+      "technologies": ["React", "Vue", "TypeScript", "C# .NET", "Azure"]
+    },
+    {
+      "role": "Freelance Full-stack Developer",
+      "company": "Independent projects",
+      "period": "2019 — 2022",
+      "summary": "Delivered bespoke web experiences for small businesses, from concept to production hand-off.",
+      "achievements": [
+        "Built responsive websites and PWAs that increased lead generation for local clients.",
+        "Automated back-office workflows with Firebase, reducing manual effort by up to 50%.",
+        "Mentored non-technical stakeholders to adopt analytics and iterative testing."
+      ],
+      "technologies": ["Next.js", "Firebase", "Tailwind", "Node.js"]
+    }
+  ],
+  "projects.subtitle": "Showcase",
   "projects.title": "Projects",
+  "projects.description": "Selected applications that blend thoughtful UX, robust architecture, and measurable results.",
   "projects.all": "All",
   "projects.others": "Others",
-  "projects.webSites": "Web Sites",
-  "contact.title": "Contact Me",
-  "contact.firstDescription": "I am open to new job opportunities. You can contact me through my social media or by sending me an email.",
-  "contact.secondDescription": "I'll leave you a download link for my resume.",
+  "projects.webSites": "Web",
+  "projects.inProgress": "In development",
+  "projects.noImage": "Image coming soon",
+  "projects.error": "We couldn't load the projects. Please try again later.",
+  "projects.links.demo": "View demo",
+  "projects.links.repository": "Repository",
+  "projects.typeLabels.website": "Website",
+  "projects.typeLabels.misc": "Other",
+  "projects.empty": "There are no projects to show yet. Come back soon!",
+  "contact.subtitle": "Collaboration",
+  "contact.title": "Let's build something memorable",
+  "contact.description": [
+    "I'm open to new opportunities, remote collaborations, and conversations about product growth.",
+    "Prefer async? Drop me a line or download my latest resume."
+  ],
+  "contact.ctaEmail": "Send an email",
+  "contact.ctaResume": "Download resume",
   "footer.develop": "Developed by Federico Moretto",
-  "footer.rights": "All Rights reserved",
-  "changeLanguage": "🇪🇸"
+  "footer.rights": "All rights reserved",
+  "changeLanguage": "ES / EN"
 }
