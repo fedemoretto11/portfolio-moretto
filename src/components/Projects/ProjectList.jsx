@@ -12,9 +12,10 @@ function ProjectList({ projects }) {
     : 
     <section className="projectsList grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 xl:px-[240px]">
       {projects.map((project) => {
+        if (project.visible === false) return null;
         return (
           <Project 
-            key={project.id}s
+            key={project.id}
             project={project}
           />
         )
