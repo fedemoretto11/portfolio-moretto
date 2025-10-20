@@ -105,7 +105,7 @@ Project.propTypes = {
     descriptionSpanish: PropTypes.string,
     imageUrl: PropTypes.string,
     img: PropTypes.string,
-    technologies: PropTypes.arrayOf(PropTypes.string),
+    techs: PropTypes.arrayOf(PropTypes.string),
     isFinished: PropTypes.bool,
     role: PropTypes.string,
     type: PropTypes.string,
