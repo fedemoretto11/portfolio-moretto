@@ -4,6 +4,7 @@ import Hero from "./Hero"
 import ProjectsView from "./ProjectsView"
 import Skills from "./Skills"
 import Works from "./Works"
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function Main() {
   return (
