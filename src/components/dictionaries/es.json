@@ -8,40 +8,40 @@
   "header.openMenu": "Abrir menú",
   "header.closeMenu": "Cerrar menú",
   "hero.tagline": "Software Developer",
-  "hero.title": "Creando experiencias confiables con un enfoque humano",
-  "hero.description": "Diseño, entrego y mantengo productos digitales que equilibran interfaces atractivas con arquitecturas resilientes.",
-  "hero.secondary": "Actualmente mantengo estables los sistemas críticos y desarrollo nuevas capacidades en Asince SRL.",
+  "hero.title": "Transformo ideas en software que realmente funciona",
+  "hero.description": "Diseño, desarrollo y mantengo productos digitales que combinan interfaces simples con una arquitectura sólida y pensada para durar.",
+  "hero.secondary": "Hoy formo parte de Asince SRL, donde me enfoco en mantener estables los sistemas críticos y en crear nuevas funcionalidades que ayuden a que la empresa siga creciendo.",
   "hero.ctaContact": "Colaboremos",
   "hero.ctaProjects": "Ver proyectos",
   "hero.highlights": [
     { "label": "Años en tecnología", "value": "2+" },
-    { "label": "Lanzamientos entregados", "value": "5+" },
-    { "label": "Con base en", "value": "Argentina" }
+    { "label": "Proyectos entregados", "value": "5+" },
+    { "label": "Desde", "value": "Argentina" }
   ],
   "about.subtitle": "Historia",
-  "about.title": "De soporte técnico a solucionador Full-Stack",
+  "about.title": "De soporte técnico a desarrollador full-stack",
   "about.description": [
-    "¡Hola! Soy Federico Moretto, un desarrollador que disfruta transformar ideas complejas en productos simples y mantenibles.",
-    "En Asince SRL combino respuesta a incidentes con entrega de producto: investigo tickets, publico hotfixes y lanzo nuevas funcionalidades sin perder de vista el rendimiento.",
-    "Mi experiencia en comercio exterior fortaleció mi pensamiento analítico y la colaboración con equipos multidisciplinarios."
+    "¡Hola! Soy Federico Moretto, un desarrollador al que le apasiona convertir ideas complejas en soluciones claras, escalables y fáciles de mantener.",
+    "En Asince SRL combino la respuesta a incidentes con el desarrollo de producto: analizo tickets, aplico hotfixes y desarrollo nuevas funcionalidades sin perder de vista el rendimiento.",
+    "Mi paso por el área de comercio exterior fortaleció mi pensamiento analítico y mi forma de trabajar con equipos de distintos perfiles."
   ],
-  "about.highlightsTitle": "En qué confía mi equipo",
+  "about.highlightsTitle": "Mi equipo confía en mí para",
   "about.highlights": [
-    "Diagnosticar y resolver incidentes en producción antes de que afecten a los usuarios.",
-    "Diseñar automatizaciones que acortan los ciclos de soporte y reducen tareas manuales.",
-    "Entregar mejoras de interfaz respetando accesibilidad e identidad de marca.",
-    "Monitorear la salud de la infraestructura en servicios cloud y bases de datos."
+    "Detectar y resolver incidentes en producción antes de que afecten a los usuarios.",
+    "Diseñar automatizaciones que reducen tareas manuales y acortan los tiempos de soporte.",
+    "Mejorar interfaces cuidando la accesibilidad y la coherencia visual del producto.",
+    "Monitorear la infraestructura y el rendimiento de los servicios en la nube y bases de datos."
   ],
-  "about.focusTitle": "Explorando actualmente",
+  "about.focusTitle": "Lo que estoy explorando",
   "about.focusAreas": [
-    "Herramientas asistidas por IA para acelerar debugging y flujos de soporte.",
-    "Diseñar sistemas que mantengan la consistencia en productos multilenguaje.",
-    "Observabilidad nativa en la nube y estrategias de respuesta a incidentes.",
-    "APIs escalables con .NET y entornos serverless."
+    "Herramientas impulsadas por IA para acelerar el debugging y los flujos de soporte.",
+    "Diseño de sistemas que mantengan la consistencia en productos multilenguaje.",
+    "Estrategias de observabilidad y respuesta a incidentes en entornos cloud.",
+    "APIs escalables con .NET y despliegues en entornos serverless."
   ],
   "skills.subtitle": "Toolkit",
   "skills.title": "Skills y tecnologías",
-  "skills.description": "Apasionado por el desarrollo backend: transformar la lógica y los datos en soluciones robustas y eficientes.",
+  "skills.description": "Apasionado por el desarrollo backend: transformar la lógica y los datos en soluciones estables, seguras y eficientes.",
   "skills.groups": [
     {
       "title": "Front-end",
@@ -57,59 +57,59 @@
     }
   ],
   "skills.highlights": [
-    "Configuro pipelines de CI y controles de calidad automáticos para mantener lanzamientos predecibles.",
-    "Impulso el desarrollo basado en componentes con patrones reutilizables y foco en accesibilidad.",
-    "Trabajo junto a personas clave para traducir reglas de negocio en features mantenibles."
+    "Configuro pipelines de CI/CD y pruebas automatizadas para mantener lanzamientos predecibles.",
+    "Promuevo el desarrollo basado en componentes con patrones reutilizables y enfoque en accesibilidad.",
+    "Trabajo junto a las áreas clave del negocio para traducir reglas en funcionalidades mantenibles."
   ],
   "works.subtitle": "Carrera",
-  "works.title": "Roles y colaboraciones recientes",
-  "works.description": "Un repaso por los equipos con los que trabajé y los resultados que alcanzamos.",
+  "works.title": "Experiencia profesional",
+  "works.description": "Un vistazo a los equipos y proyectos con los que tuve la oportunidad de crecer.",
   "works.items": [
     {
       "role": "Soporte técnico y desarrollador de software",
       "company": "Asince SRL",
       "period": "2022 — Actualidad",
-      "summary": "Mantengo estable la plataforma principal mientras entrego features del roadmap para productos fintech y ERP.",
+      "summary": "Mantengo estable la plataforma principal mientras desarrollo nuevas funcionalidades para productos fintech y ERP.",
       "achievements": [
-        "Gestón y resolución de tickets de soporte técnico.",
-        "Desarro lo e implementación de hotfixes para errores en producción.",
-        " Monitoreo y mantenimiento de servidores y bases de datos.",
-        "Desarro lo de nuevas funcionalidades en aplicaciones web."
+        "Gestión y resolución de tickets de soporte técnico.",
+        "Desarrollo e implementación de hotfixes para entornos productivos.",
+        "Monitoreo y mantenimiento de servidores y bases de datos.",
+        "Desarrollo de nuevas funcionalidades en aplicaciones web."
       ],
-      "technologies": ["C# .NET",  "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
+      "technologies": ["C# .NET", "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
     },
     {
       "role": "Desarrollador full-stack freelance",
       "company": "Proyectos independientes",
       "period": "2019 — 2022",
-      "summary": "Diseñé experiencias web a medida para pequeñas empresas, desde la idea hasta la puesta en producción.",
+      "summary": "Diseñé y desarrollé sitios web a medida para pequeñas empresas, desde la idea hasta su publicación.",
       "achievements": [
-        "Construí sitios responsivos y PWAs que incrementaron la generación de leads para clientes locales.",
-        "Automatizé flujos administrativos con Firebase, reduciendo tareas manuales hasta un 50%.",
-        "Acompañé a perfiles no técnicos a incorporar analítica y pruebas iterativas."
+        "Creación de sitios responsivos y PWAs que aumentaron la visibilidad y generación de leads de clientes locales.",
+        "Automatización de flujos administrativos con Firebase, reduciendo tareas manuales hasta en un 50%.",
+        "Acompañamiento a clientes no técnicos para implementar analítica y procesos iterativos de mejora."
       ],
       "technologies": ["Next.js", "Firebase", "Tailwind", "Node.js"]
     }
   ],
   "projects.subtitle": "Showcase",
   "projects.title": "Proyectos",
-  "projects.description": "Aplicaciones seleccionadas que combinan UX cuidada, arquitectura robusta y resultados medibles.",
+  "projects.description": "Algunos proyectos destacados que combinan una buena experiencia de usuario con bases técnicas sólidas.",
   "projects.all": "Todos",
   "projects.others": "Varios",
   "projects.webSites": "Web",
   "projects.inProgress": "En desarrollo",
   "projects.noImage": "Imagen en preparación",
-  "projects.error": "No pudimos cargar los proyectos. Intenta nuevamente más tarde.",
+  "projects.error": "No se pudieron cargar los proyectos. Intentá nuevamente más tarde.",
   "projects.links.demo": "Ver demo",
   "projects.links.repository": "Repositorio",
   "projects.typeLabels.website": "Sitio web",
   "projects.typeLabels.misc": "Otros",
-  "projects.empty": "Aún no hay proyectos para mostrar. ¡Vuelve pronto!",
+  "projects.empty": "Todavía no hay proyectos para mostrar. ¡Vuelvo pronto!",
   "contact.subtitle": "Colaboración",
-  "contact.title": "Construyamos algo memorable",
+  "contact.title": "Construyamos algo que valga la pena",
   "contact.description": [
-    "Estoy abierto a nuevas oportunidades, colaboraciones remotas y charlas sobre crecimiento de producto.",
-    "¿Preferís asincrónico? Escribime o descargá mi CV actualizado."
+    "Estoy abierto a nuevas oportunidades, proyectos remotos y charlas sobre desarrollo y crecimiento de producto.",
+    "¿Preferís algo más asincrónico? Escribime o descargá mi CV actualizado."
   ],
   "contact.ctaEmail": "Enviar email",
   "contact.ctaResume": "Descargar CV",

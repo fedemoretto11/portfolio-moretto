@@ -8,40 +8,40 @@
   "header.openMenu": "Open menu",
   "header.closeMenu": "Close menu",
   "hero.tagline": "Software Developer",
-  "hero.title": "Crafting reliable experiences with a human touch",
-  "hero.description": "I design, ship, and maintain digital products that balance delightful interfaces with resilient architecture.",
-  "hero.secondary": "Currently safeguarding mission-critical systems and building new capabilities at Asince SRL.",
+  "hero.title": "I turn ideas into software that truly works",
+  "hero.description": "I design, build, and maintain digital products that blend simple interfaces with solid, long-lasting architecture.",
+  "hero.secondary": "I’m currently part of Asince SRL, where I focus on keeping critical systems stable while building new features that help the company grow.",
   "hero.ctaContact": "Let's collaborate",
-  "hero.ctaProjects": "See projects",
+  "hero.ctaProjects": "View projects",
   "hero.highlights": [
     { "label": "Years in tech", "value": "2+" },
-    { "label": "Launches delivered", "value": "5+" },
+    { "label": "Projects delivered", "value": "5+" },
     { "label": "Based in", "value": "Argentina" }
   ],
   "about.subtitle": "Story",
-  "about.title": "From support engineer to full-stack problem solver",
+  "about.title": "From tech support to full-stack developer",
   "about.description": [
-    "Hi! I'm Federico Moretto, a developer who loves transforming complex ideas into simple, maintainable products.",
-    "At Asince SRL I combine incident response with product delivery: I investigate tickets, release hotfixes, and push new features while keeping performance on track.",
-    "My background in foreign trade sharpened my analytical mindset and my ability to collaborate with multidisciplinary teams."
+    "Hi! I’m Federico Moretto — a developer passionate about turning complex ideas into clear, scalable, and maintainable solutions.",
+    "At Asince SRL, I combine incident response with product development: I analyze tickets, apply hotfixes, and ship new features while keeping performance in check.",
+    "My time working in foreign trade strengthened my analytical thinking and my ability to collaborate with people from different areas."
   ],
-  "about.highlightsTitle": "What teammates rely on me for",
+  "about.highlightsTitle": "My team trusts me to",
   "about.highlights": [
-    "Diagnosing and resolving production incidents before they impact users.",
-    "Designing automations that shorten support cycles and reduce manual tasks.",
-    "Delivering UI enhancements that respect accessibility and brand guidelines.",
-    "Monitoring infrastructure health across cloud services and databases."
+    "Identify and resolve production issues before they affect users.",
+    "Design automations that reduce manual work and speed up support processes.",
+    "Improve user interfaces while respecting accessibility and visual consistency.",
+    "Monitor infrastructure and performance across cloud services and databases."
   ],
   "about.focusTitle": "Currently exploring",
   "about.focusAreas": [
-    "AI-assisted tooling to accelerate debugging and support workflows.",
-    "Design systems that keep multi-language products consistent.",
+    "AI-powered tools to speed up debugging and support workflows.",
+    "Design systems that keep multilingual products consistent.",
     "Cloud-native observability and incident response strategies.",
-    "Scalable APIs with .NET, and serverless runtimes."
+    "Scalable APIs with .NET and serverless deployments."
   ],
   "skills.subtitle": "Toolkit",
   "skills.title": "Skills & technologies",
-  "skills.description": "Passionate about backend development — turning logic and data into reliable, high-performance solutions.",
+  "skills.description": "Passionate about backend development — turning logic and data into stable, secure, and efficient solutions.",
   "skills.groups": [
     {
       "title": "Front-end",
@@ -57,45 +57,45 @@
     }
   ],
   "skills.highlights": [
-    "Set up CI pipelines and automated quality gates to keep releases predictable.",
-    "Champion component-driven development with reusable patterns and accessibility-first thinking.",
-    "Pair with stakeholders to translate business rules into maintainable features."
+    "Set up CI/CD pipelines and automated testing to ensure reliable releases.",
+    "Encourage component-driven development with reusable patterns and accessibility in mind.",
+    "Collaborate closely with business teams to turn rules into maintainable features."
   ],
   "works.subtitle": "Career",
-  "works.title": "Recent roles & collaborations",
-  "works.description": "Highlights from the teams I've partnered with and the outcomes we achieved together.",
+  "works.title": "Professional experience",
+  "works.description": "A look at the teams and projects that helped me grow as a developer.",
   "works.items": [
     {
       "role": "Technical Support & Software Developer",
       "company": "Asince SRL",
       "period": "2022 — Present",
-      "summary": "I keep the core platform stable while delivering roadmap features for fintech and ERP products.",
+      "summary": "I keep the company’s core platform stable while developing new features for fintech and ERP products.",
       "achievements": [
-        "Management and resolution of technical support tickets.",
-        "Development and implementation of hotfixes for production issues.",
-        "Monitoring and maintenance of servers and databases.",
-        "Development of new features for web applications."
+        "Handled and resolved technical support tickets.",
+        "Developed and implemented hotfixes for production environments.",
+        "Monitored and maintained servers and databases.",
+        "Developed new features for web applications."
       ],
-      "technologies": ["C# .NET",  "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
+      "technologies": ["C# .NET", "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
     },
     {
-      "role": "Freelance Full-stack Developer",
-      "company": "Independent projects",
+      "role": "Freelance Full-Stack Developer",
+      "company": "Independent Projects",
       "period": "2019 — 2022",
-      "summary": "Delivered bespoke web experiences for small businesses, from concept to production hand-off.",
+      "summary": "Designed and developed custom websites for small businesses — from concept to launch.",
       "achievements": [
-        "Built responsive websites and PWAs that increased lead generation for local clients.",
-        "Automated back-office workflows with Firebase, reducing manual effort by up to 50%.",
-        "Mentored non-technical stakeholders to adopt analytics and iterative testing."
+        "Built responsive sites and PWAs that improved visibility and lead generation for local clients.",
+        "Automated back-office processes with Firebase, cutting manual work by up to 50%.",
+        "Helped non-technical clients adopt analytics and iterative improvement practices."
       ],
       "technologies": ["Next.js", "Firebase", "Tailwind", "Node.js"]
     }
   ],
   "projects.subtitle": "Showcase",
   "projects.title": "Projects",
-  "projects.description": "Selected applications that blend thoughtful UX, robust architecture, and measurable results.",
+  "projects.description": "Selected projects that blend great user experience with strong technical foundations.",
   "projects.all": "All",
-  "projects.others": "Others",
+  "projects.others": "Various",
   "projects.webSites": "Web",
   "projects.inProgress": "In development",
   "projects.noImage": "Image coming soon",
@@ -104,14 +104,14 @@
   "projects.links.repository": "Repository",
   "projects.typeLabels.website": "Website",
   "projects.typeLabels.misc": "Other",
-  "projects.empty": "There are no projects to show yet. Come back soon!",
+  "projects.empty": "No projects to show yet — check back soon!",
   "contact.subtitle": "Collaboration",
-  "contact.title": "Let's build something memorable",
+  "contact.title": "Let’s build something meaningful",
   "contact.description": [
-    "I'm open to new opportunities, remote collaborations, and conversations about product growth.",
-    "Prefer async? Drop me a line or download my latest resume."
+    "I’m open to new opportunities, remote projects, and conversations about software and product growth.",
+    "Prefer async? Send me an email or grab my latest resume."
   ],
-  "contact.ctaEmail": "Send an email",
+  "contact.ctaEmail": "Send email",
   "contact.ctaResume": "Download resume",
   "footer.develop": "Developed by Federico Moretto",
   "footer.rights": "All rights reserved",
