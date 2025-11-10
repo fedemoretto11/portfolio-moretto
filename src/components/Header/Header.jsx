@@ -6,6 +6,19 @@ function Header() {
   const { t, i18n } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const handleNavClick = (event, hash) => {
+    event.preventDefault()
+
+    const targetElement = document.querySelector(hash)
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" })
+      window.history.replaceState(null, "", hash)
+    }
+
+    setIsMenuOpen(false)
+  }
+
   const navLinks = [
     { id: "home", label: t("header.home"), href: "#hero" },
     { id: "about", label: t("header.about"), href: "#about" },
@@ -23,7 +36,11 @@ function Header() {
   return (
     <header id="index" className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#hero" className="flex items-center gap-3">
+        <a
+          href="#hero"
+          onClick={(event) => handleNavClick(event, "#hero")}
+          className="flex items-center gap-3"
+        >
           <img
             src={logo}
             alt="Federico Moretto logo"
@@ -64,7 +81,7 @@ function Header() {
             <li key={link.id}>
               <a
                 href={link.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(event) => handleNavClick(event, link.href)}
                 className="inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-slate-600 hover:bg-slate-900/60 hover:text-white"
               >
                 {link.label}
