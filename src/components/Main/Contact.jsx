@@ -5,7 +5,7 @@ function Contact() {
   const description = t("contact.description", { returnObjects: true })
 
   return (
-    <section id="contact" className="px-6">
+    <section id="contact" className="scroll-mt-32 px-6">
       <div className="mx-auto flex max-w-4xl flex-col gap-6 overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900/70 via-slate-900/40 to-slate-900/70 px-8 py-12 text-center shadow-xl shadow-slate-950/40 backdrop-blur">
         <span className="text-sm uppercase tracking-[0.3em] text-sky-300">{t("contact.subtitle")}</span>
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">{t("contact.title")}</h2>
