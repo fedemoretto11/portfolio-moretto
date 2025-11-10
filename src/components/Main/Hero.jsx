@@ -5,7 +5,7 @@ function Hero() {
   const highlights = t("hero.highlights", { returnObjects: true })
 
   return (
-    <section id="hero" className="px-6">
+    <section id="hero" className="scroll-mt-32 px-6">
       <div className="mx-auto grid max-w-6xl gap-10 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/50 px-8 py-12 shadow-xl shadow-slate-950/40 backdrop-blur lg:grid-cols-[2fr,1fr]">
         <div className="flex flex-col gap-6">
           <span className="inline-flex items-center gap-2 self-start rounded-full border border-slate-700 bg-slate-900/70 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-sky-300">

@@ -8,7 +8,7 @@ function About() {
   const focusAreas = t("about.focusAreas", { returnObjects: true })
 
   return (
-    <section id="about" className="px-6">
+    <section id="about" className="scroll-mt-32 px-6">
       <div className="mx-auto grid max-w-6xl gap-10 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/50 px-8 py-12 shadow-xl shadow-slate-950/40 backdrop-blur lg:grid-cols-[3fr,2fr]">
         <div className="flex flex-col gap-6">
           <div>

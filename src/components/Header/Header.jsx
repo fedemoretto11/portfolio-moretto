@@ -7,7 +7,7 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navLinks = [
-    { id: "home", label: t("header.home"), href: "#index" },
+    { id: "home", label: t("header.home"), href: "#hero" },
     { id: "about", label: t("header.about"), href: "#about" },
     { id: "works", label: t("header.works"), href: "#works" },
     { id: "tech", label: t("header.technology"), href: "#tech" },
@@ -23,7 +23,7 @@ function Header() {
   return (
     <header id="index" className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#index" className="flex items-center gap-3">
+        <a href="#hero" className="flex items-center gap-3">
           <img
             src={logo}
             alt="Federico Moretto logo"
