@@ -6,7 +6,7 @@ function Skills() {
   const highlights = t("skills.highlights", { returnObjects: true })
 
   return (
-    <section id="tech" className="px-6">
+    <section id="tech" className="scroll-mt-32 px-6">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 rounded-3xl border border-slate-800 bg-slate-900/50 px-8 py-12 shadow-xl shadow-slate-950/40 backdrop-blur">
         <div className="flex flex-col gap-2">
           <span className="text-sm uppercase tracking-[0.3em] text-sky-300">{t("skills.subtitle")}</span>
