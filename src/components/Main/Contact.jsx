@@ -26,7 +26,7 @@ function Contact() {
             {t("contact.ctaEmail")}
           </a>
           <a
-            href="https://drive.google.com/file/d/1rs2PRMyinNfGShFtPOX_aWm_Y8SeCkH-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1e-iDQ2UlwQLCyRHULMOqovKSGq_Iavf2/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-slate-500 hover:bg-slate-800/80 sm:w-auto"
