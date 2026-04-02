@@ -1,41 +1,71 @@
-🇪🇸 Español
+# Portfolio Moretto
 
+Portfolio personal de Federico Moretto desarrollado con React, Vite y Tailwind CSS.
 
-# Portafolio Personal
+El sitio tiene un enfoque de una sola página y presenta:
 
-¡Bienvenido a mi portafolio personal! Aquí encontrarás una exhibición de mis proyectos y habilidades en desarrollo web.
+- Hero principal con propuesta de valor.
+- Sección "Sobre mí" con perfil profesional.
+- Experiencia laboral.
+- Skills y stack técnico.
+- Proyectos destacados.
+- Contacto y acceso al CV.
 
-## Tecnologías Utilizadas
-  - React JS
-  - Tailwind CSS
-  - Iconos de Bootstrap
-  - FireStore
-  - Saas
+## Stack actual
 
-## Diseño Responsivo
-Todos mis proyectos están desarrollados siguiendo los principios del diseño responsivo. Esto significa que se adaptarán y se verán geniales en una variedad de dispositivos y tamaños de pantalla.
+- React 18
+- Vite
+- Tailwind CSS
+- i18next / react-i18next
+- Firebase / Firestore
+- Bootstrap Icons
 
-## Enlace del Proyecto
-Puedes visitar mi portafolio en el siguiente enlace: [Portafolio Personal](https://federicomoretto.com.ar/)
+## Objetivo del proyecto
 
+Mostrar el perfil profesional de Federico de forma clara, moderna y confiable, priorizando:
 
----
+- Buena primera impresión visual.
+- Navegación simple.
+- Contenido profesional útil para recruiters y clientes.
+- Carga rápida y mantenimiento sencillo.
 
-🇺🇸 English
+## Scripts
 
-# Personal Portfolio
+```bash
+npm run dev
+npm run build
+npm run lint
+npm run preview
+```
 
-Welcome to my personal portfolio! Here you will find a showcase of my projects and skills in web development.
+## Estado actual
 
-## Technologies Used
-  - React JS
-  - Tailwind CSS
-  - Bootstarp Icons
-  - FireStore
-  - Saas
+La UI ya tiene una base visual sólida y responsive, pero todavía hay deuda técnica relevante:
 
-## Responsive Design
-All my projects are developed following the principles of responsive design. This means they will adapt and look great on a variety of devices and screen sizes.
+- La sección de proyectos depende de Firestore en runtime.
+- Hay código de utilidades y migración de Firebase dentro de `src/`.
+- El repo no pasa `lint` en limpio.
+- La imagen principal del perfil pesa demasiado para un portfolio.
+- Faltan mejoras de SEO, performance y persistencia de idioma.
 
-## Project Link
-You can visit my portfolio at the following link: [Personal Portfolio](https://federicomoretto.com.ar/)
+## Documentación para IA
+
+Este repo incluye documentación específica para asistentes de IA y editores:
+
+- [AGENTS.md](./AGENTS.md)
+- [CLAUDE.md](./CLAUDE.md)
+- [GEMINI.md](./GEMINI.md)
+- [.github/copilot-instructions.md](./.github/copilot-instructions.md)
+- [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)
+- [docs/TECH_REVIEW.md](./docs/TECH_REVIEW.md)
+- [docs/CONTENT_GUIDE.md](./docs/CONTENT_GUIDE.md)
+
+## Dirección recomendada
+
+Si se sigue iterando este portfolio, la prioridad sugerida es:
+
+1. Dejar el repo sano y sin código roto.
+2. Pasar proyectos a contenido estático o build-time.
+3. Optimizar assets, sobre todo la foto principal.
+4. Mejorar SEO y metadata social.
+5. Hacer más fuerte la propuesta profesional y la conversión.
