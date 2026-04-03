@@ -1,13 +1,20 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
+import useProjects from "../../hooks/useProjects"
 import ProjectListContainer from "../Projects/ProjectListContainer"
-import projects from "../../data/projects"
 import Icon from "../ui/Icon"
 
 function ProjectsView() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [type, setType] = useState("todos")
+  const { projects, loading, error } = useProjects()
   const featuredProjects = projects.filter((project) => project.featured && project.visible !== false)
+  const getProjectSummary = (project) =>
+    i18n.language === "es"
+      ? project.shortDescriptionSpanish || project.descriptionSpanish
+      : project.shortDescriptionEnglish || project.descriptionEnglish || project.shortDescriptionSpanish
+  const getTypeLabel = (projectType) =>
+    projectType === "sitioWeb" ? t("projects.typeLabels.website") : t("projects.typeLabels.misc")
 
   const filters = [
     { id: "todos", label: t("projects.all") },
@@ -34,7 +41,28 @@ function ProjectsView() {
           </div>
 
           <div className="grid gap-6 xl:grid-cols-3">
-            {featuredProjects.map((project) => (
+            {loading &&
+              Array.from({ length: 3 }).map((_, index) => (
+                <div
+                  key={`featured-skeleton-${index}`}
+                  className="overflow-hidden rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.22)]"
+                >
+                  <div className="h-60 w-full animate-pulse bg-[rgba(7,12,24,0.92)]" />
+                  <div className="space-y-4 p-6">
+                    <div className="h-4 w-1/3 animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
+                    <div className="h-8 w-2/3 animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
+                    <div className="h-4 w-full animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
+                  </div>
+                </div>
+              ))}
+
+            {!loading && error && (
+              <p className="surface-card px-4 py-4 text-center text-sm text-red-200 xl:col-span-3">{t(error)}</p>
+            )}
+
+            {!loading &&
+              !error &&
+              featuredProjects.map((project) => (
               <article
                 key={`featured-${project.id}`}
                 className="flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.22)]"
@@ -58,7 +86,7 @@ function ProjectsView() {
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
-                        {project.context}
+                        {getTypeLabel(project.type)}
                       </p>
                       <h3 className="mt-2 font-display text-2xl font-semibold text-white">
                         {project.title}
@@ -73,12 +101,8 @@ function ProjectsView() {
                     )}
                   </div>
 
-                  {project.role && (
-                    <p className="text-sm font-medium text-[color:var(--muted-strong)]">{project.role}</p>
-                  )}
-
-                  {project.impact && (
-                    <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{project.impact}</p>
+                  {getProjectSummary(project) && (
+                    <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{getProjectSummary(project)}</p>
                   )}
 
                   <ul className="flex flex-wrap gap-2">
@@ -115,7 +139,7 @@ function ProjectsView() {
                   </div>
                 </div>
               </article>
-            ))}
+              ))}
           </div>
         </div>
 
@@ -150,7 +174,13 @@ function ProjectsView() {
             })}
           </div>
 
-          <ProjectListContainer type={type} excludeFeatured />
+          <ProjectListContainer
+            projects={projects}
+            type={type}
+            excludeFeatured
+            isLoading={loading}
+            error={error}
+          />
         </div>
       </div>
     </section>

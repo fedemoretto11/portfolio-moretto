@@ -5,10 +5,10 @@ const projects = [
     type: "sitioWeb",
     featured: true,
     imageUrl: "/Corporacion Capital.webp",
-    context: "Sitio corporativo",
-    role: "Web para una consultora de recursos humanos",
-    impact:
-      "Enfoque orientado a servicios, vacantes y contacto directo para conectar candidatos, empleadores y propuesta comercial.",
+    shortDescriptionSpanish:
+      "Sitio corporativo orientado a servicios, vacantes y contacto directo con candidatos y empleadores.",
+    shortDescriptionEnglish:
+      "Corporate website focused on services, open roles, and direct contact with candidates and employers.",
     descriptionSpanish:
       "Sitio web para una empresa de recursos humanos con foco en postulacion a empleos, presentacion de servicios y contacto directo con potenciales candidatos y empleadores.",
     descriptionEnglish:
@@ -24,10 +24,10 @@ const projects = [
     type: "varios",
     featured: true,
     imageUrl: "/Kilometros App.webp",
-    context: "Herramienta operativa",
-    role: "Panel de carga y consulta para seguimiento de kilometraje",
-    impact:
-      "Pensado para tareas administrativas donde importa cargar rapido, consultar facil y mantener el orden de la informacion.",
+    shortDescriptionSpanish:
+      "Herramienta administrativa para cargar kilometraje y consultar informacion operativa con rapidez.",
+    shortDescriptionEnglish:
+      "Administrative tool built for fast mileage entry and quick lookup of operational information.",
     descriptionSpanish:
       "Herramienta administrativa para registrar kilometros recorridos y ordenar informacion operativa con una interfaz enfocada en carga y consulta rapida.",
     descriptionEnglish:
@@ -40,10 +40,10 @@ const projects = [
     type: "sitioWeb",
     featured: true,
     imageUrl: "/Super Music Changuito.webp",
-    context: "E-commerce conceptual",
-    role: "Exploracion de catalogo y flujo de compra",
-    impact:
-      "Proyecto para trabajar estructura de productos, navegacion por categorias y una experiencia simple de exploracion en tienda web.",
+    shortDescriptionSpanish:
+      "E-commerce conceptual con catalogo, categorias y un recorrido de compra simple para explorar productos.",
+    shortDescriptionEnglish:
+      "Concept e-commerce project with catalog browsing, categories, and a simple purchase exploration flow.",
     descriptionSpanish:
       "E-commerce orientado a instrumentos musicales, con catalogo de productos, navegacion por categorias y una experiencia pensada para explorar articulos de forma rapida.",
     descriptionEnglish:
@@ -55,7 +55,8 @@ const projects = [
     title: "Moretto SRL",
     type: "sitioWeb",
     imageUrl: "/Moretto SRL.webp",
-    role: "Sitio corporativo para una distribuidora",
+    shortDescriptionSpanish: "Sitio corporativo para una distribuidora con foco en productos, servicios y presencia comercial.",
+    shortDescriptionEnglish: "Corporate website for a distributor focused on products, services, and commercial presence.",
     descriptionSpanish:
       "Sitio corporativo para una distribuidora, enfocado en mostrar productos, servicios y presencia comercial de manera clara y directa.",
     descriptionEnglish:
@@ -67,7 +68,8 @@ const projects = [
     title: "Alexpama",
     type: "sitioWeb",
     imageUrl: "/Alexpama.webp",
-    role: "Sitio institucional y promocional",
+    shortDescriptionSpanish: "Sitio institucional y promocional orientado a presencia digital y acceso rapido a contacto.",
+    shortDescriptionEnglish: "Institutional and promotional website focused on digital presence and quick access to contact channels.",
     descriptionSpanish:
       "Sitio institucional y promocional orientado a presencia digital, presentacion de contenidos y acceso rapido a canales de contacto y redes.",
     descriptionEnglish:
@@ -79,7 +81,8 @@ const projects = [
     title: "To Do List",
     type: "varios",
     imageUrl: "/To Do List.webp",
-    role: "Proyecto personal de practica",
+    shortDescriptionSpanish: "Proyecto personal para practicar JavaScript, POO y un flujo diario de gestion de tareas.",
+    shortDescriptionEnglish: "Personal project to practice JavaScript, OOP, and a clear daily task management flow.",
     descriptionSpanish:
       "Aplicacion de lista de tareas creada como proyecto personal para practicar JavaScript y programacion orientada a objetos, con foco en una interfaz simple y flujo claro de gestion diaria.",
     descriptionEnglish:
@@ -93,7 +96,8 @@ const projects = [
     title: "DrumKit",
     type: "varios",
     imageUrl: "/DrumKit.webp",
-    role: "Exploracion de eventos y feedback inmediato",
+    shortDescriptionSpanish: "Proyecto interactivo para explorar eventos, audio y feedback inmediato en interfaz.",
+    shortDescriptionEnglish: "Interactive project exploring events, audio, and immediate UI feedback.",
     descriptionSpanish:
       "Proyecto interactivo inspirado en una bateria virtual, donde cada tecla dispara un sonido y permite practicar eventos, audio y feedback inmediato en la interfaz.",
     descriptionEnglish:
@@ -105,7 +109,8 @@ const projects = [
     title: "Calculadora",
     type: "varios",
     imageUrl: "/Calculadora.webp",
-    role: "Ejercicio de logica de interfaz",
+    shortDescriptionSpanish: "Ejercicio de logica de interfaz y operaciones matematicas con foco en rapidez de uso.",
+    shortDescriptionEnglish: "UI logic and math operations exercise focused on fast interaction.",
     descriptionSpanish:
       "Calculadora web como ejercicio de logica de interfaz y operaciones matematicas, con una UI simple orientada a velocidad de uso.",
     descriptionEnglish:

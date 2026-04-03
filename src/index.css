@@ -153,4 +153,135 @@
     opacity: 0.55;
     pointer-events: none;
   }
+
+  .field-group {
+    @apply flex flex-col gap-2;
+  }
+
+  .field-label {
+    @apply text-xs font-semibold uppercase tracking-[0.24em];
+    color: var(--accent);
+  }
+
+  .field-input,
+  .field-textarea {
+    @apply w-full rounded-[1rem] border px-4 py-3 text-sm text-white outline-none transition;
+    border-color: rgba(129, 149, 191, 0.16);
+    background: rgba(8, 14, 31, 0.86);
+  }
+
+  .field-input::placeholder,
+  .field-textarea::placeholder {
+    color: var(--muted);
+  }
+
+  .field-input:focus,
+  .field-textarea:focus {
+    border-color: rgba(121, 183, 255, 0.34);
+    box-shadow: 0 0 0 3px rgba(121, 183, 255, 0.08);
+  }
+
+  .field-input-error {
+    border-color: rgba(244, 114, 182, 0.44);
+    box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.08);
+  }
+
+  .field-error {
+    @apply text-sm;
+    color: #fda4af;
+  }
+
+  .field-textarea {
+    resize: vertical;
+    min-height: 7rem;
+  }
+
+  .field-toggle {
+    @apply flex items-center gap-3 rounded-[1rem] border px-4 py-3 text-sm text-[color:var(--muted-strong)];
+    border-color: rgba(129, 149, 191, 0.14);
+    background: rgba(8, 14, 31, 0.66);
+  }
+
+  .field-toggle input {
+    accent-color: var(--primary);
+  }
+
+  .admin-form-section {
+    @apply flex flex-col gap-4 rounded-[1.35rem] border p-5;
+    border-color: rgba(129, 149, 191, 0.12);
+    background: rgba(8, 14, 31, 0.34);
+  }
+
+  .admin-section-copy {
+    @apply mt-1 text-sm leading-7;
+    color: var(--muted);
+  }
+
+  .admin-preview-card {
+    @apply flex flex-col gap-4 rounded-[1.35rem] border p-4;
+    border-color: rgba(129, 149, 191, 0.12);
+    background: linear-gradient(180deg, rgba(9, 15, 31, 0.92) 0%, rgba(8, 14, 31, 0.76) 100%);
+  }
+
+  .admin-stat-card {
+    @apply flex flex-col gap-2 rounded-[1.1rem] border px-4 py-4;
+    border-color: rgba(129, 149, 191, 0.12);
+    background: rgba(8, 14, 31, 0.58);
+  }
+
+  .admin-stat-label {
+    @apply text-xs font-semibold uppercase tracking-[0.22em];
+    color: var(--muted);
+  }
+
+  .admin-stat-value {
+    @apply text-3xl font-semibold text-white;
+    font-family: "Fraunces", "Times New Roman", serif;
+  }
+
+  .admin-filter-pill {
+    @apply inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition;
+    color: var(--muted-strong);
+    border-color: rgba(129, 149, 191, 0.14);
+    background: rgba(10, 18, 39, 0.42);
+  }
+
+  .admin-filter-pill:hover {
+    color: #ffffff;
+    border-color: rgba(129, 149, 191, 0.24);
+  }
+
+  .admin-filter-pill-active {
+    color: var(--accent);
+    border-color: rgba(121, 183, 255, 0.28);
+    background: rgba(121, 183, 255, 0.08);
+  }
+
+  .admin-project-row {
+    @apply flex flex-col gap-4 rounded-[1.25rem] border p-4 transition xl:flex-row xl:items-center xl:justify-between;
+    border-color: rgba(129, 149, 191, 0.1);
+    background: rgba(10, 18, 39, 0.24);
+  }
+
+  .admin-project-row:hover {
+    border-color: rgba(129, 149, 191, 0.2);
+    background: rgba(12, 22, 48, 0.28);
+  }
+
+  .admin-project-row-active {
+    border-color: rgba(121, 183, 255, 0.32);
+    background: rgba(121, 183, 255, 0.08);
+  }
+
+  .danger-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em];
+    color: #ffd9e7;
+    border: 1px solid rgba(244, 114, 182, 0.22);
+    background: rgba(76, 15, 37, 0.38);
+  }
+
+  .danger-button:hover {
+    border-color: rgba(244, 114, 182, 0.34);
+    background: rgba(103, 19, 49, 0.46);
+  }
 }

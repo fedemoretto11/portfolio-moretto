@@ -22,7 +22,7 @@ El sitio prioriza credibilidad, claridad narrativa y una experiencia sobria para
 
 ## Decisiones actuales
 
-- Proyectos alimentados desde `src/data/projects.js`
+- Proyectos administrados desde Firestore con panel privado en Firebase
 - Bilingue con persistencia de idioma en `localStorage`
 - Metadata dinamica por idioma
 - Tipografia editorial con `Fraunces` para display y `Manrope` para texto
@@ -71,3 +71,4 @@ Si se sigue iterando este portfolio, conviene sostener estas reglas:
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)
 - [docs/TECH_REVIEW.md](./docs/TECH_REVIEW.md)
 - [docs/CONTENT_GUIDE.md](./docs/CONTENT_GUIDE.md)
+- [FIREBASE_PROJECTS_ADMIN.md](./FIREBASE_PROJECTS_ADMIN.md)

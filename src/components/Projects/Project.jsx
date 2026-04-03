@@ -9,7 +9,11 @@ function Project({ project }) {
   const description =
     i18n.language === "es"
       ? project?.descriptionSpanish ?? project?.description ?? ""
-      : project?.descriptionEnglish ?? project?.description ?? ""
+      : project?.descriptionEnglish ?? project?.description ?? project?.descriptionSpanish ?? ""
+  const shortDescription =
+    i18n.language === "es"
+      ? project?.shortDescriptionSpanish ?? project?.descriptionSpanish ?? ""
+      : project?.shortDescriptionEnglish ?? project?.descriptionEnglish ?? project?.shortDescriptionSpanish ?? ""
 
   const imageSrc = project?.imageUrl || project?.img || (project?.title ? `/${project.title}.webp` : "")
   const technologies = Array.isArray(project?.techs) ? project.techs : []
@@ -19,7 +23,7 @@ function Project({ project }) {
     varios: t("projects.typeLabels.misc"),
   }
 
-  const secondaryInfo = project?.role || typeLabels[project?.type] || project?.type
+  const secondaryInfo = typeLabels[project?.type] || project?.type
 
   return (
     <article className="relative flex h-full flex-col gap-4 overflow-hidden rounded-[1.5rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.18)] p-5">
@@ -61,7 +65,10 @@ function Project({ project }) {
           </ul>
         )}
 
-        {description && <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{description}</p>}
+        {shortDescription && <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{shortDescription}</p>}
+        {description && description !== shortDescription && (
+          <p className="text-sm leading-7 text-[color:var(--muted)]">{description}</p>
+        )}
       </div>
 
       <div className="mt-auto flex flex-wrap gap-3">
@@ -101,14 +108,13 @@ Project.propTypes = {
     description: PropTypes.string,
     descriptionEnglish: PropTypes.string,
     descriptionSpanish: PropTypes.string,
+    shortDescriptionEnglish: PropTypes.string,
+    shortDescriptionSpanish: PropTypes.string,
     imageUrl: PropTypes.string,
     img: PropTypes.string,
     techs: PropTypes.arrayOf(PropTypes.string),
-    context: PropTypes.string,
-    impact: PropTypes.string,
     year: PropTypes.string,
     isFinished: PropTypes.bool,
-    role: PropTypes.string,
     type: PropTypes.string,
     webLink: PropTypes.string,
     githubLink: PropTypes.string,
