@@ -2,116 +2,87 @@
 
 ## Resumen
 
-Este proyecto es el portfolio personal de Federico Moretto. Su función principal es presentar el perfil profesional de Federico a recruiters, clientes potenciales y equipos técnicos.
+Este proyecto es el portfolio personal de Federico Moretto. Su funcion es mostrar un perfil tecnico confiable para recruiters, clientes y equipos de producto.
 
-No debe comportarse como una aplicación compleja. Debe sentirse como una landing profesional de alto nivel, enfocada en credibilidad, claridad y conversión.
+No debe sentirse como una app. Debe sentirse como una landing profesional de una sola pagina, con una narrativa clara y una presencia visual sobria.
 
 ## Perfil que el sitio debe comunicar
 
-Federico se presenta como un desarrollador con experiencia práctica en:
+Federico se presenta como un desarrollador con experiencia practica en:
 
 - desarrollo full-stack
-- mantenimiento de sistemas en producción
-- soporte técnico con criterio de producto
-- implementación de nuevas funcionalidades
-- trabajo con plataformas empresariales, cloud y bases de datos
+- soporte tecnico
+- mantenimiento de sistemas en produccion
+- hotfixes y correcciones de bajo riesgo
+- evolucion funcional de productos existentes
 
-El portfolio debe reforzar una narrativa clara:
+Narrativa central:
 
-> Desarrollador orientado a resolver problemas reales, mantener sistemas estables y construir software útil.
+> Desarrollador orientado a resolver problemas reales, mantener sistemas estables y construir software util.
 
-## Estructura actual del sitio
+## Direccion visual actual
 
-### Header
+El sitio hoy sigue una direccion:
 
-Incluye:
+- editorial premium
+- sobria
+- tecnica
+- humana
+- sin ruido visual innecesario
 
-- navegación por anclas
-- cambio de idioma
-- branding simple con logo/foto
+Decisiones base:
 
-### Hero
+- `logo_fm` como identidad visual
+- paleta oscura con acentos azules frios
+- `Fraunces` para titulos
+- `Manrope` para lectura
+- iconografia SVG propia
 
-Es la primera impresión del portfolio. Debe comunicar:
+## Estructura actual
 
-- qué hace Federico
-- qué tipo de valor aporta
-- por qué vale la pena contactarlo
+1. Hero
+2. Experiencia
+3. Proyectos
+4. Perfil
+5. Skills
+6. Contacto
 
-### About
+Ese orden prioriza prueba y credibilidad antes que biografia o listado de herramientas.
 
-Cuenta la transición profesional y el enfoque de trabajo actual.
-
-### Works
-
-Resume experiencia profesional y responsabilidades.
-
-### Skills
-
-Lista herramientas, tecnologías y fortalezas.
-
-### Projects
-
-Muestra proyectos destacados y links externos.
-
-### Contact
-
-Es la parte de conversión. Tiene que facilitar:
-
-- envío de email
-- descarga o visualización del CV
-
-## Stack técnico actual
+## Stack tecnico actual
 
 - React 18
 - Vite
 - Tailwind CSS
-- Bootstrap Icons
 - i18next / react-i18next
-- Firebase / Firestore
 
 ## Estado funcional actual
 
-### Lo que ya está bien
+### Lo que ya esta bien
 
-- El sitio tiene una jerarquía visual clara.
-- La UI se percibe moderna.
-- La navegación por secciones es entendible.
-- Hay soporte bilingüe.
-- El portfolio ya transmite mejor el perfil profesional que una plantilla genérica.
+- Proyectos locales y estables dentro del repo.
+- Persistencia real de idioma.
+- Metadata dinamica por idioma.
+- UI responsive y con mejor jerarquia.
+- Visual mas propia que una plantilla generica.
 
-### Lo que hoy genera fricción
+### Lo que aun puede mejorar
 
-- La sección de proyectos depende de Firestore en runtime.
-- Hay archivos de Firebase que mezclan frontend productivo con tareas manuales de carga o migración.
-- El repo no pasa lint.
-- La imagen principal es muy pesada para un sitio de presentación.
-- El SEO técnico es todavía muy básico.
-- El idioma no se persiste entre sesiones.
+- Curaduria y profundidad del contenido de proyectos.
+- SEO tecnico mas completo.
+- Mayor refinamiento del CV y los canales de contacto.
+- Ajustes finos de accesibilidad y semantica.
 
-## Dirección de producto recomendada
+## Cambios que suelen sumar valor
 
-Este portfolio debería evolucionar hacia:
+- Reforzar evidencia de impacto profesional real.
+- Mejorar titulos, descripciones y metadata social.
+- Curar mejor los proyectos destacados.
+- Mantener el sistema visual sobrio y consistente.
 
-- contenido más estable y menos dependiente de servicios externos
-- mejor performance inicial
-- SEO y sharing social más sólidos
-- una propuesta de valor todavía más concreta arriba del fold
-- una experiencia más confiable para recruiters y clientes
+## Cambios que suelen restar valor
 
-## Qué cambios suelen sumar valor
-
-- Convertir proyectos a data estática local.
-- Optimizar imágenes.
-- Mejorar metadata, titles, descriptions y Open Graph.
-- Hacer persistente el idioma elegido.
-- Reforzar el CTA principal.
-- Incluir más evidencia de impacto profesional real.
-
-## Qué cambios suelen restar valor
-
-- Sobrecargar el portfolio con animaciones.
-- Agregar demasiadas tecnologías sin necesidad.
-- Convertir el portfolio en una app administrativa.
-- Mostrar demasiada información irrelevante.
-- Priorizar efectos antes que claridad.
+- Volver a una UI recargada o con demasiado efecto.
+- Agregar demasiadas tecnologias sin contexto.
+- Reintroducir dependencias runtime para el contenido.
+- Priorizar decoracion por encima de claridad.

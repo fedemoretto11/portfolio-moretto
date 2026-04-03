@@ -1,60 +1,124 @@
+import logo from "../../assets/logo_fm.png"
 import { useTranslation } from "react-i18next"
+import Icon from "../ui/Icon"
 
 function Hero() {
   const { t } = useTranslation()
-  const highlights = t("hero.highlights", { returnObjects: true })
+  const proofPoints = t("hero.proofPoints", { returnObjects: true })
+  const signalCards = t("hero.signalCards", { returnObjects: true })
+  const stack = t("hero.stack", { returnObjects: true })
 
   return (
-    <section id="hero" className="scroll-mt-32 px-6">
-      <div className="mx-auto grid max-w-6xl gap-10 overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/50 px-8 py-12 shadow-xl shadow-slate-950/40 backdrop-blur lg:grid-cols-[2fr,1fr]">
-        <div className="flex flex-col gap-6">
-          <span className="inline-flex items-center gap-2 self-start rounded-full border border-slate-700 bg-slate-900/70 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-sky-300">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            {t("hero.tagline")}
-          </span>
+    <section id="hero" className="section-shell scroll-mt-32 pt-2 sm:pt-4">
+      <div className="surface-panel px-8 py-10 sm:px-10 sm:py-12 lg:px-12">
+        <div className="relative grid gap-10 lg:grid-cols-[1.35fr,0.8fr] lg:items-start">
+          <div className="flex flex-col gap-6">
+            <span className="eyebrow self-start">
+              <span className="h-2 w-2 rounded-full bg-[color:var(--accent)]" />
+              {t("hero.tagline")}
+            </span>
 
-          <h1 className="text-4xl font-semibold text-white sm:text-5xl lg:text-6xl">
-            {t("hero.title")}
-          </h1>
+            <div className="flex flex-col gap-4">
+              <h1 className="font-display max-w-4xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+                {t("hero.title")}
+              </h1>
 
-          <p className="max-w-2xl text-lg leading-relaxed text-slate-200">
-            {t("hero.description")}
-          </p>
+              <p className="max-w-3xl text-lg leading-8 text-[color:var(--muted-strong)]">
+                {t("hero.description")}
+              </p>
 
-          <p className="max-w-2xl text-base text-slate-400">
-            {t("hero.secondary")}
-          </p>
+              <p className="max-w-3xl text-base leading-7 text-[color:var(--muted)]">
+                {t("hero.secondary")}
+              </p>
+            </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-500/70 bg-emerald-500/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200 transition hover:border-emerald-400 hover:bg-emerald-400/20"
-            >
-              <i className="bi bi-send-fill text-base" aria-hidden="true" />
-              {t("hero.ctaContact")}
-            </a>
-            <a
-              href="#projects"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-slate-500 hover:bg-slate-800/80"
-            >
-              <i className="bi bi-grid-fill text-base" aria-hidden="true" />
-              {t("hero.ctaProjects")}
-            </a>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {Array.isArray(proofPoints) &&
+                proofPoints.map((item, index) => (
+                  <li
+                    key={`hero-proof-${index}`}
+                    className="border-l border-[rgba(129,149,191,0.18)] pl-4 text-sm leading-7 text-[color:var(--muted-strong)]"
+                  >
+                    {item}
+                  </li>
+                ))}
+            </ul>
+
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <a href="#contact" className="primary-button">
+                <Icon name="send" className="h-4 w-4" />
+                {t("hero.ctaContact")}
+              </a>
+
+              <a href="#projects" className="secondary-button">
+                <Icon name="grid" className="h-4 w-4" />
+                {t("hero.ctaProjects")}
+              </a>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {Array.isArray(stack) &&
+                stack.map((item, index) => (
+                  <span key={`hero-stack-${index}`} className="tag-chip">
+                    {item}
+                  </span>
+                ))}
+            </div>
+          </div>
+
+          <div className="border-t border-[rgba(129,149,191,0.12)] pt-8 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            <div className="flex items-start justify-between gap-5">
+              <div className="flex-1">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                  {t("hero.brandCard.eyebrow")}
+                </p>
+                <h2 className="font-display mt-3 text-2xl font-semibold text-white">
+                  {t("hero.brandCard.title")}
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[color:var(--muted-strong)]">
+                  {t("hero.brandCard.description")}
+                </p>
+              </div>
+
+              <img
+                src={logo}
+                alt="FM logo"
+                className="h-16 w-16 rounded-2xl border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.38)] p-3"
+              />
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className="data-chip">
+                <Icon name="building" className="h-4 w-4" />
+                {t("hero.brandCard.badgeOne")}
+              </span>
+              <span className="data-chip">
+                <Icon name="pin" className="h-4 w-4" />
+                {t("hero.brandCard.badgeTwo")}
+              </span>
+            </div>
+
+            <div className="mt-8 grid gap-5">
+              {Array.isArray(signalCards) &&
+                signalCards.map((card, index) => (
+                  <article
+                    key={`hero-signal-${index}`}
+                    className="border-t border-[rgba(129,149,191,0.12)] pt-5 first:border-t-0 first:pt-0"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                      {card?.eyebrow}
+                    </p>
+                    <h3 className="mt-3 font-display text-xl font-semibold text-white">
+                      {card?.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-7 text-[color:var(--muted-strong)]">
+                      {card?.description}
+                    </p>
+                  </article>
+                ))}
+            </div>
           </div>
         </div>
-
-        <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {Array.isArray(highlights) &&
-            highlights.map((item, index) => (
-              <li
-                key={`hero-highlight-${index}`}
-                className="rounded-2xl border border-slate-800 bg-slate-900/70 px-6 py-5 shadow-inner shadow-slate-950/40"
-              >
-                <p className="text-3xl font-semibold text-white">{item?.value}</p>
-                <p className="text-sm uppercase tracking-[0.3em] text-slate-400">{item?.label}</p>
-              </li>
-            ))}
-        </ul>
       </div>
     </section>
   )

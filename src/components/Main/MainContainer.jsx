@@ -1,13 +1,11 @@
 import Main from "./Main"
-import Sidebar from "./Sidebar"
 
 function MainContainer() {
   return (
-    <div className="relative flex w-full flex-col bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 sm:flex-row">
-      <div className="flex-1">
-        <Main />
-      </div>
-      <Sidebar />
+    <div className="relative overflow-hidden">
+      <div className="brand-glow left-[-12rem] top-24 h-96 w-96 bg-[rgba(58,115,224,0.08)]" aria-hidden="true" />
+      <div className="brand-glow bottom-[-6rem] right-[-10rem] h-80 w-80 bg-[rgba(121,183,255,0.06)]" aria-hidden="true" />
+      <Main />
     </div>
   )
 }

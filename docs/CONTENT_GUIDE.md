@@ -1,8 +1,8 @@
 # Guia De Contenido Para IA
 
-## Propósito
+## Proposito
 
-Este documento ayuda a cualquier IA a generar texto, propuestas o mejoras de contenido para el portfolio sin perder coherencia con el perfil profesional de Federico Moretto.
+Este documento ayuda a escribir o reescribir contenido del portfolio sin perder coherencia con el perfil profesional de Federico Moretto.
 
 ## Tono recomendado
 
@@ -16,86 +16,80 @@ El tono debe ser:
 
 Evitar:
 
-- frases vacías
+- frases vacias
 - exageraciones
-- lenguaje corporativo inflado
-- claims imposibles de sostener
+- marketing inflado
+- claims de seniority sin evidencia
 
 ## Posicionamiento profesional
 
-Federico no debe sonar como un perfil genérico de frontend junior. El sitio debe transmitir que aporta valor en contextos reales de negocio y producción.
+Federico no debe sonar como un perfil generico de frontend junior. El sitio debe mostrar a alguien que trabaja sobre sistemas reales, entiende soporte, mantenimiento y desarrollo, y puede aportar criterio tecnico en contexto de negocio.
 
-## Ideas fuerza que conviene reforzar
+## Ideas fuerza a reforzar
 
 - Resuelve problemas reales.
-- Trabaja con sistemas en producción.
-- Combina soporte, desarrollo y criterio técnico.
-- Piensa en estabilidad, mantenibilidad y crecimiento.
-- Puede colaborar con perfiles técnicos y no técnicos.
+- Trabaja sobre sistemas en produccion.
+- Combina soporte, desarrollo y criterio tecnico.
+- Prioriza claridad, estabilidad y mantenibilidad.
+- Puede colaborar con perfiles tecnicos y no tecnicos.
 
 ## Mensajes que suelen funcionar bien
 
-- Construyo software útil y mantenible.
-- Trabajo sobre sistemas reales, no solo demos.
-- Me enfoco en claridad, estabilidad y evolución del producto.
-- Puedo moverme entre debugging, soporte, desarrollo e implementación.
+- Desarrollo y mantengo software para entornos reales.
+- Trabajo sobre sistemas donde soporte, estabilidad y evolucion importan.
+- Me enfoco en claridad tecnica y producto mantenible.
+- Puedo moverme entre debugging, soporte, desarrollo e implementacion.
 
 ## Mensajes que conviene evitar
 
-- "Apasionado por la tecnología" como mensaje principal.
-- Listas eternas de tecnologías sin contexto.
-- Frases tipo "innovador, disruptivo, visionario".
-- Claims de seniority no respaldados por evidencia.
+- "Apasionado por la tecnologia" como eje principal.
+- Listas eternas de tecnologias sin contexto.
+- "Innovador", "disruptivo", "visionario".
+- Claims grandilocuentes imposibles de sostener.
 
-## Cómo escribir cada sección
+## Como escribir cada seccion
 
 ### Hero
 
-Debe responder rápido:
+Debe responder rapido:
 
-- quién es Federico
-- qué hace
-- qué valor aporta
-
-### About
-
-Debe mostrar evolución profesional y forma de trabajar.
+- quien es Federico
+- que hace
+- en que contexto trabaja
+- por que vale la pena contactarlo
 
 ### Works
 
-Debe poner foco en impacto, responsabilidades y contexto real.
-
-### Skills
-
-No debe ser solo una nube de tecnologías. Conviene agrupar por capacidad y uso real.
+Debe poner foco en contexto real, responsabilidades y tipo de problemas que resuelve.
 
 ### Projects
 
-Cada proyecto debería explicar:
+Cada proyecto deberia dejar claro:
 
-- qué problema resolvía
-- qué rol tuvo Federico
-- qué stack usó
-- qué resultado se puede ver
+- que problema o necesidad atendia
+- que tipo de pieza es
+- cual fue el rol de Federico
+- que stack uso
+- si hay demo o repo
+
+### About
+
+Debe mostrar forma de trabajo y criterio profesional, no solo biografia.
+
+### Skills
+
+No debe sentirse como una nube de tags. Conviene agrupar por capacidades y uso real.
 
 ### Contact
 
-Debe bajar fricción y dejar claro para qué vale la pena escribirle.
-
-## En caso de reescribir copy
-
-Preferir frases como:
-
-- "Desarrollo y mantengo productos digitales con foco en estabilidad y claridad."
-- "Trabajo sobre sistemas reales, donde rendimiento, soporte y evolución importan."
-- "Me interesa construir software útil, entendible y sostenible."
+Debe bajar friccion y dejar claro para que tipo de oportunidades conviene escribirle.
 
 ## Resultado esperado
 
-Toda mejora de contenido debería hacer que el portfolio se sienta más:
+Toda mejora de contenido deberia hacer que el portfolio se sienta mas:
 
 - confiable
 - serio
 - humano
-- técnico
+- tecnico
 - orientado a resultados

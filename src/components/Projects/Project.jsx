@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import { useTranslation } from "react-i18next"
+import Icon from "../ui/Icon"
 
 function Project({ project }) {
   const { t, i18n } = useTranslation()
@@ -21,24 +22,24 @@ function Project({ project }) {
   const secondaryInfo = project?.role || typeLabels[project?.type] || project?.type
 
   return (
-    <article className="project relative flex h-full flex-col gap-4 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-xl shadow-slate-950/40 backdrop-blur">
+    <article className="relative flex h-full flex-col gap-4 overflow-hidden rounded-[1.5rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.18)] p-5">
       {isInProgress && (
-        <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-red-500/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-          <span className="h-2 w-2 rounded-full bg-white" />
+        <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-[rgba(9,15,31,0.88)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[color:var(--accent)]">
+          <span className="h-2 w-2 rounded-full bg-[color:var(--accent)]" />
           {t("projects.inProgress")}
         </span>
       )}
 
-      <figure className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-900">
+      <figure className="overflow-hidden rounded-[1.1rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(7,12,24,0.92)]">
         {imageSrc ? (
           <img
             src={imageSrc}
             alt={project?.title}
             loading="lazy"
-            className="h-48 w-full object-cover transition duration-500 hover:scale-105"
+            className="h-48 w-full object-cover transition duration-500 hover:scale-[1.03]"
           />
         ) : (
-          <div className="flex h-48 w-full items-center justify-center text-slate-500">
+          <div className="flex h-48 w-full items-center justify-center text-[color:var(--muted)]">
             {t("projects.noImage")}
           </div>
         )}
@@ -46,24 +47,21 @@ function Project({ project }) {
 
       <div className="flex flex-col gap-2">
         <div>
-          <h3 className="text-xl font-semibold text-white">{project?.title}</h3>
-          {secondaryInfo && <p className="text-sm text-slate-400">{secondaryInfo}</p>}
+          <h3 className="font-display text-xl font-semibold text-white">{project?.title}</h3>
+          {secondaryInfo && <p className="mt-1 text-sm text-[color:var(--muted)]">{secondaryInfo}</p>}
         </div>
 
         {technologies.length > 0 && (
           <ul className="flex flex-wrap gap-2">
             {technologies.map((tech) => (
-              <li
-                key={tech}
-                className="rounded-full border border-sky-500/60 bg-sky-500/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-sky-200"
-              >
+              <li key={tech} className="tag-chip">
                 {tech}
               </li>
             ))}
           </ul>
         )}
 
-        {description && <p className="text-sm leading-relaxed text-slate-200">{description}</p>}
+        {description && <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{description}</p>}
       </div>
 
       <div className="mt-auto flex flex-wrap gap-3">
@@ -72,9 +70,9 @@ function Project({ project }) {
             href={project.webLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-emerald-500/60 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:bg-emerald-500/10"
+            className="secondary-button px-4 py-2"
           >
-            <i className="bi bi-laptop text-lg" aria-hidden="true" />
+            <Icon name="external" className="h-4 w-4" />
             <span>{t("projects.links.demo")}</span>
           </a>
         )}
@@ -83,9 +81,9 @@ function Project({ project }) {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-500/80 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-500/10"
+            className="secondary-button px-4 py-2"
           >
-            <i className="bi bi-github text-lg" aria-hidden="true" />
+            <Icon name="github" className="h-4 w-4" />
             <span>{t("projects.links.repository")}</span>
           </a>
         )}
@@ -106,6 +104,9 @@ Project.propTypes = {
     imageUrl: PropTypes.string,
     img: PropTypes.string,
     techs: PropTypes.arrayOf(PropTypes.string),
+    context: PropTypes.string,
+    impact: PropTypes.string,
+    year: PropTypes.string,
     isFinished: PropTypes.bool,
     role: PropTypes.string,
     type: PropTypes.string,
@@ -113,4 +114,3 @@ Project.propTypes = {
     githubLink: PropTypes.string,
   }).isRequired,
 }
-

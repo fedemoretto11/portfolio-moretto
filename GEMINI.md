@@ -1,41 +1,45 @@
 # GEMINI.md
 
-Este archivo resume el contexto de trabajo para Gemini y otros asistentes similares.
+Contexto de trabajo para Gemini y otros asistentes.
 
-## Proyecto
+## Que es este repo
 
-Portfolio web personal de Federico Moretto.
+Es el portfolio web personal de Federico Moretto.
 
-## Objetivo del sitio
+## Objetivo
 
-Mostrar experiencia, skills, proyectos y vías de contacto de forma:
-
-- profesional
-- rápida de entender
-- visualmente sólida
-- fácil de mantener
+Presentar a Federico como un desarrollador full-stack que trabaja sobre sistemas reales, con experiencia en soporte tecnico, mantenimiento y nuevas funcionalidades.
 
 ## Stack actual
 
 - React 18
 - Vite
 - Tailwind CSS
-- react-i18next
-- Firebase / Firestore
+- i18next / react-i18next
 
-## Prioridades recomendadas
+## Sistema actual
 
-1. Deuda técnica y salud del repo.
-2. Performance.
-3. SEO.
-4. Mejoras de contenido y conversión.
+- Navegacion por secciones
+- Copy bilingue en JSON
+- Proyectos locales dentro del repo
+- Paleta alineada al `logo_fm`
+- Tipografia editorial y sobria
+- Iconos SVG propios
 
-## Restricciones recomendadas
+## Prioridades sugeridas
+
+1. Claridad profesional.
+2. Conversion a contacto.
+3. Performance.
+4. Mantenibilidad.
+5. Consistencia entre idiomas.
+
+## Restricciones
 
 - No agregar complejidad innecesaria.
-- No reemplazar toda la arquitectura sin motivo fuerte.
-- No depender de servicios externos si el contenido puede ser estático.
-- No perder soporte bilingüe.
+- No depender de servicios externos para contenido critico.
+- No volver a una estetica recargada o muy "SaaS".
+- No romper la lectura simple de la landing.
 
 ## Fuentes de contexto
 

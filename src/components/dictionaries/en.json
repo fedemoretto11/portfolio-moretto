@@ -1,119 +1,191 @@
 {
+  "meta.title": "Federico Moretto | Full-stack developer",
+  "meta.description": "Federico Moretto's portfolio: full-stack development, technical support, hotfixes, and new features for real production systems.",
+  "meta.ogTitle": "Federico Moretto | Full-stack developer",
+  "meta.ogDescription": "I build and maintain software for real environments, focused on stability, clarity, and product evolution.",
   "header.home": "Home",
-  "header.about": "About",
+  "header.about": "Profile",
   "header.technology": "Skills",
   "header.works": "Experience",
   "header.projects": "Projects",
   "header.contact": "Contact",
   "header.openMenu": "Open menu",
   "header.closeMenu": "Close menu",
-  "hero.tagline": "Software Developer",
-  "hero.title": "I turn ideas into software that truly works",
-  "hero.description": "I design, build, and maintain digital products that blend simple interfaces with solid, long-lasting architecture.",
-  "hero.secondary": "I’m currently part of Asince SRL, where I focus on keeping critical systems stable while building new features that help the company grow.",
-  "hero.ctaContact": "Let's collaborate",
+  "header.role": "Full-stack developer",
+  "header.cta": "Get in touch",
+  "hero.tagline": "Full-stack developer · support and product",
+  "hero.title": "I build and maintain software for real operating environments",
+  "hero.description": "I work on production products where stability, technical support, and system evolution matter every single day.",
+  "hero.secondary": "I am currently part of Asince SRL, contributing to fintech and ERP platforms through hotfixes, maintenance, and new features.",
+  "hero.ctaContact": "Let's talk",
   "hero.ctaProjects": "View projects",
-  "hero.highlights": [
-    { "label": "Years in tech", "value": "2+" },
-    { "label": "Projects delivered", "value": "5+" },
-    { "label": "Based in", "value": "Argentina" }
+  "hero.proofPoints": [
+    "I work with incidents, hotfixes, and improvements on production systems.",
+    "I combine technical support with new feature development.",
+    "I prioritize clear interfaces and maintainable code over unnecessary complexity.",
+    "I am comfortable moving between product, operations, and business needs."
   ],
-  "about.subtitle": "Story",
-  "about.title": "From tech support to full-stack developer",
+  "hero.stack": [".NET", "TypeScript", "Azure", "React", "SQL", "Clear UX"],
+  "hero.brandCard.eyebrow": "Professional identity",
+  "hero.brandCard.title": "Useful, stable, understandable software",
+  "hero.brandCard.description": "My focus is solving real problems with a solid technical base and a clean experience for the people who use the product every day.",
+  "hero.brandCard.badgeOne": "Production systems",
+  "hero.brandCard.badgeTwo": "Argentina · remote",
+  "hero.signalCards": [
+    {
+      "eyebrow": "Currently",
+      "title": "Asince SRL",
+      "description": "Technical support and development across fintech and ERP platforms, with a strong focus on operational continuity."
+    },
+    {
+      "eyebrow": "Core stack",
+      "title": ".NET, TypeScript and Azure",
+      "description": "I work with APIs, databases, web interfaces, and cloud services that need to stay reliable."
+    },
+    {
+      "eyebrow": "Working style",
+      "title": "Clarity over noise",
+      "description": "I aim for maintainable solutions, sound product judgment, and communication that is easy to follow."
+    }
+  ],
+  "about.subtitle": "Profile",
+  "about.title": "A technical profile that understands product, support, and business",
   "about.description": [
-    "Hi! I’m Federico Moretto — a developer passionate about turning complex ideas into clear, scalable, and maintainable solutions.",
-    "At Asince SRL, I combine incident response with product development: I analyze tickets, apply hotfixes, and ship new features while keeping performance in check.",
-    "My time working in foreign trade strengthened my analytical thinking and my ability to collaborate with people from different areas."
+    "My path moved from technical support into full-stack development, and that still shapes how I approach problems today: first I understand the context, then I prioritize a clear and sustainable solution.",
+    "At Asince SRL I work on systems that people already depend on. That taught me to respond to incidents, protect stability, and add features without losing sight of the teams using the product."
   ],
-  "about.highlightsTitle": "My team trusts me to",
+  "about.highlightsTitle": "How I work",
   "about.highlights": [
-    "Identify and resolve production issues before they affect users.",
-    "Design automations that reduce manual work and speed up support processes.",
-    "Improve user interfaces while respecting accessibility and visual consistency.",
-    "Monitor infrastructure and performance across cloud services and databases."
+    "I can enter existing codebases quickly and prioritize low-risk changes.",
+    "I translate tickets, operational issues, and business rules into concrete solutions.",
+    "I value restrained, clear UI over decorative effects that add friction.",
+    "I want each technical decision to leave the product better prepared to grow."
   ],
   "about.focusTitle": "Currently exploring",
   "about.focusAreas": [
-    "AI-powered tools to speed up debugging and support workflows.",
-    "Design systems that keep multilingual products consistent.",
-    "Cloud-native observability and incident response strategies.",
-    "Scalable APIs with .NET and serverless deployments."
+    "Observability and incident response",
+    "AI-assisted automation",
+    "Maintainable .NET architectures",
+    "Consistent multilingual experiences"
   ],
-  "skills.subtitle": "Toolkit",
-  "skills.title": "Skills & technologies",
-  "skills.description": "Passionate about backend development — turning logic and data into stable, secure, and efficient solutions.",
+  "about.sideCards.currentRoleLabel": "Today",
+  "about.sideCards.currentRoleTitle": "Technical support + development",
+  "about.sideCards.currentRoleDescription": "I move between debugging, maintenance, and new features with a strong focus on reliability.",
+  "about.sideCards.approachLabel": "Approach",
+  "about.sideCards.approachTitle": "Product with operational awareness",
+  "about.sideCards.approachDescription": "I do not only think about whether something works. I also think about how it is maintained, explained, and used day to day.",
+  "skills.subtitle": "Capabilities",
+  "skills.title": "Technology with a reason behind it",
+  "skills.description": "A stack oriented toward building, maintaining, and improving real products, not isolated demos.",
   "skills.groups": [
     {
-      "title": "Front-end",
-      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "Tailwind CSS", "React", "Next.js", "React Native"]
+      "title": "Product interfaces",
+      "description": "Clear UI, reusable components, and responsive web experiences.",
+      "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML", "CSS"]
     },
     {
-      "title": "Back-end",
-      "items": ["C# .NET", "Java", "Spring Boot", "Python", "Node.js"]
+      "title": "Backend and data",
+      "description": "Business logic, APIs, and persistence for systems that need reliability.",
+      "items": ["C# .NET", "Node.js", "Java", "Spring Boot", "SQL", "Firebase"]
     },
     {
-      "title": "Tools",
-      "items": ["SQL", "Firebase", "Git", "GitHub", "Azure", "Jira"]
+      "title": "Operations and collaboration",
+      "description": "Technical work connected to deployment, support, and cross-functional teams.",
+      "items": ["Azure", "Git", "GitHub", "Jira", "CI/CD", "Production support"]
     }
   ],
   "skills.highlights": [
-    "Set up CI/CD pipelines and automated testing to ensure reliable releases.",
-    "Encourage component-driven development with reusable patterns and accessibility in mind.",
-    "Collaborate closely with business teams to turn rules into maintainable features."
+    "I can work on new code or on existing systems without losing reading speed.",
+    "I am comfortable improving product while keeping the operational base stable.",
+    "I aim for technical decisions that reduce friction for users, support, and future changes.",
+    "Once something reaches production, I care about its maintenance as much as its delivery."
   ],
-  "works.subtitle": "Career",
-  "works.title": "Professional experience",
-  "works.description": "A look at the teams and projects that helped me grow as a developer.",
+  "works.subtitle": "Experience",
+  "works.title": "I work on software that is already being used",
+  "works.description": "Experience in technical support, maintenance, and product development for contexts where stability truly matters.",
   "works.items": [
     {
-      "role": "Technical Support & Software Developer",
+      "role": "Technical support and software developer",
       "company": "Asince SRL",
       "period": "2022 — Present",
-      "summary": "I keep the company’s core platform stable while developing new features for fintech and ERP products.",
+      "summary": "I work on production fintech and ERP platforms, combining incident response with functional product evolution.",
       "achievements": [
-        "Handled and resolved technical support tickets.",
-        "Developed and implemented hotfixes for production environments.",
-        "Monitored and maintained servers and databases.",
-        "Developed new features for web applications."
+        "Analysis and resolution of technical tickets on real operating environments.",
+        "Implementation of hotfixes and low-risk adjustments to maintain continuity.",
+        "Monitoring of services, databases, and infrastructure tied to the product.",
+        "Development of new features aligned with business needs."
       ],
       "technologies": ["C# .NET", "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
     },
     {
-      "role": "Freelance Full-Stack Developer",
-      "company": "Independent Projects",
+      "role": "Freelance full-stack developer",
+      "company": "Independent projects",
       "period": "2019 — 2022",
-      "summary": "Designed and developed custom websites for small businesses — from concept to launch.",
+      "summary": "I designed and launched websites and tools for small businesses, prioritizing clarity, client autonomy, and digital presence.",
       "achievements": [
-        "Built responsive sites and PWAs that improved visibility and lead generation for local clients.",
-        "Automated back-office processes with Firebase, cutting manual work by up to 50%.",
-        "Helped non-technical clients adopt analytics and iterative improvement practices."
+        "Built responsive websites and experiences designed to generate inquiries.",
+        "Automated administrative tasks to reduce manual work.",
+        "Supported non-technical clients on content, structure, and iterative improvements.",
+        "Created solutions that were simple to maintain and easy to understand."
       ],
-      "technologies": ["Next.js", "Firebase", "Tailwind", "Node.js"]
+      "technologies": ["Next.js", "Firebase", "Tailwind CSS", "Node.js"]
     }
   ],
-  "projects.subtitle": "Showcase",
-  "projects.title": "Projects",
-  "projects.description": "Selected projects that blend great user experience with strong technical foundations.",
+  "projects.subtitle": "Projects",
+  "projects.title": "Selected work",
+  "projects.description": "A sample of projects where I combined technical structure, visual clarity, and focus on real use.",
+  "projects.featuredTitle": "Featured projects",
+  "projects.featuredCount": "featured",
+  "projects.archiveTitle": "More work",
+  "projects.archiveDescription": "Exercises, websites, and complementary pieces that are also part of my path.",
   "projects.all": "All",
   "projects.others": "Various",
   "projects.webSites": "Web",
-  "projects.inProgress": "In development",
-  "projects.noImage": "Image coming soon",
-  "projects.error": "We couldn't load the projects. Please try again later.",
+  "projects.inProgress": "In progress",
+  "projects.noImage": "Image in preparation",
+  "projects.error": "We could not load the projects. Please try again later.",
   "projects.links.demo": "View demo",
   "projects.links.repository": "Repository",
   "projects.typeLabels.website": "Website",
   "projects.typeLabels.misc": "Other",
-  "projects.empty": "No projects to show yet — check back soon!",
-  "contact.subtitle": "Collaboration",
-  "contact.title": "Let’s build something meaningful",
+  "projects.empty": "There are no projects to show in this category yet.",
+  "contact.subtitle": "Contact",
+  "contact.title": "Let's build something useful and maintainable",
   "contact.description": [
-    "I’m open to new opportunities, remote projects, and conversations about software and product growth.",
-    "Prefer async? Send me an email or grab my latest resume."
+    "I am open to remote opportunities, collaborations, and conversations centered on product, stability, and continuous improvement.",
+    "If my profile fits your team or project, feel free to email me, review my resume, or reach out through LinkedIn."
   ],
   "contact.ctaEmail": "Send email",
-  "contact.ctaResume": "Download resume",
-  "footer.develop": "Developed by Federico Moretto",
+  "contact.ctaResume": "View resume",
+  "contact.meta.location": "Argentina · UTC-3",
+  "contact.meta.availability": "Open to remote opportunities",
+  "contact.channels": [
+    {
+      "label": "Email",
+      "title": "fedemoretto94@gmail.com",
+      "description": "Best option for job opportunities, interviews, or project conversations.",
+      "icon": "mail",
+      "href": "mailto:fedemoretto94@gmail.com",
+      "external": false
+    },
+    {
+      "label": "LinkedIn",
+      "title": "Professional profile",
+      "description": "Experience, background, and work context in a format that is quick to review.",
+      "icon": "linkedin",
+      "href": "https://www.linkedin.com/in/morettofede/",
+      "external": true
+    },
+    {
+      "label": "GitHub",
+      "title": "Code and projects",
+      "description": "Public repositories, exercises, and technical work.",
+      "icon": "github",
+      "href": "https://github.com/fedemoretto11",
+      "external": true
+    }
+  ],
+  "footer.develop": "Software by Federico Moretto",
   "footer.rights": "All rights reserved",
   "changeLanguage": "ES / EN"
 }

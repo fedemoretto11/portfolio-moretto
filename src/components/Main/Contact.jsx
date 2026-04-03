@@ -1,39 +1,80 @@
 import { useTranslation } from "react-i18next"
+import Icon from "../ui/Icon"
 
 function Contact() {
   const { t } = useTranslation()
   const description = t("contact.description", { returnObjects: true })
+  const channels = t("contact.channels", { returnObjects: true })
 
   return (
-    <section id="contact" className="scroll-mt-32 px-6">
-      <div className="mx-auto flex max-w-4xl flex-col gap-6 overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900/70 via-slate-900/40 to-slate-900/70 px-8 py-12 text-center shadow-xl shadow-slate-950/40 backdrop-blur">
-        <span className="text-sm uppercase tracking-[0.3em] text-sky-300">{t("contact.subtitle")}</span>
-        <h2 className="text-3xl font-semibold text-white sm:text-4xl">{t("contact.title")}</h2>
+    <section id="contact" className="section-shell scroll-mt-32">
+      <div className="rounded-[2rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.26)] px-8 py-10 sm:px-10 sm:py-12">
+        <div className="grid gap-8 lg:grid-cols-[1fr,0.95fr] lg:items-start">
+          <div className="flex flex-col gap-5">
+            <span className="eyebrow self-start">{t("contact.subtitle")}</span>
+            <h2 className="section-title">{t("contact.title")}</h2>
 
-        <div className="flex flex-col gap-4 text-base leading-relaxed text-slate-200">
-          {Array.isArray(description) &&
-            description.map((paragraph, index) => (
-              <p key={`contact-paragraph-${index}`}>{paragraph}</p>
-            ))}
-        </div>
+            <div className="flex flex-col gap-4 text-base leading-8 text-[color:var(--muted-strong)]">
+              {Array.isArray(description) &&
+                description.map((paragraph, index) => (
+                  <p key={`contact-paragraph-${index}`}>{paragraph}</p>
+                ))}
+            </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="mailto:fedemoretto94@gmail.com"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-500/70 bg-emerald-500/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200 transition hover:border-emerald-400 hover:bg-emerald-400/20 sm:w-auto"
-          >
-            <i className="bi bi-envelope-paper-heart" aria-hidden="true" />
-            {t("contact.ctaEmail")}
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1e-iDQ2UlwQLCyRHULMOqovKSGq_Iavf2/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-slate-500 hover:bg-slate-800/80 sm:w-auto"
-          >
-            <i className="bi bi-file-earmark-arrow-down" aria-hidden="true" />
-            {t("contact.ctaResume")}
-          </a>
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <a href="mailto:fedemoretto94@gmail.com" className="primary-button">
+                <Icon name="mail" className="h-4 w-4" />
+                {t("contact.ctaEmail")}
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1e-iDQ2UlwQLCyRHULMOqovKSGq_Iavf2/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button"
+              >
+                <Icon name="file" className="h-4 w-4" />
+                {t("contact.ctaResume")}
+              </a>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="data-chip">
+                <Icon name="pin" className="h-4 w-4" />
+                {t("contact.meta.location")}
+              </span>
+              <span className="data-chip">
+                <Icon name="clock" className="h-4 w-4" />
+                {t("contact.meta.availability")}
+              </span>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            {Array.isArray(channels) &&
+              channels.map((channel, index) => (
+                <a
+                  key={`contact-channel-${index}`}
+                  href={channel.href}
+                  target={channel.external ? "_blank" : undefined}
+                  rel={channel.external ? "noopener noreferrer" : undefined}
+                  className="group flex items-start justify-between gap-4 rounded-[1.5rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.16)] px-5 py-5"
+                >
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">
+                      {channel.label}
+                    </p>
+                    <p className="mt-3 font-display text-xl font-semibold text-white">{channel.title}</p>
+                    <p className="mt-2 text-sm leading-7 text-[color:var(--muted-strong)]">
+                      {channel.description}
+                    </p>
+                  </div>
+
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.34)] text-[color:var(--accent)] transition group-hover:border-[rgba(129,149,191,0.24)]">
+                    <Icon name={channel.icon} className="h-5 w-5" />
+                  </span>
+                </a>
+              ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,111 +1,82 @@
 # Revision Tecnica Y Funcional
 
-## Fortalezas
+## Fortalezas actuales
 
-### 1. Base visual profesional
+### 1. Arquitectura simple
 
-La interfaz actual ya se ve moderna, limpia y consistente. No parece una plantilla totalmente genérica y transmite una mejor primera impresión que muchos portfolios personales.
+El sitio sigue siendo chico, mantenible y facil de recorrer. La estructura por secciones es clara y no necesita capas extra de complejidad.
 
-### 2. Estructura entendible
+### 2. Contenido estable
 
-El sitio está bien dividido en bloques funcionales:
+La fuente de verdad de proyectos vive en `src/data/projects.js`, lo que elimina riesgo innecesario en runtime para una zona clave del portfolio.
 
-- presentación
-- perfil
-- experiencia
-- skills
-- proyectos
-- contacto
+### 3. Sistema visual mas coherente
 
-Eso ayuda tanto a usuarios como a futuros mantenedores.
+Hay una direccion visual definida:
 
-### 3. Internacionalización real
+- paleta basada en `logo_fm`
+- tipografia editorial
+- iconografia SVG propia
+- menos dependencias visuales externas
 
-Hay una base de `i18next` con diccionarios separados para español e inglés. Eso ya es una ventaja competitiva para un portfolio profesional.
+### 4. Bilinguismo real
 
-### 4. Componentización razonable
+`i18next` esta integrado con persistencia de idioma y metadata sincronizada segun el idioma activo.
 
-Los componentes están separados por responsabilidad general y la app todavía es chica, así que la estructura se puede sanear sin una refactorización traumática.
+## Mejoras tecnicas ya realizadas
 
-## Debilidades técnicas
+- Se removio la dependencia visual a Bootstrap Icons.
+- Se eliminaron estilos SCSS legados que no participaban del render.
+- Se saco codigo muerto como la sidebar social antigua.
+- Se simplifico el bundle visual usando iconos SVG internos.
 
-### 1. Runtime dependency innecesaria
+## Riesgos o pendientes actuales
 
-La sección de proyectos depende de Firestore en el cliente. Para un portfolio, esto agrega:
+### 1. SEO aun mejorable
 
-- más peso
-- más complejidad
-- más riesgo de error
-- peor experiencia en redes lentas
+Aunque ya hay metadata mas cuidada, todavia se podria sumar:
 
-### 2. Código operativo dentro de `src`
-
-Hay utilidades de carga de imágenes y migración mezcladas con el código productivo. Eso afecta:
-
-- lint
-- claridad del repositorio
-- mantenibilidad
-- confianza al modificar el proyecto
-
-### 3. Performance mejorable
-
-La imagen principal del perfil pesa demasiado y afecta el costo de la carga inicial.
-
-### 4. Salud del repo
-
-El proyecto compila, pero no pasa `npm run lint`. Para un portfolio técnico, eso es una señal que conviene corregir cuanto antes.
-
-### 5. SEO limitado
-
-El HTML inicial tiene metadata básica, pero faltan:
-
-- Open Graph
-- Twitter cards
 - canonical
-- mejor estrategia de títulos y descripciones
+- schema markup
+- mejor estrategia de sharing social
 
-## Debilidades funcionales
+### 2. Dependencia externa de fuentes
 
-### 1. Riesgo en la sección más importante
+La tipografia se carga desde Google Fonts. Funciona bien, pero sigue siendo una dependencia externa de presentacion.
 
-Si Firestore falla, los proyectos pueden no cargar. Eso debilita justo la zona que más suele revisar un recruiter.
+### 3. CV externo
 
-### 2. Persistencia de idioma ausente
+El CV sigue enlazado a Google Drive. Es funcional, pero no es la experiencia mas controlada posible.
 
-El usuario cambia idioma, pero la elección no queda guardada.
+### 4. Contenido todavia perfectible
 
-### 3. Dependencia externa para el CV
+Hay proyectos fuertes y otros mas exploratorios. La curaduria puede seguir mejorando para elevar aun mas la percepcion de seniority.
 
-El CV está servido desde Google Drive. Funciona, pero depende de permisos, estabilidad externa y experiencia menos controlada.
+## Prioridades tecnicas sugeridas
 
-## Correcciones sugeridas en orden
+### Alta
 
-### Prioridad alta
+1. Completar SEO tecnico.
+2. Revisar si conviene servir el CV desde el propio sitio.
+3. Seguir refinando accesibilidad y foco visible.
 
-1. Limpiar archivos de Firebase que rompen lint.
-2. Sacar scripts manuales del frontend productivo.
-3. Hacer que proyectos usen contenido estático o build-time.
-4. Optimizar la imagen principal.
+### Media
 
-### Prioridad media
+1. Curar mejor proyectos y evidencias de impacto.
+2. Evaluar autohospedar tipografias si performance o privacidad lo justifican.
 
-1. Persistir idioma.
-2. Mejorar SEO y metadata social.
-3. Limpiar estilos legados y archivos que ya no participan del render.
+### Baja
 
-### Prioridad baja
-
-1. Ajustar copy para aumentar conversión.
-2. Revisar pequeños detalles de accesibilidad y foco visible.
-3. Fortalecer documentación y flujo de mantenimiento.
+1. Pequenos ajustes de microcopy.
+2. Refinamientos visuales menores.
 
 ## Criterio de calidad esperado
 
-El portfolio debería tender a ser:
+El portfolio deberia tender a ser:
 
-- rápido
-- simple
+- rapido
+- claro
 - confiable
-- legible
-- profesional
-- fácil de mantener
+- sobrio
+- facil de mantener
+- visualmente distintivo sin exagerar

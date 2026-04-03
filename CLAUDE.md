@@ -1,30 +1,49 @@
 # CLAUDE.md
 
-Este archivo existe para darle a Claude contexto rápido sobre el proyecto.
+Resumen rapido para Claude y asistentes similares.
 
-## Resumen corto
+## Proyecto
 
-- Proyecto: portfolio personal de Federico Moretto.
-- Tipo: single-page website.
-- Stack: React, Vite, Tailwind, i18next, Firebase.
-- Meta principal: comunicar perfil profesional con claridad y generar contacto.
+Portfolio personal de Federico Moretto.
 
-## Instrucciones clave
+## Estado actual
 
-- Conservá el enfoque simple y profesional del sitio.
-- Priorizá performance, claridad, accesibilidad y mantenibilidad.
-- Evitá complejizar el portfolio con lógica innecesaria.
-- Si mejorás contenido, respetá el tono humano, concreto y profesional.
-- Si tocás proyectos, preferí contenido estático o build-time antes que runtime Firestore.
+- Single-page website
+- React + Vite + Tailwind
+- `i18next` para espanol e ingles
+- Proyectos locales en `src/data/projects.js`
+- `logo_fm` como base de identidad visual
+- Metadata dinamica por idioma desde `src/App.jsx`
+- Iconografia SVG propia en `src/components/ui/Icon.jsx`
 
-## Problemas a tener presentes
+## Direccion del sitio
 
-- El repo hoy no está limpio de deuda técnica.
-- Hay código de Firebase que no debería vivir dentro del frontend productivo.
-- La foto principal pesa demasiado.
-- El SEO todavía está incompleto.
+El portfolio debe sentirse:
 
-## Lecturas obligatorias
+- profesional
+- sobrio
+- tecnico
+- humano
+- claro
+
+Evitar cualquier cambio que lo empuje hacia una app compleja o una landing recargada.
+
+## Prioridades
+
+1. Claridad del mensaje profesional.
+2. Conversion a contacto.
+3. Performance y mantenibilidad.
+4. Consistencia bilingue.
+5. Accesibilidad basica real.
+
+## Reglas utiles
+
+- Preferi contenido estatico o build-time.
+- No agregues dependencias pesadas sin una razon fuerte.
+- No llenes la UI de tarjetas, efectos o decoracion innecesaria.
+- Si mejoras copy, mantene tono cercano, concreto y profesional.
+
+## Leer tambien
 
 - [AGENTS.md](./AGENTS.md)
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)

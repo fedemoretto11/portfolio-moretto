@@ -4,16 +4,15 @@ import Hero from "./Hero"
 import ProjectsView from "./ProjectsView"
 import Skills from "./Skills"
 import Works from "./Works"
-import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function Main() {
   return (
-    <main className="flex w-full flex-col gap-16 pb-24 pt-10 sm:pt-16">
+    <main className="flex w-full flex-col gap-12 pb-24 pt-6 sm:gap-16 sm:pt-10">
       <Hero />
-      <About />
       <Works />
-      <Skills />
       <ProjectsView />
+      <About />
+      <Skills />
       <Contact />
     </main>
   )

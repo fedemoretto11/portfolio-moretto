@@ -4,41 +4,42 @@ This repository contains Federico Moretto's personal portfolio website.
 
 ## Project goals
 
-- Keep the portfolio simple, fast and professional.
-- Improve clarity of the professional message.
+- Keep the portfolio simple, fast, and professional.
+- Prioritize a clear professional message.
 - Preserve the single-page experience.
 - Favor maintainability over unnecessary complexity.
+- Keep the visual tone editorial, sober, and human.
 
 ## Current stack
 
 - React 18
 - Vite
 - Tailwind CSS
-- i18next
-- Firebase / Firestore
+- i18next / react-i18next
 
 ## Important context
 
-- The projects section currently loads from Firestore at runtime.
-- There is Firebase utility and migration code inside `src/` that should not remain as production-facing frontend code.
-- The repository currently has lint issues.
-- The main portrait image is too heavy for a portfolio website.
+- Projects are sourced from local data in `src/data/projects.js`.
+- The site supports English and Spanish with persisted language selection.
+- Metadata is updated dynamically based on the active language.
+- `logo_fm` defines the visual identity.
+- Icons are local SVG components, not an external icon font.
 
 ## Preferred implementation direction
 
-- Prefer static or build-time project data over runtime Firestore for portfolio content.
-- Avoid adding large dependencies.
+- Prefer static content or build-time data.
+- Avoid large dependencies.
 - Keep bilingual support intact.
-- Preserve the current visual language unless a change clearly improves the site.
-- Optimize for readability, accessibility and first-load performance.
+- Preserve the current visual direction unless a change clearly improves clarity.
+- Optimize for readability, accessibility, and first-load performance.
 
 ## When editing content
 
-- Keep the tone professional, direct and human.
+- Keep the tone professional, direct, and human.
 - Avoid inflated marketing language.
-- Emphasize real-world software work, maintainability, support, debugging and product impact.
+- Emphasize real-world software work, maintainability, support, debugging, and product impact.
 
-## Read before making major changes
+## Read before major changes
 
 - [../AGENTS.md](../AGENTS.md)
 - [../docs/PROJECT_CONTEXT.md](../docs/PROJECT_CONTEXT.md)
