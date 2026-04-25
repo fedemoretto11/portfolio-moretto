@@ -1,4 +1,4 @@
-import logo from "../../assets/logo_fm.png"
+import logo from "../../assets/federico_completo_icon.png"
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import Icon from "../ui/Icon"
