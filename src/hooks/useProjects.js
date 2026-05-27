@@ -1,21 +1,24 @@
 import { useEffect, useState } from "react"
+import localProjects from "../data/projects"
 import { getFirebaseServices, hasFirebaseConfig } from "../lib/firebase"
 import { normalizeProject, sortProjects } from "../lib/projectModel"
 
-function useProjects() {
-  const [projects, setProjects] = useState([])
+const fallbackProjects = sortProjects(localProjects.map((project, index) => normalizeProject(project, index)))
+
+function useProjects({ localFallback = true } = {}) {
+  const [projects, setProjects] = useState(localFallback ? fallbackProjects : [])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [errorDetail, setErrorDetail] = useState("")
-  const [source, setSource] = useState("firebase")
+  const [source, setSource] = useState(localFallback ? "local" : "firebase")
 
   useEffect(() => {
     if (!hasFirebaseConfig) {
-      setProjects([])
+      setProjects(localFallback ? fallbackProjects : [])
       setLoading(false)
-      setError("projects.error")
+      setError(localFallback ? null : "projects.error")
       setErrorDetail("Firebase is not configured.")
-      setSource("firebase")
+      setSource(localFallback ? "local" : "firebase")
       return undefined
     }
 
@@ -45,11 +48,11 @@ function useProjects() {
             setSource("firebase")
           },
           (nextError) => {
-            setProjects([])
+            setProjects(localFallback ? fallbackProjects : [])
             setLoading(false)
-            setError("projects.error")
+            setError(localFallback ? null : "projects.error")
             setErrorDetail(nextError.message)
-            setSource("firebase")
+            setSource(localFallback ? "local" : "firebase")
           },
         )
       })
@@ -58,18 +61,18 @@ function useProjects() {
           return
         }
 
-        setProjects([])
+        setProjects(localFallback ? fallbackProjects : [])
         setLoading(false)
-        setError("projects.error")
+        setError(localFallback ? null : "projects.error")
         setErrorDetail(nextError.message)
-        setSource("firebase")
+        setSource(localFallback ? "local" : "firebase")
       })
 
     return () => {
       cancelled = true
       unsubscribe()
     }
-  }, [])
+  }, [localFallback])
 
   return {
     projects,

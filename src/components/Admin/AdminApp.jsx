@@ -137,7 +137,7 @@ function validateProjectForm(formValues, activeProjectId, projects) {
 }
 
 function AdminApp() {
-  const { projects, loading, error, errorDetail } = useProjects()
+  const { projects, loading, error, errorDetail } = useProjects({ localFallback: false })
   const [sessionReady, setSessionReady] = useState(!hasFirebaseConfig)
   const [user, setUser] = useState(null)
   const [firebaseServices, setFirebaseServices] = useState(null)
