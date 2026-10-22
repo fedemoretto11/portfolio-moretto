@@ -12,7 +12,12 @@ const getInitialLanguage = () => {
     return 'es'
   }
 
-  const storedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY)
+  let storedLanguage
+  try {
+    storedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY)
+  } catch {
+    // Storage can be disabled; language selection must still work for this visit.
+  }
 
   if (storedLanguage && supportedLanguages.includes(storedLanguage)) {
     return storedLanguage
@@ -51,7 +56,11 @@ i18n.on('languageChanged', (language) => {
   }
 
   if (typeof window !== 'undefined') {
-    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language)
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language)
+    } catch {
+      // Persistence is optional when browser storage is unavailable.
+    }
   }
 })
 

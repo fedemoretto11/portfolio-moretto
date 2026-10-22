@@ -7,7 +7,7 @@ import Works from "./Works"
 
 function Main() {
   return (
-    <main className="flex w-full flex-col gap-12 pb-24 pt-6 sm:gap-16 sm:pt-10">
+    <main id="main-content" tabIndex={-1} className="flex w-full flex-col gap-12 pb-24 pt-6 sm:gap-16 sm:pt-10">
       <Hero />
       <Works />
       <ProjectsView />

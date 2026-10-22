@@ -1,4 +1,4 @@
-import logo from "../../assets/federico_completo_icon.png"
+import logo from "../../assets/federico_completo_icon.webp"
 import { useTranslation } from "react-i18next"
 import Icon from "../ui/Icon"
 
@@ -82,7 +82,9 @@ function Hero() {
 
               <img
                 src={logo}
-                alt="FM logo"
+                alt=""
+                width="64"
+                height="64"
                 className="h-16 w-16 rounded-2xl border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.38)] p-3"
               />
             </div>

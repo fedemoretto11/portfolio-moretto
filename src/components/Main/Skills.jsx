@@ -21,12 +21,15 @@ function Skills() {
             groups.map((group, index) => (
               <div
                 key={`skills-group-${index}`}
-                className="rounded-[1.5rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.18)] p-6"
+                className="flex flex-col items-start gap-4 rounded-[1.5rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.18)] p-6"
               >
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[rgba(47,124,255,0.14)] text-[color:var(--accent)]">
                   <Icon name={icons[index] || "stars"} className="h-5 w-5" />
                 </span>
-                <h3 className="font-display text-xl font-semibold text-white">{group?.title}</h3>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--accent)]">{group?.context}</p>
+                  <h3 className="mt-2 font-display text-xl font-semibold text-white">{group?.title}</h3>
+                </div>
                 {group?.description && (
                   <p className="text-sm leading-7 text-[color:var(--muted-strong)]">{group.description}</p>
                 )}

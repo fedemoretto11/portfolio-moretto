@@ -52,14 +52,37 @@
     color: #ffffff;
   }
 
-  button:focus-visible,
-  a:focus-visible {
+  :focus-visible {
     outline: 2px solid rgba(103, 220, 255, 0.85);
     outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
 @layer components {
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: -6rem;
+    z-index: 100;
+    padding: 0.75rem 1.25rem;
+    border-radius: 9999px;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--accent);
+  }
+
+  .skip-link:focus { top: 1rem; }
+
   .section-shell {
     @apply mx-auto w-full max-w-6xl px-6;
   }

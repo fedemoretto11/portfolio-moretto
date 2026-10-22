@@ -8,7 +8,7 @@ Es el portfolio web personal de Federico Moretto.
 
 ## Objetivo
 
-Presentar a Federico como un desarrollador full-stack que trabaja sobre sistemas reales, con experiencia en soporte tecnico, mantenimiento y nuevas funcionalidades.
+Presentar a Federico como Software Developer con foco en .NET, backend e integraciones empresariales. Distinguir su experiencia profesional de los proyectos personales full stack y mobile; las fechas de Asince siguen sujetas a aprobacion editorial.
 
 ## Stack actual
 
@@ -21,7 +21,8 @@ Presentar a Federico como un desarrollador full-stack que trabaja sobre sistemas
 
 - Navegacion por secciones
 - Copy bilingue en JSON
-- Proyectos locales dentro del repo
+- La fuente unica de proyectos publicos es `src/data/projects.js` (Git), normalizada por `src/data/publicProjects.js`, sin conexiones Firebase.
+- El administrador Firebase es heredado y esta separado (`useAdminProjects`); solo desarrollo con opt-in explicito, nunca builds/preview. Sus cambios no modifican el catalogo publico. Carga inicial deshabilitada; no borrar datos remotos sin inventario y respaldo. Usar Node 24; ver `docs/RELEASE.md`.
 - Paleta alineada al `logo_fm`
 - Tipografia editorial y sobria
 - Iconos SVG propios
@@ -43,6 +44,7 @@ Presentar a Federico como un desarrollador full-stack que trabaja sobre sistemas
 
 ## Fuentes de contexto
 
+- [Actualizacion profesional y bloqueos de publicacion](./docs/PROFESSIONAL_UPDATE_2026.md)
 - [AGENTS.md](./AGENTS.md)
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)
 - [docs/TECH_REVIEW.md](./docs/TECH_REVIEW.md)

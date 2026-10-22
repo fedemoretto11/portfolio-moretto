@@ -1,24 +1,20 @@
 import { useEffect, useState } from "react"
-import localProjects from "../data/projects"
 import { getFirebaseServices, hasFirebaseConfig } from "../lib/firebase"
 import { normalizeProject, sortProjects } from "../lib/projectModel"
 
-const fallbackProjects = sortProjects(localProjects.map((project, index) => normalizeProject(project, index)))
-
-function useProjects({ localFallback = true } = {}) {
-  const [projects, setProjects] = useState(localFallback ? fallbackProjects : [])
+// Legacy remote administration only. Never used by the public gallery.
+function useAdminProjects() {
+  const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [errorDetail, setErrorDetail] = useState("")
-  const [source, setSource] = useState(localFallback ? "local" : "firebase")
 
   useEffect(() => {
     if (!hasFirebaseConfig) {
-      setProjects(localFallback ? fallbackProjects : [])
+      setProjects([])
       setLoading(false)
-      setError(localFallback ? null : "projects.error")
+      setError("projects.error")
       setErrorDetail("Firebase is not configured.")
-      setSource(localFallback ? "local" : "firebase")
       return undefined
     }
 
@@ -35,6 +31,7 @@ function useProjects({ localFallback = true } = {}) {
         unsubscribe = services.firestoreApi.onSnapshot(
           services.firestoreApi.collection(services.db, "projects"),
           (snapshot) => {
+            if (cancelled) return
             const nextProjects = sortProjects(
               snapshot.docs.map((documentSnapshot, index) =>
                 normalizeProject({ id: documentSnapshot.id, ...documentSnapshot.data() }, index),
@@ -45,14 +42,13 @@ function useProjects({ localFallback = true } = {}) {
             setLoading(false)
             setError(null)
             setErrorDetail("")
-            setSource("firebase")
           },
           (nextError) => {
-            setProjects(localFallback ? fallbackProjects : [])
+            if (cancelled) return
+            setProjects([])
             setLoading(false)
-            setError(localFallback ? null : "projects.error")
+            setError("projects.error")
             setErrorDetail(nextError.message)
-            setSource(localFallback ? "local" : "firebase")
           },
         )
       })
@@ -61,27 +57,24 @@ function useProjects({ localFallback = true } = {}) {
           return
         }
 
-        setProjects(localFallback ? fallbackProjects : [])
+        setProjects([])
         setLoading(false)
-        setError(localFallback ? null : "projects.error")
+        setError("projects.error")
         setErrorDetail(nextError.message)
-        setSource(localFallback ? "local" : "firebase")
       })
 
     return () => {
       cancelled = true
       unsubscribe()
     }
-  }, [localFallback])
+  }, [])
 
   return {
     projects,
     loading,
     error,
     errorDetail,
-    source,
-    usingFirebase: hasFirebaseConfig,
   }
 }
 
-export default useProjects
+export default useAdminProjects

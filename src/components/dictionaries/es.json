@@ -1,159 +1,198 @@
 {
-  "meta.title": "Federico Moretto | Desarrollador full-stack",
-  "meta.description": "Portfolio de Federico Moretto: desarrollo full-stack, soporte tecnico, hotfixes y nuevas funcionalidades para sistemas reales en produccion.",
-  "meta.ogTitle": "Federico Moretto | Desarrollador full-stack",
-  "meta.ogDescription": "Desarrollo y mantengo software para contextos reales, con foco en estabilidad, claridad y evolucion del producto.",
+  "meta.title": "Federico Moretto | Software Developer · .NET e integraciones",
+  "meta.description": "Software Developer con experiencia en C#, .NET, backend, APIs y bases de datos. Integraciones empresariales en Asince y proyectos full stack y mobile.",
+  "meta.ogTitle": "Federico Moretto | Software Developer",
+  "meta.ogDescription": "Desarrollo backend e integraciones empresariales con C# y .NET. Experiencia en sistemas productivos y proyectos personales full stack y mobile.",
   "header.home": "Inicio",
   "header.about": "Perfil",
   "header.technology": "Skills",
   "header.works": "Experiencia",
   "header.projects": "Proyectos",
   "header.contact": "Contacto",
-  "header.openMenu": "Abrir menu",
-  "header.closeMenu": "Cerrar menu",
-  "header.role": "Desarrollador full-stack",
+  "header.openMenu": "Abrir menú",
+  "header.closeMenu": "Cerrar menú",
+  "header.navigation": "Navegación principal",
+  "accessibility.skipToContent": "Saltar al contenido principal",
+  "header.role": "Software Developer · .NET",
   "header.cta": "Escribime",
-  "hero.tagline": "Desarrollador full-stack · soporte, producto y sistemas reales",
-  "hero.title": "Desarrollo y mantengo software para contextos reales",
-  "hero.description": "Trabajo sobre productos en produccion donde la estabilidad, el soporte y la evolucion del sistema importan de verdad.",
-  "hero.secondary": "Hoy trabajo en Asince SRL, aportando sobre plataformas fintech y ERP con hotfixes, mantenimiento y nuevas funcionalidades.",
+  "hero.tagline": "Software Developer | .NET · Backend · Integraciones",
+  "hero.title": "Backend e integraciones para sistemas empresariales",
+  "hero.description": "Soy Software Developer con experiencia en sistemas productivos. Desarrollo y mantengo soluciones que conectan aplicaciones, servicios y datos.",
+  "hero.secondary": "En Asince trabajo en integraciones para procesos de administración, contabilidad y finanzas, con C#, .NET y Oracle.",
   "hero.ctaContact": "Charlemos",
   "hero.ctaProjects": "Ver proyectos",
   "hero.proofPoints": [
-    "Trabajo con incidentes, hotfixes y mejoras sobre sistemas en produccion.",
-    "Combino soporte tecnico con desarrollo de nuevas funcionalidades.",
-    "Priorizo interfaces claras y codigo mantenible antes que la complejidad innecesaria.",
-    "Me muevo con soltura entre producto, operacion y necesidades de negocio."
+    "Integración de APIs, servicios y archivos de intercambio.",
+    "Desarrollo y mantenimiento de procesos con SQL y PL/SQL.",
+    "Debugging y mejoras sobre backend en producción.",
+    "Proyectos personales full stack y aplicaciones móviles."
   ],
-  "hero.stack": [".NET", "TypeScript", "Azure", "React", "SQL", "UX clara"],
-  "hero.brandCard.eyebrow": "Identidad profesional",
-  "hero.brandCard.title": "Software util, estable y entendible",
-  "hero.brandCard.description": "Mi foco esta en resolver problemas reales con una base tecnica solida y una experiencia sobria para quienes usan el producto todos los dias.",
-  "hero.brandCard.badgeOne": "Sistemas en produccion",
-  "hero.brandCard.badgeTwo": "Argentina · remoto",
+  "hero.stack": [
+    "C#",
+    ".NET",
+    "APIs",
+    "Oracle",
+    "PL/SQL",
+    "Azure"
+  ],
+  "hero.brandCard.eyebrow": "Actualmente",
+  "hero.brandCard.title": "Software Developer – Integrations",
+  "hero.brandCard.description": "Equipo de integraciones de Administración, Contabilidad y Finanzas de Asince.",
+  "hero.brandCard.badgeOne": "Asince",
+  "hero.brandCard.badgeTwo": "Argentina",
   "hero.signalCards": [
     {
-      "eyebrow": "Actualmente",
-      "title": "Asince SRL",
-      "description": "Soporte tecnico y desarrollo sobre plataformas fintech y ERP, con foco en continuidad operativa."
+      "eyebrow": "Experiencia",
+      "title": "Sistemas productivos",
+      "description": "Trabajo con código existente, servicios y bases de datos, desde el análisis del problema hasta su resolución."
     },
     {
-      "eyebrow": "Stack base",
-      "title": ".NET, TypeScript y Azure",
-      "description": "Trabajo con APIs, bases de datos, interfaces web y mantenimiento de servicios en la nube."
-    },
-    {
-      "eyebrow": "Forma de trabajo",
-      "title": "Claridad antes que ruido",
-      "description": "Busco soluciones mantenibles, buen criterio de producto y una comunicacion tecnica facil de seguir."
+      "eyebrow": "Proyectos personales",
+      "title": "Full stack y mobile",
+      "description": "ClubConnect y Nido complementan mi experiencia profesional con aplicaciones web y móviles."
     }
   ],
   "about.subtitle": "Perfil",
-  "about.title": "Un perfil tecnico que entiende producto, soporte y negocio",
+  "about.title": "De la operación de negocio al desarrollo de software",
   "about.description": [
-    "Mi recorrido me llevo desde soporte tecnico hacia el desarrollo full-stack, y eso hoy se nota en como encaro los problemas: primero entiendo el contexto, despues priorizo una solucion clara y sostenible.",
-    "En Asince SRL trabajo sobre sistemas que ya estan en uso. Eso me llevo a desarrollar criterio para responder incidentes, cuidar la estabilidad y sumar funcionalidades sin perder de vista a las personas que dependen del producto."
+    "Mi trayectoria comenzó en ventas y documentación de importación. Esas experiencias me dieron contexto sobre procesos de negocio y trabajo con distintas áreas.",
+    "Después orienté mi formación y mis proyectos al desarrollo de software. En Asince trabajé en el diagnóstico técnico de sistemas productivos y hoy formo parte del equipo de integraciones.",
+    "Curso la Tecnicatura Universitaria en Programación en la UTN. En paralelo desarrollo ClubConnect y Nido para seguir construyendo soluciones full stack y móviles."
   ],
-  "about.highlightsTitle": "Como trabajo",
+  "about.highlightsTitle": "Cómo trabajo",
   "about.highlights": [
-    "Entro rapido a codigo existente y priorizo cambios de bajo riesgo.",
-    "Puedo traducir tickets, dudas operativas y reglas de negocio en soluciones concretas.",
-    "Valoro una UI sobria, clara y facil de recorrer antes que los efectos decorativos.",
-    "Me interesa que cada decision tecnica deje al producto mejor parado para crecer."
+    "Entiendo los requerimientos técnicos y de negocio antes de definir una solución.",
+    "Trabajo sobre código y datos existentes con atención a sus dependencias.",
+    "Uso pruebas y debugging para revisar el comportamiento de los cambios."
   ],
-  "about.focusTitle": "Hoy estoy profundizando en",
+  "about.focusTitle": "Áreas de trabajo",
   "about.focusAreas": [
-    "Observabilidad y respuesta a incidentes",
-    "Automatizacion asistida por IA",
-    "Arquitecturas .NET mantenibles",
-    "Experiencias multilenguaje consistentes"
+    "Backend con .NET",
+    "Integraciones de sistemas",
+    "Bases de datos",
+    "Aplicaciones personales"
   ],
   "about.sideCards.currentRoleLabel": "Hoy",
-  "about.sideCards.currentRoleTitle": "Soporte tecnico + desarrollo",
-  "about.sideCards.currentRoleDescription": "Me muevo entre debugging, mantenimiento y nuevas funcionalidades con foco en confiabilidad.",
+  "about.sideCards.currentRoleTitle": "Desarrollo de integraciones",
+  "about.sideCards.currentRoleDescription": "C#, .NET y Oracle en procesos empresariales de administración, contabilidad y finanzas.",
   "about.sideCards.approachLabel": "Enfoque",
-  "about.sideCards.approachTitle": "Producto con criterio operativo",
-  "about.sideCards.approachDescription": "No pienso solo en que algo funcione: tambien en como se mantiene, se explica y se usa en el dia a dia.",
+  "about.sideCards.approachTitle": "Contexto y precisión técnica",
+  "about.sideCards.approachDescription": "Conectar necesidades de negocio con soluciones que se puedan entender y mantener.",
   "skills.subtitle": "Capacidades",
-  "skills.title": "Tecnologia con criterio de uso",
-  "skills.description": "Un stack orientado a construir, mantener y mejorar productos reales, no solo demos aisladas.",
+  "skills.title": "Experiencia profesional y tecnologías de proyectos",
+  "skills.description": "El foco está en backend e integraciones. Los proyectos personales amplían mi práctica en interfaces web y aplicaciones móviles.",
   "skills.groups": [
     {
-      "title": "Interfaces de producto",
-      "description": "UI claras, componentes reutilizables y experiencias web responsivas.",
-      "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML", "CSS"]
+      "context": "Experiencia profesional",
+      "title": "Backend e integraciones",
+      "description": "Desarrollo y mantenimiento de servicios y procesos de intercambio entre sistemas.",
+      "items": [
+        "C#",
+        ".NET",
+        "APIs y servicios",
+        "SFTP",
+        "XML",
+        "Azure"
+      ]
     },
     {
-      "title": "Backend y datos",
-      "description": "Logica de negocio, APIs y persistencia para sistemas que necesitan estabilidad.",
-      "items": ["C# .NET", "Node.js", "Java", "Spring Boot", "SQL", "Firebase"]
+      "context": "Experiencia profesional",
+      "title": "Datos y colaboración",
+      "description": "Análisis de datos, consultas y trabajo coordinado con equipos técnicos y funcionales.",
+      "items": [
+        "Oracle",
+        "SQL Server",
+        "SQL",
+        "PL/SQL",
+        "Git",
+        "Bitbucket",
+        "Jira"
+      ]
     },
     {
-      "title": "Operacion y colaboracion",
-      "description": "Trabajo tecnico conectado con despliegue, soporte y equipos de distintas areas.",
-      "items": ["Azure", "Git", "GitHub", "Jira", "CI/CD", "Soporte productivo"]
+      "context": "Proyectos personales",
+      "title": "Full stack y mobile",
+      "description": "Aplicaciones completas con interfaces web, persistencia y experiencias móviles.",
+      "items": [
+        "Vue.js / Quasar",
+        "React",
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "Firebase",
+        "PostgreSQL"
+      ]
     }
   ],
   "skills.highlights": [
-    "Puedo trabajar sobre codigo nuevo o sobre sistemas ya existentes sin perder velocidad de lectura.",
-    "Me siento comodo mejorando producto mientras mantengo una base operativa estable.",
-    "Busco que las decisiones tecnicas reduzcan friccion para usuarios, soporte y futuros cambios.",
-    "Cuando algo llega a produccion, me importa tanto su mantenimiento como su entrega."
+    "Experiencia sobre APIs, servicios y bases de datos en sistemas productivos.",
+    "Práctica de desarrollo full stack y mobile respaldada por proyectos personales."
   ],
   "works.subtitle": "Experiencia",
-  "works.title": "Trabajo sobre software que ya esta en uso",
-  "works.description": "Experiencia en soporte tecnico, mantenimiento y desarrollo de producto para contextos donde la estabilidad realmente importa.",
+  "works.title": "Desarrollo de software en Asince",
+  "works.description": "Dos etapas: intervención técnica en sistemas productivos y trabajo actual en integraciones empresariales.",
   "works.items": [
     {
-      "role": "Soporte tecnico y desarrollador de software",
-      "company": "Asince SRL",
-      "period": "2022 — Actualidad",
-      "summary": "Trabajo sobre plataformas fintech y ERP en produccion, combinando respuesta a incidentes con evolucion funcional del producto.",
+      "role": "Software Developer – Integrations",
+      "company": "Asince",
+      "period": "Septiembre de 2026 — Actualidad",
+      "summary": "Desarrollo y mantenimiento de integraciones para procesos de administración, contabilidad y finanzas.",
       "achievements": [
-        "Analisis y resolucion de tickets tecnicos sobre entornos reales de operacion.",
-        "Implementacion de hotfixes y ajustes de bajo riesgo para sostener la continuidad.",
-        "Monitoreo de servicios, bases de datos e infraestructura vinculada al producto.",
-        "Desarrollo de nuevas funcionalidades alineadas con necesidades concretas del negocio."
+        "Integración de sistemas internos y plataformas externas mediante APIs, servicios, SFTP y archivos XML.",
+        "Desarrollo con C#/.NET y procesos Oracle; análisis de requerimientos, pruebas y debugging."
       ],
-      "technologies": ["C# .NET", "Vue", "TypeScript", "Azure", "Oracle SQL", "Crystal Reports"]
+      "technologies": [
+        "C#",
+        ".NET",
+        "Oracle",
+        "SQL / PL/SQL",
+        "APIs",
+        "SFTP / XML",
+        "Azure"
+      ]
     },
     {
-      "role": "Desarrollador full-stack freelance",
-      "company": "Proyectos independientes",
-      "period": "2019 — 2022",
-      "summary": "Disene y publique sitios y herramientas para pequenos negocios, priorizando claridad, autonomia del cliente y presencia digital.",
+      "role": "Technical Support Developer",
+      "company": "Asince",
+      "period": "Abril de 2024 — Septiembre de 2026",
+      "summary": "Diagnóstico y resolución de incidencias productivas con intervención directa en código, backend y bases de datos.",
       "achievements": [
-        "Construccion de sitios responsive y experiencias pensadas para generar consultas.",
-        "Automatizacion de tareas administrativas para reducir trabajo manual.",
-        "Acompanamiento a clientes no tecnicos en contenido, estructura y mejoras iterativas.",
-        "Desarrollo de soluciones simples de mantener y faciles de entender."
+        "Debugging con C#/.NET, hotfixes y ajustes en APIs y servicios existentes.",
+        "Análisis y optimización de consultas Oracle y SQL Server, rendimiento y monitoreo de entornos Azure."
       ],
-      "technologies": ["Next.js", "Firebase", "Tailwind CSS", "Node.js"]
+      "technologies": [
+        "C#",
+        ".NET",
+        "Oracle",
+        "SQL Server",
+        "SQL",
+        "Azure"
+      ]
     }
   ],
   "projects.subtitle": "Proyectos",
-  "projects.title": "Trabajo seleccionado",
-  "projects.description": "Una muestra de proyectos donde combine estructura tecnica, claridad visual y foco en el uso real.",
+  "projects.title": "Proyectos personales y trabajo seleccionado",
+  "projects.description": "Aplicaciones full stack, mobile y sitios web. Cada proyecto conserva su alcance y estado de desarrollo.",
   "projects.featuredTitle": "Proyectos destacados",
   "projects.featuredCount": "destacados",
-  "projects.archiveTitle": "Mas proyectos",
-  "projects.archiveDescription": "Ejercicios, sitios y piezas complementarias que tambien forman parte de mi recorrido.",
+  "projects.archiveTitle": "Archivo de proyectos",
+  "projects.archiveDescription": "Trabajos anteriores y ejercicios de formación. Los filtros se aplican a este archivo.",
   "projects.all": "Todos",
-  "projects.others": "Varios",
+  "projects.others": "Apps y ejercicios",
   "projects.webSites": "Web",
   "projects.inProgress": "En desarrollo",
-  "projects.noImage": "Imagen en preparacion",
+  "projects.noImage": "Sin captura publicada",
   "projects.error": "No se pudieron cargar los proyectos. Proba de nuevo mas tarde.",
   "projects.links.demo": "Ver demo",
   "projects.links.repository": "Repositorio",
-  "projects.typeLabels.website": "Sitio web",
-  "projects.typeLabels.misc": "Otros",
+  "projects.typeLabels.website": "Web",
+  "projects.typeLabels.misc": "Aplicación",
   "projects.empty": "Todavia no hay proyectos para mostrar en esta categoria.",
   "contact.subtitle": "Contacto",
-  "contact.title": "Construyamos algo util y mantenible",
+  "contact.title": "Conversemos sobre software",
   "contact.description": [
-    "Estoy abierto a oportunidades remotas, colaboraciones y conversaciones donde el foco este en producto, estabilidad y mejora continua.",
-    "Si te interesa mi perfil para un equipo o proyecto, escribime por mail, revisa mi CV o contactame por LinkedIn."
+    "Me interesan las oportunidades vinculadas con .NET, backend e integraciones, y los equipos que trabajan sobre sistemas empresariales.",
+    "Podés escribirme por email o encontrar más contexto profesional y proyectos en mis perfiles."
   ],
   "contact.ctaEmail": "Enviar mail",
   "contact.ctaResume": "Ver CV",
@@ -161,31 +200,62 @@
   "contact.meta.availability": "Abierto a oportunidades remotas",
   "contact.channels": [
     {
-      "label": "Mail",
-      "title": "fedemoretto94@gmail.com",
-      "description": "La mejor opcion para propuestas laborales, entrevistas o conversaciones sobre proyectos.",
-      "icon": "mail",
-      "href": "mailto:fedemoretto94@gmail.com",
-      "external": false
+      "id": "email",
+      "label": "Email",
+      "description": "Para oportunidades laborales, entrevistas y conversaciones sobre proyectos.",
+      "icon": "mail"
     },
     {
+      "id": "linkedin",
       "label": "LinkedIn",
       "title": "Perfil profesional",
-      "description": "Experiencia, recorrido y contexto laboral en un formato rapido de revisar.",
-      "icon": "linkedin",
-      "href": "https://www.linkedin.com/in/morettofede/",
-      "external": true
+      "description": "Trayectoria, experiencia y formación.",
+      "icon": "linkedin"
     },
     {
+      "id": "github",
       "label": "GitHub",
-      "title": "Codigo y proyectos",
-      "description": "Repositorios publicos, ejercicios y trabajos con foco tecnico.",
-      "icon": "github",
-      "href": "https://github.com/fedemoretto11",
-      "external": true
+      "title": "Código y proyectos",
+      "description": "Repositorios públicos y proyectos personales.",
+      "icon": "github"
     }
   ],
   "footer.develop": "Software hecho por Federico Moretto",
   "footer.rights": "Todos los derechos reservados",
-  "changeLanguage": "EN / ES"
+  "changeLanguage": "EN / ES",
+  "works.company": "Asince",
+  "works.previousTitle": "Trayectoria profesional anterior",
+  "works.previousItems": [
+    {
+      "company": "MSL Corporate",
+      "role": "Asistente de documentación de importación",
+      "period": "Enero de 2021 — Diciembre de 2022",
+      "summary": "Gestión documental y soporte operativo en sistemas internos."
+    },
+    {
+      "company": "Rodolfo Isidro Moretto SRL",
+      "role": "Supervisor de Ventas",
+      "period": "Abril de 2019 — Enero de 2021",
+      "summary": "Supervisión de ventas, análisis de indicadores, reportes y planificación comercial."
+    }
+  ],
+  "about.portraitAlt": "Retrato de Federico Moretto",
+  "about.educationTitle": "Formación",
+  "about.educationItems": [
+    {
+      "institution": "Universidad Tecnológica Nacional (UTN)",
+      "program": "Tecnicatura Universitaria en Programación",
+      "period": "Marzo de 2026 — Actualidad",
+      "status": "En curso"
+    },
+    {
+      "institution": "Universidad de Ciencias Empresariales y Sociales (UCES)",
+      "program": "Estudios en Licenciatura en Comercio Exterior",
+      "period": "Marzo de 2014 — Marzo de 2019",
+      "status": "Estudios cursados"
+    }
+  ],
+  "contact.linkLabels.email": "Email",
+  "contact.linkLabels.linkedin": "LinkedIn",
+  "contact.linkLabels.github": "GitHub"
 }

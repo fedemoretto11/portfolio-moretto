@@ -1,5 +1,7 @@
 # Revision Tecnica Y Funcional
 
+Estado de cierre local posterior: Node 24, Vite 7.3, ESLint 10, React 18 conservado; SEO estatico completado, logo optimizado sin perdida visible, accesibilidad basica automatizada y CI preparado. El administrador solo existe mediante opt-in de desarrollo. Validaciones y limites actuales en [RELEASE.md](./RELEASE.md). Las propuestas de mas abajo son antecedentes, no una nueva lista de bloqueos.
+
 ## Fortalezas actuales
 
 ### 1. Arquitectura simple
@@ -8,7 +10,7 @@ El sitio sigue siendo chico, mantenible y facil de recorrer. La estructura por s
 
 ### 2. Contenido estable
 
-La fuente de verdad de proyectos vive en `src/data/projects.js`, lo que elimina riesgo innecesario en runtime para una zona clave del portfolio.
+La fuente publica unica es `src/data/projects.js` (Git). `publicProjects.js` normaliza, ordena y filtra visibilidad sin acceder a Firebase. La ruta administrativa se carga de forma diferida y usa `useAdminProjects`; sus registros remotos son independientes. La carga inicial esta deshabilitada hasta contar con inventario, respaldo y un procedimiento seguro. Ver [correcciones y validacion](./PREPUBLICATION_CORRECTIONS_2026.md).
 
 ### 3. Sistema visual mas coherente
 
@@ -29,6 +31,7 @@ Hay una direccion visual definida:
 - Se eliminaron estilos SCSS legados que no participaban del render.
 - Se saco codigo muerto como la sidebar social antigua.
 - Se simplifico el bundle visual usando iconos SVG internos.
+- Se separo el catalogo publico de Firebase y se corrigio la navegacion entre movil y escritorio; el menu cerrado se desmonta y Escape devuelve el foco al boton.
 
 ## Riesgos o pendientes actuales
 
@@ -46,7 +49,7 @@ La tipografia se carga desde Google Fonts. Funciona bien, pero sigue siendo una 
 
 ### 3. CV externo
 
-El CV sigue enlazado a Google Drive. Es funcional, pero no es la experiencia mas controlada posible.
+El enlace privado y desactualizado fue deshabilitado. `src/data/contact.js` mantiene `resumeUrl: null` hasta revisar un CV actualizado y su acceso anonimo. No se copio ningun PDF al sitio.
 
 ### 4. Contenido todavia perfectible
 

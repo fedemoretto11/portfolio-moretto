@@ -4,7 +4,8 @@ import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import MainContainer from "./components/Main/MainContainer"
 
-const AdminApp = lazy(() => import("./components/Admin/AdminApp"))
+// Compile-time gate: production builds cannot include the legacy admin or Firebase.
+const AdminApp = __LEGACY_ADMIN_ENABLED__ ? lazy(() => import("./components/Admin/AdminApp")) : null
 
 function matchesAdminRoute() {
   const { hash, pathname } = window.location
@@ -14,11 +15,11 @@ function matchesAdminRoute() {
 
 function App() {
   const { t, i18n } = useTranslation()
-  const [isAdminRoute, setIsAdminRoute] = useState(() => matchesAdminRoute())
+  const [isAdminRoute, setIsAdminRoute] = useState(() => __LEGACY_ADMIN_ENABLED__ && matchesAdminRoute())
 
   useEffect(() => {
     const syncRoute = () => {
-      setIsAdminRoute(matchesAdminRoute())
+      setIsAdminRoute(__LEGACY_ADMIN_ENABLED__ && matchesAdminRoute())
     }
 
     window.addEventListener("popstate", syncRoute)
@@ -44,12 +45,14 @@ function App() {
     const ogDescription = document.querySelector('meta[property="og:description"]')
     const twitterTitle = document.querySelector('meta[name="twitter:title"]')
     const twitterDescription = document.querySelector('meta[name="twitter:description"]')
+    const ogLocale = document.querySelector('meta[property="og:locale"]')
 
     if (metaDescription) metaDescription.setAttribute("content", t("meta.description"))
     if (ogTitle) ogTitle.setAttribute("content", t("meta.ogTitle"))
     if (ogDescription) ogDescription.setAttribute("content", t("meta.ogDescription"))
     if (twitterTitle) twitterTitle.setAttribute("content", t("meta.ogTitle"))
     if (twitterDescription) twitterDescription.setAttribute("content", t("meta.ogDescription"))
+    if (ogLocale) ogLocale.setAttribute("content", i18n.language === "en" ? "en_US" : "es_AR")
 
     document.documentElement.lang = i18n.language
   }, [i18n.language, isAdminRoute, t])
@@ -64,6 +67,7 @@ function App() {
 
   return (
     <>
+      <a href="#main-content" className="skip-link">{t("accessibility.skipToContent")}</a>
       <Header />
       <MainContainer />
       <Footer />

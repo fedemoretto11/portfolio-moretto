@@ -19,7 +19,7 @@ This repository contains Federico Moretto's personal portfolio website.
 
 ## Important context
 
-- Projects are sourced from local data in `src/data/projects.js`.
+- Public projects come exclusively from Git (`src/data/projects.js`, prepared by `src/data/publicProjects.js`). Never initialize Firebase on public visits. The preserved legacy admin requires explicit development opt-in and is excluded from every production/preview build. Initial loading is disabled; remote data must remain untouched until inventoried and backed up. Use Node 24 and `docs/RELEASE.md` for checks and delivery.
 - The site supports English and Spanish with persisted language selection.
 - Metadata is updated dynamically based on the active language.
 - `logo_fm` defines the visual identity.
@@ -41,6 +41,7 @@ This repository contains Federico Moretto's personal portfolio website.
 
 ## Read before major changes
 
+- [../docs/PROFESSIONAL_UPDATE_2026.md](../docs/PROFESSIONAL_UPDATE_2026.md)
 - [../AGENTS.md](../AGENTS.md)
 - [../docs/PROJECT_CONTEXT.md](../docs/PROJECT_CONTEXT.md)
 - [../docs/TECH_REVIEW.md](../docs/TECH_REVIEW.md)

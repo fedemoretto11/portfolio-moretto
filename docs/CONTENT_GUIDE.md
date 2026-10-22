@@ -23,6 +23,8 @@ Evitar:
 
 ## Posicionamiento profesional
 
+Desde la actualizacion local del 22/10/2026: **Software Developer | .NET · Backend · Integraciones**. No describir el puesto actual como Technical Support. Las fechas de ambas etapas de Asince son provisionales hasta aprobacion; ver [registro de actualizacion](./PROFESSIONAL_UPDATE_2026.md). No recuperar la experiencia freelance 2019–2022 ni atribuir desarrollo a los puestos previos de ventas y documentacion.
+
 Federico no debe sonar como un perfil generico de frontend junior. El sitio debe mostrar a alguien que trabaja sobre sistemas reales, entiende soporte, mantenimiento y desarrollo, y puede aportar criterio tecnico en contexto de negocio.
 
 ## Ideas fuerza a reforzar
