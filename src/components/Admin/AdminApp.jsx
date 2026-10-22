@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
 import AdminProjectForm from "./AdminProjectForm"
 import AdminProjectsList from "./AdminProjectsList"
-import projectSeeds from "../../data/projectSeeds"
-import useProjects from "../../hooks/useProjects"
+import useAdminProjects from "../../hooks/useAdminProjects"
 import {
   adminSetupFields,
   firebaseSetupFields,
@@ -136,8 +135,18 @@ function validateProjectForm(formValues, activeProjectId, projects) {
   return errors
 }
 
+function LegacyAdminNotice() {
+  return (
+    <p role="note" className="mt-6 rounded-[1.35rem] border border-[rgba(129,149,191,0.18)] px-5 py-4 text-sm leading-7 text-[color:var(--muted-strong)]">
+      Administracion heredada: los cambios de este panel solo afectan Firestore. NO modifican el catalogo
+      publico, que se mantiene en Git. La carga inicial esta deshabilitada hasta inventariar y respaldar
+      los datos remotos y revisar un procedimiento que evite sobrescrituras.
+    </p>
+  )
+}
+
 function AdminApp() {
-  const { projects, loading, error, errorDetail } = useProjects({ localFallback: false })
+  const { projects, loading, error, errorDetail } = useAdminProjects()
   const [sessionReady, setSessionReady] = useState(!hasFirebaseConfig)
   const [user, setUser] = useState(null)
   const [firebaseServices, setFirebaseServices] = useState(null)
@@ -352,34 +361,6 @@ function AdminApp() {
     }
   }
 
-  const handleBootstrapProjects = async () => {
-    if (!firebaseServices || !user || !authorized || projects.length > 0) {
-      return
-    }
-
-    setIsSubmitting(true)
-    setStatus(null)
-
-    try {
-      const batch = firebaseServices.firestoreApi.writeBatch(firebaseServices.db)
-
-      projectSeeds.forEach((project) => {
-        batch.set(firebaseServices.firestoreApi.doc(firebaseServices.db, "projects", project.id), {
-          ...project,
-          createdAt: firebaseServices.firestoreApi.serverTimestamp(),
-          updatedAt: firebaseServices.firestoreApi.serverTimestamp(),
-        })
-      })
-
-      await batch.commit()
-      setStatus({ type: "success", message: "Se cargaron 3 proyectos iniciales en Firestore." })
-    } catch (nextError) {
-      setStatus({ type: "error", message: `No se pudieron cargar los proyectos iniciales: ${nextError.message}` })
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
-
   if (!hasFirebaseConfig) {
     return (
       <main className="px-4 py-6 md:px-8 xl:px-10 xl:py-8">
@@ -391,6 +372,7 @@ function AdminApp() {
           <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--muted-strong)]">
             El panel ya esta integrado, pero necesita tus variables de entorno para autenticacion y Firestore.
           </p>
+          <LegacyAdminNotice />
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             <div className="surface-card p-5">
               <h2 className="font-display text-xl text-white">Variables publicas necesarias</h2>
@@ -425,15 +407,14 @@ function AdminApp() {
           <div>
             <span className="eyebrow">Administracion</span>
             <h1 className="mt-4 font-display text-3xl font-semibold text-white sm:text-4xl">
-              Gestiona proyectos sin tocar Firestore a mano
+              Administracion heredada de Firestore
             </h1>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[color:var(--muted-strong)]">
-              El panel esta pensado como una mesa de trabajo: eliges un proyecto, editas lo importante y validas
-              rapido como se va a mostrar en el sitio.
+              Consulta y edita los registros remotos. La galeria publica utiliza exclusivamente el catalogo de Git.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="data-chip">Fuente publica: Firestore</span>
+            <span className="data-chip">Catalogo publico: Git</span>
             {authorized && user?.email && <span className="data-chip">{user.email}</span>}
             <a href="/" className="secondary-button">Ver portfolio</a>
             {authorized && (
@@ -443,6 +424,8 @@ function AdminApp() {
             )}
           </div>
         </div>
+
+        <LegacyAdminNotice />
 
         {status && (
           <div
@@ -518,7 +501,6 @@ function AdminApp() {
               errorDetail={errorDetail}
               isSubmitting={isSubmitting}
               loading={loading}
-              onBootstrap={handleBootstrapProjects}
               onDelete={handleDeleteProject}
               onEdit={handleEditProject}
               onReset={resetForm}

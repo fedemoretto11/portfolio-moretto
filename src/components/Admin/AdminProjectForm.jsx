@@ -174,9 +174,9 @@ function AdminProjectForm({ activeProjectId, fieldErrors, formValues, isSubmitti
 
               <section className="admin-form-section">
                 <div>
-                  <p className="field-label">Organizacion del sitio</p>
+                  <p className="field-label">Organizacion de datos remotos</p>
                   <p className="admin-section-copy">
-                    Decide como se ordena y si aparece como parte del archivo o del bloque destacado.
+                    Conserva el orden y las marcas del registro remoto; no alteran la galeria publica.
                   </p>
                 </div>
 
@@ -224,7 +224,7 @@ function AdminProjectForm({ activeProjectId, fieldErrors, formValues, isSubmitti
 
                 <div className="grid gap-3 md:grid-cols-3">
                   {[
-                    ["visible", "Mostrar en el sitio"],
+                    ["visible", "Visible en datos remotos"],
                     ["featured", "Marcar como destacado"],
                     ["isFinished", "Proyecto finalizado"],
                   ].map(([name, label]) => (

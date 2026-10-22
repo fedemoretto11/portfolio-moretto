@@ -1,11 +1,28 @@
-import logo from "../../assets/federico_completo_icon.png"
-import { useState } from "react"
+import logo from "../../assets/federico_completo_icon.webp"
+import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import Icon from "../ui/Icon"
 
 function Header() {
   const { t, i18n } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuButtonRef = useRef(null)
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 1024px)")
+    const closeOnDesktop = () => {
+      if (desktop.matches) setIsMenuOpen(false)
+    }
+    desktop.addEventListener("change", closeOnDesktop)
+    return () => desktop.removeEventListener("change", closeOnDesktop)
+  }, [])
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape" && isMenuOpen) {
+      setIsMenuOpen(false)
+      menuButtonRef.current?.focus()
+    }
+  }
 
   const handleNavClick = (event, hash) => {
     event.preventDefault()
@@ -13,7 +30,10 @@ function Header() {
     const targetElement = document.querySelector(hash)
 
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth", block: "start" })
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      targetElement.scrollIntoView({ behavior: reduceMotion ? "instant" : "smooth", block: "start" })
+      targetElement.setAttribute("tabindex", "-1")
+      targetElement.focus({ preventScroll: true })
       window.history.replaceState(null, "", hash)
     }
 
@@ -35,17 +55,21 @@ function Header() {
   return (
     <header
       id="index"
+      onKeyDown={handleKeyDown}
       className="sticky top-0 z-50 border-b border-[rgba(129,149,191,0.12)] bg-[rgba(6,10,22,0.84)] backdrop-blur-xl"
     >
       <div className="section-shell flex items-center justify-between py-4">
         <a
           href="#hero"
+          aria-label={t("header.home")}
           onClick={(event) => handleNavClick(event, "#hero")}
           className="flex items-center gap-3"
         >
           <img
             src={logo}
-            alt="Federico Moretto logo"
+            alt=""
+            width="48"
+            height="48"
             className="h-12 w-12 rounded-2xl border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.56)] p-2"
           />
           <div className="hidden sm:block">
@@ -56,7 +80,7 @@ function Header() {
           </div>
         </a>
 
-        <nav className="hidden lg:flex lg:items-center lg:gap-2">
+        <nav aria-label={t("header.navigation")} className="hidden lg:flex lg:items-center lg:gap-2">
           {navLinks.map((link) => (
             <a
               key={link.id}
@@ -73,7 +97,7 @@ function Header() {
           <button
             type="button"
             onClick={toggleLanguage}
-            className="hidden rounded-full border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.4)] px-3 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--muted-strong)] hover:border-[rgba(129,149,191,0.24)] hover:text-white sm:inline-flex"
+            className="hidden rounded-full border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.4)] px-3 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[color:var(--muted-strong)] hover:border-[rgba(129,149,191,0.24)] hover:text-white lg:inline-flex"
           >
             {t("changeLanguage")}
           </button>
@@ -81,7 +105,7 @@ function Header() {
           <a
             href="#contact"
             onClick={(event) => handleNavClick(event, "#contact")}
-            className="primary-button hidden sm:inline-flex"
+            className="primary-button hidden lg:inline-flex"
           >
             <Icon name="send" className="h-4 w-4" />
             {t("header.cta")}
@@ -89,8 +113,9 @@ function Header() {
 
           <button
             type="button"
+            ref={menuButtonRef}
             onClick={() => setIsMenuOpen((value) => !value)}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-[rgba(129,149,191,0.16)] bg-[rgba(10,18,39,0.52)] text-[color:var(--muted-strong)] hover:border-[rgba(129,149,191,0.24)] sm:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-[rgba(129,149,191,0.16)] bg-[rgba(10,18,39,0.52)] text-[color:var(--muted-strong)] hover:border-[rgba(129,149,191,0.24)] lg:hidden"
             aria-label={isMenuOpen ? t("header.closeMenu") : t("header.openMenu")}
             aria-expanded={isMenuOpen}
             aria-controls="main-navigation"
@@ -100,11 +125,10 @@ function Header() {
         </div>
       </div>
 
-      <nav
+      {isMenuOpen && <nav
         id="main-navigation"
-        className={`section-shell flex flex-col gap-4 overflow-hidden transition-[max-height,opacity,padding] duration-300 sm:hidden ${
-          isMenuOpen ? "max-h-[28rem] pb-6 opacity-100" : "max-h-0 pb-0 opacity-0"
-        }`}
+        aria-label={t("header.navigation")}
+        className="section-shell flex flex-col gap-4 pb-6 lg:hidden"
       >
         <ul className="flex flex-col gap-2">
           {navLinks.map((link) => (
@@ -137,7 +161,7 @@ function Header() {
             {t("header.cta")}
           </a>
         </div>
-      </nav>
+      </nav>}
     </header>
   )
 }

@@ -3,7 +3,7 @@ import { useMemo, useState } from "react"
 
 const filters = [
   { id: "todos", label: "Todos" },
-  { id: "visibles", label: "Publicados" },
+  { id: "visibles", label: "Visibles en datos remotos" },
   { id: "destacados", label: "Destacados" },
   { id: "ocultos", label: "Ocultos" },
 ]
@@ -18,7 +18,6 @@ function AdminProjectsList({
   errorDetail,
   isSubmitting,
   loading,
-  onBootstrap,
   onDelete,
   onEdit,
   onReset,
@@ -96,16 +95,6 @@ function AdminProjectsList({
               </div>
 
               <div className="flex flex-wrap gap-3">
-                {projects.length === 0 && !loading && (
-                  <button
-                    type="button"
-                    onClick={onBootstrap}
-                    disabled={isSubmitting}
-                    className="secondary-button disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    Cargar 3 iniciales
-                  </button>
-                )}
                 <button type="button" onClick={onReset} className="primary-button">
                   Nuevo proyecto
                 </button>
@@ -118,7 +107,7 @@ function AdminProjectsList({
                 <strong className="admin-stat-value">{counters.total}</strong>
               </div>
               <div className="admin-stat-card">
-                <span className="admin-stat-label">Publicados</span>
+                <span className="admin-stat-label">Visibles en datos remotos</span>
                 <strong className="admin-stat-value">{counters.visible}</strong>
               </div>
               <div className="admin-stat-card">
@@ -253,7 +242,6 @@ AdminProjectsList.propTypes = {
   errorDetail: PropTypes.string,
   isSubmitting: PropTypes.bool.isRequired,
   loading: PropTypes.bool.isRequired,
-  onBootstrap: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
   onEdit: PropTypes.func.isRequired,
   onReset: PropTypes.func.isRequired,

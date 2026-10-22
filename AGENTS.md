@@ -9,7 +9,7 @@ Este repositorio contiene el portfolio personal de Federico Moretto. Si sos una 
 - Es un website de portfolio de una sola pagina.
 - Esta construido con React + Vite + Tailwind.
 - Tiene soporte bilingue con `i18next`.
-- La seccion de proyectos sale de data local del repo.
+- La unica fuente de proyectos publicos es `src/data/projects.js`, versionada en Git. Firebase solo pertenece al administrador heredado: requiere opt-in de desarrollo y queda excluido de todo build/preview. Nunca inicializarlo en visitas publicas.
 - Usa `logo_fm` como identidad visual.
 
 ## Que priorizar
@@ -46,7 +46,11 @@ Este repositorio contiene el portfolio personal de Federico Moretto. Si sos una 
 - `src/components/Main/About.jsx`: perfil y forma de trabajo.
 - `src/components/Main/Skills.jsx`: capacidades agrupadas.
 - `src/components/Main/Contact.jsx`: conversion y enlaces de contacto.
-- `src/data/projects.js`: fuente de verdad de proyectos.
+- `src/data/projects.js`: unica fuente editable del catalogo publico; no sincroniza ni migra Firestore.
+- `src/data/publicProjects.js`: normalizacion, orden y visibilidad del catalogo publico, sin Firebase.
+- `src/hooks/useAdminProjects.js`: lectura remota exclusiva del administrador heredado; sus cambios no publican proyectos.
+- `src/data/projectSeeds.js`: referencia de recuperacion con IDs explicitos. La carga inicial del panel esta deshabilitada; no es un respaldo remoto.
+- `src/data/contact.js`: enlaces de contacto y habilitacion del CV revisado.
 - `src/components/dictionaries/*.json`: copy bilingue.
 - `src/App.jsx`: metadata dinamica por idioma.
 
@@ -64,10 +68,15 @@ Todo cambio deberia responder al menos una de estas preguntas:
 - Verificar que el sitio siga renderizando correctamente.
 - Correr `npm run lint`.
 - Correr `npm run build`.
+- Usar Node 24 y `npm ci`, `npm run lint`, `npm test`, `npm run build`, `npm run check:build` y `npm run test:e2e` (Playwright).
+- Comprobar el artefacto con/sin variables Firebase y con opt-in de administrador forzado: el panel y el SDK deben estar ausentes. No acceder a servicios remotos durante pruebas.
 - Documentar decisiones si cambia estructura, contenido o direccion visual.
 
 ## Lecturas recomendadas
 
+- [docs/PROFESSIONAL_UPDATE_2026.md](./docs/PROFESSIONAL_UPDATE_2026.md): alcance, fuentes, cronologia confirmada y registro de aprobaciones.
+- [docs/PREPUBLICATION_CORRECTIONS_2026.md](./docs/PREPUBLICATION_CORRECTIONS_2026.md): separacion Git/Firebase, protecciones y validacion del artefacto.
+- [docs/RELEASE.md](./docs/RELEASE.md): estado final, dependencias, mantenimiento local y publicacion/rollback.
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)
 - [docs/TECH_REVIEW.md](./docs/TECH_REVIEW.md)
 - [docs/CONTENT_GUIDE.md](./docs/CONTENT_GUIDE.md)

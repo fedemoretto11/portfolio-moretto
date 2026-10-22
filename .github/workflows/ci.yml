@@ -1,0 +1,38 @@
+name: Portfolio checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+        env:
+          VITE_ENABLE_LEGACY_ADMIN: "true"
+          VITE_FIREBASE_API_KEY: test-not-a-secret
+          VITE_FIREBASE_AUTH_DOMAIN: example.invalid
+          VITE_FIREBASE_PROJECT_ID: test-only
+          VITE_FIREBASE_MESSAGING_SENDER_ID: "123"
+          VITE_FIREBASE_APP_ID: test-only
+      - run: npm run check:build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: browser-test-results
+          path: test-results/
+          retention-days: 7

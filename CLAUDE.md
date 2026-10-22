@@ -11,7 +11,7 @@ Portfolio personal de Federico Moretto.
 - Single-page website
 - React + Vite + Tailwind
 - `i18next` para espanol e ingles
-- Proyectos locales en `src/data/projects.js`
+- Proyectos publicos exclusivamente desde `src/data/projects.js` (Git), preparados en `src/data/publicProjects.js`. Firebase solo para el administrador heredado con opt-in local de desarrollo; siempre excluido de builds/preview. Carga inicial deshabilitada y datos remotos sin inventariar ni respaldar. Node 24 y procedimiento en `docs/RELEASE.md`.
 - `logo_fm` como base de identidad visual
 - Metadata dinamica por idioma desde `src/App.jsx`
 - Iconografia SVG propia en `src/components/ui/Icon.jsx`
@@ -45,6 +45,7 @@ Evitar cualquier cambio que lo empuje hacia una app compleja o una landing recar
 
 ## Leer tambien
 
+- [Actualizacion profesional y bloqueos de publicacion](./docs/PROFESSIONAL_UPDATE_2026.md)
 - [AGENTS.md](./AGENTS.md)
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)
 - [docs/TECH_REVIEW.md](./docs/TECH_REVIEW.md)

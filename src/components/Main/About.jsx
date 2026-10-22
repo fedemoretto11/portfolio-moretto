@@ -6,6 +6,7 @@ function About() {
   const description = t("about.description", { returnObjects: true })
   const highlights = t("about.highlights", { returnObjects: true })
   const focusAreas = t("about.focusAreas", { returnObjects: true })
+  const education = t("about.educationItems", { returnObjects: true })
 
   return (
     <section id="about" className="section-shell scroll-mt-32">
@@ -15,7 +16,7 @@ function About() {
             <figure className="overflow-hidden rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.3)] p-4">
               <img
                 src={fede}
-                alt="Federico Moretto portrait"
+                alt={t("about.portraitAlt")}
                 width="720"
                 height="1080"
                 className="relative z-10 h-auto w-full rounded-[1.25rem] border border-[rgba(119,154,255,0.16)] object-cover"
@@ -77,6 +78,20 @@ function About() {
                     </li>
                   ))}
               </ul>
+            </div>
+
+            <div>
+              <h3 className="font-display text-2xl font-semibold text-white">{t("about.educationTitle")}</h3>
+              <div className="mt-4 grid gap-4">
+                {Array.isArray(education) && education.map((item) => (
+                  <article key={item.institution} className="border-l border-[rgba(129,149,191,0.16)] pl-4">
+                    <p className="text-sm font-semibold text-[color:var(--accent)]">{item.institution}</p>
+                    <h4 className="mt-2 text-base font-semibold text-white">{item.program}</h4>
+                    <p className="mt-2 text-sm text-[color:var(--muted-strong)]">{item.period}</p>
+                    <p className="mt-1 text-sm text-[color:var(--muted)]">{item.status}</p>
+                  </article>
+                ))}
+              </div>
             </div>
 
             <div>

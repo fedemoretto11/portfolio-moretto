@@ -1,13 +1,12 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
-import useProjects from "../../hooks/useProjects"
+import projects from "../../data/publicProjects"
 import ProjectListContainer from "../Projects/ProjectListContainer"
 import Icon from "../ui/Icon"
 
 function ProjectsView() {
   const { t, i18n } = useTranslation()
   const [type, setType] = useState("todos")
-  const { projects, loading, error } = useProjects()
   const featuredProjects = projects.filter((project) => project.featured && project.visible !== false)
   const getProjectSummary = (project) =>
     i18n.language === "es"
@@ -23,7 +22,7 @@ function ProjectsView() {
   ]
 
   return (
-    <section id="projects" className="section-shell scroll-mt-32">
+    <section id="projects" data-project-source="local" className="section-shell scroll-mt-32">
       <div className="px-2 py-2 sm:px-0">
         <div className="flex flex-col gap-2">
           <span className="eyebrow self-start">{t("projects.subtitle")}</span>
@@ -41,28 +40,7 @@ function ProjectsView() {
           </div>
 
           <div className="grid gap-6 xl:grid-cols-3">
-            {loading &&
-              Array.from({ length: 3 }).map((_, index) => (
-                <div
-                  key={`featured-skeleton-${index}`}
-                  className="overflow-hidden rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.22)]"
-                >
-                  <div className="h-60 w-full animate-pulse bg-[rgba(7,12,24,0.92)]" />
-                  <div className="space-y-4 p-6">
-                    <div className="h-4 w-1/3 animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
-                    <div className="h-8 w-2/3 animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
-                    <div className="h-4 w-full animate-pulse rounded bg-[rgba(18,32,64,0.9)]" />
-                  </div>
-                </div>
-              ))}
-
-            {!loading && error && (
-              <p className="surface-card px-4 py-4 text-center text-sm text-red-200 xl:col-span-3">{t(error)}</p>
-            )}
-
-            {!loading &&
-              !error &&
-              featuredProjects.map((project) => (
+            {featuredProjects.map((project) => (
               <article
                 key={`featured-${project.id}`}
                 className="flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.22)]"
@@ -74,12 +52,19 @@ function ProjectsView() {
                       {t("projects.inProgress")}
                     </span>
                   )}
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    loading="lazy"
-                    className="h-60 w-full object-cover"
-                  />
+                  {project.imageUrl ? (
+                    <img
+                      src={project.imageUrl}
+                      alt={project.title}
+                      loading="lazy"
+                      className="h-60 w-full object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-32 items-center justify-center gap-3 px-6 pt-8 text-sm text-[color:var(--muted)]">
+                      <Icon name="layers" className="h-6 w-6" />
+                      {t("projects.noImage")}
+                    </div>
+                  )}
                 </figure>
 
                 <div className="flex flex-1 flex-col gap-4 p-6">
@@ -178,8 +163,6 @@ function ProjectsView() {
             projects={projects}
             type={type}
             excludeFeatured
-            isLoading={loading}
-            error={error}
           />
         </div>
       </div>

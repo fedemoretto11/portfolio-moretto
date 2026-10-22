@@ -8,7 +8,9 @@ No debe sentirse como una app. Debe sentirse como una landing profesional de una
 
 ## Perfil que el sitio debe comunicar
 
-Federico se presenta como un desarrollador con experiencia practica en:
+Actualizacion 22/10/2026: **Software Developer | .NET · Backend · Integraciones**. La etapa actual en Asince corresponde a integraciones de Administracion, Contabilidad y Finanzas; Technical Support Developer se presenta como etapa anterior. Las fechas publicadas fueron confirmadas y aprobadas por el usuario el 22/10/2026; cronologia y fuentes en [PROFESSIONAL_UPDATE_2026.md](./PROFESSIONAL_UPDATE_2026.md).
+
+El posicionamiento anterior priorizaba:
 
 - desarrollo full-stack
 - soporte tecnico
@@ -60,7 +62,8 @@ Ese orden prioriza prueba y credibilidad antes que biografia o listado de herram
 
 ### Lo que ya esta bien
 
-- Proyectos locales y estables dentro del repo.
+- Fuente publica unica: `src/data/projects.js` en Git. `publicProjects.js` prepara orden y visibilidad; Firebase no participa en visitas publicas.
+- Administrador Firebase heredado separado y exclusivo de desarrollo con opt-in; excluido de builds y preview, sin efecto sobre el catalogo publico. Carga inicial deshabilitada. Inventario y respaldo remotos pendientes.
 - Persistencia real de idioma.
 - Metadata dinamica por idioma.
 - UI responsive y con mejor jerarquia.

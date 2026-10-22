@@ -4,6 +4,7 @@ import Icon from "../ui/Icon"
 function Works() {
   const { t } = useTranslation()
   const works = t("works.items", { returnObjects: true })
+  const previousWorks = t("works.previousItems", { returnObjects: true })
 
   return (
     <section id="works" className="section-shell scroll-mt-32">
@@ -14,7 +15,8 @@ function Works() {
           <p className="section-copy">{t("works.description")}</p>
         </div>
 
-        <div className="relative mt-10 flex flex-col gap-6 before:absolute before:bottom-0 before:left-[15px] before:top-2 before:hidden before:w-px before:bg-[linear-gradient(180deg,rgba(103,220,255,0.4),rgba(103,220,255,0))] md:before:block">
+        <h3 className="mt-10 text-sm font-semibold uppercase tracking-[0.28em] text-[color:var(--accent)]">{t("works.company")}</h3>
+        <div className="relative mt-5 flex flex-col gap-6 before:absolute before:bottom-0 before:left-[15px] before:top-2 before:hidden before:w-px before:bg-[linear-gradient(180deg,rgba(103,220,255,0.4),rgba(103,220,255,0))] md:before:block">
           {Array.isArray(works) &&
             works.map((work, index) => (
               <article
@@ -28,10 +30,7 @@ function Works() {
                 <div className="flex flex-col gap-5 rounded-[1.75rem] border border-[rgba(129,149,191,0.12)] bg-[rgba(10,18,39,0.22)] p-6">
                   <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
                     <div>
-                      <p className="text-sm uppercase tracking-[0.28em] text-[color:var(--accent)]">
-                        {work?.company}
-                      </p>
-                      <h3 className="mt-2 font-display text-2xl font-semibold text-white">{work?.role}</h3>
+                      <h4 className="font-display text-2xl font-semibold text-white">{work?.role}</h4>
                     </div>
 
                     <span className="data-chip self-start">
@@ -71,6 +70,20 @@ function Works() {
                 </div>
               </article>
             ))}
+        </div>
+
+        <div className="mt-10 border-t border-[rgba(129,149,191,0.12)] pt-8">
+          <h3 className="font-display text-xl font-semibold text-white">{t("works.previousTitle")}</h3>
+          <div className="mt-5 grid gap-6 md:grid-cols-2">
+            {Array.isArray(previousWorks) && previousWorks.map((work) => (
+              <article key={work.company} className="border-l border-[rgba(129,149,191,0.16)] pl-4">
+                <p className="text-sm font-semibold text-[color:var(--muted-strong)]">{work.company}</p>
+                <h4 className="mt-2 text-base font-semibold text-white">{work.role}</h4>
+                <p className="mt-2 text-sm text-[color:var(--muted)]">{work.period}</p>
+                <p className="mt-3 text-sm leading-7 text-[color:var(--muted-strong)]">{work.summary}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

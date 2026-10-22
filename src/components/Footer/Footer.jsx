@@ -1,5 +1,6 @@
-import logo from "../../assets/federico_completo_icon.png"
+import logo from "../../assets/federico_completo_icon.webp"
 import { useTranslation } from "react-i18next"
+import { contactLinks } from "../../data/contact"
 
 function Footer() {
   const { t } = useTranslation()
@@ -10,7 +11,9 @@ function Footer() {
         <div className="flex items-center gap-3">
           <img
             src={logo}
-            alt="Federico Moretto logo"
+            alt=""
+            width="44"
+            height="44"
             className="h-11 w-11 rounded-2xl border border-[rgba(129,149,191,0.14)] bg-[rgba(10,18,39,0.38)] p-2"
           />
           <div>
@@ -23,23 +26,17 @@ function Footer() {
 
         <div className="flex flex-col gap-3 text-sm text-[color:var(--muted)] sm:items-end">
           <div className="flex flex-wrap gap-3">
-            <a href="mailto:fedemoretto94@gmail.com" className="hover:text-white">Email</a>
-            <a
-              href="https://www.linkedin.com/in/morettofede/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/fedemoretto11"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
-              GitHub
-            </a>
+            {contactLinks.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+                className="hover:text-white"
+              >
+                {t(`contact.linkLabels.${link.id}`)}
+              </a>
+            ))}
           </div>
           <p>&copy; {new Date().getFullYear()} · {t("footer.rights")}</p>
         </div>
