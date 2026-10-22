@@ -8,7 +8,7 @@ Es el portfolio web personal de Federico Moretto.
 
 ## Objetivo
 
-Presentar a Federico como Software Developer con foco en .NET, backend e integraciones empresariales. Distinguir su experiencia profesional de los proyectos personales full stack y mobile; las fechas de Asince siguen sujetas a aprobacion editorial.
+Presentar a Federico como Software Developer con foco en .NET, backend e integraciones empresariales. Distinguir su experiencia profesional de los proyectos personales full stack y mobile. Las fechas de Asince fueron confirmadas y aprobadas por el usuario el 22/10/2026: Technical Support Developer, abril 2024 a septiembre 2026; Software Developer – Integrations, septiembre 2026 a actualidad. Conservar las fechas publicadas.
 
 ## Stack actual
 

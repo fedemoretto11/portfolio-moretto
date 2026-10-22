@@ -2,7 +2,7 @@
 
 Instantánea de la etapa anterior. El cierre técnico posterior, las validaciones finales y la preparación de commits se registran en [RELEASE.md](./RELEASE.md). Ahora el administrador se excluye de todo build/preview y requiere opt-in local; las restricciones anteriores de no hacer commits correspondían a esta etapa, no a la autorización de cierre posterior.
 
-Estado: implementación local validada; sin commit, push, merge, despliegue ni operaciones sobre servicios remotos. Complementa [la actualización profesional](./PROFESSIONAL_UPDATE_2026.md), cuyo contenido y cronología provisional se preservan.
+Estado histórico de esta fase: implementación local validada; sin commit, push, merge, despliegue ni operaciones sobre servicios remotos. Complementa [la actualización profesional](./PROFESSIONAL_UPDATE_2026.md). Posteriormente, el usuario confirmó y aprobó las fechas publicadas de Asince el 22/10/2026; se conservan sus valores y dejan de ser provisionales. El estado de release actual está en [RELEASE.md](./RELEASE.md).
 
 ## Cambios y arquitectura efectiva
 
@@ -90,4 +90,4 @@ Rama `codex/portfolio-professional-update-2026`; HEAD/base `32b230adc9a2f515eeef
 
 Estado acumulado respecto de la base, incluyendo la actualización profesional previa: 24 archivos seguidos modificados, un hook eliminado por renombre y seis archivos nuevos sin seguimiento. El diff de archivos seguidos informa 786 inserciones y 649 eliminaciones; no incluye el contenido de los nuevos. Stage vacío y cero commits nuevos desde la base. Los seis nuevos son este informe, `PROFESSIONAL_UPDATE_2026.md`, `src/data/contact.js`, `src/data/publicProjects.js`, `src/hooks/useAdminProjects.js` y `tests/public-projects.test.mjs`.
 
-Antes de publicar: aprobar las fechas provisionales de Asince; revisar configuración real del hosting, versión de Node, rama/commit de entrega, variables, rutas administrativas y rollback; revisar el diff completo e incluir todos los nuevos archivos. Publicación y verificación del dominio requieren autorización posterior. El inventario/respaldo remoto queda separado y pendiente. CV, capturas y credenciales omitidos no bloquean por sí solos; continúan las mejoras de SEO, peso de imágenes, revisión de dependencias y accesibilidad general sin rediseño.
+Pendientes registrados al cerrar esta fase histórica: aprobación de fechas, configuración real del hosting, entrega completa y validación final. La aprobación de fechas quedó resuelta por el usuario el 22/10/2026 y el cierre técnico posterior se registra en [RELEASE.md](./RELEASE.md). La publicación definitiva requiere autorización posterior. El inventario/respaldo remoto queda separado y pendiente. CV, capturas y credenciales omitidos no bloquean por sí solos.

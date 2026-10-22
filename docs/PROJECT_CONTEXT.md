@@ -8,7 +8,7 @@ No debe sentirse como una app. Debe sentirse como una landing profesional de una
 
 ## Perfil que el sitio debe comunicar
 
-Actualizacion 22/10/2026: **Software Developer | .NET · Backend · Integraciones**. La etapa actual en Asince corresponde a integraciones de Administracion, Contabilidad y Finanzas; Technical Support Developer se presenta como etapa anterior. Cronologia provisional, fuentes y aprobaciones pendientes en [PROFESSIONAL_UPDATE_2026.md](./PROFESSIONAL_UPDATE_2026.md).
+Actualizacion 22/10/2026: **Software Developer | .NET · Backend · Integraciones**. La etapa actual en Asince corresponde a integraciones de Administracion, Contabilidad y Finanzas; Technical Support Developer se presenta como etapa anterior. Las fechas publicadas fueron confirmadas y aprobadas por el usuario el 22/10/2026; cronologia y fuentes en [PROFESSIONAL_UPDATE_2026.md](./PROFESSIONAL_UPDATE_2026.md).
 
 El posicionamiento anterior priorizaba:
 

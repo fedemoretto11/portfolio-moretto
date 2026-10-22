@@ -77,7 +77,7 @@ Para mantenimiento local autorizado, definir `VITE_ENABLE_LEGACY_ADMIN=true` sol
 
 `vercel.json` prepara Node/build estatico, salida `dist`, rutas SPA y headers basicos. Canonical, metadatos sociales, robots y sitemap apuntan a `https://federicomoretto.com.ar/`. El logo WebP conserva sus pixeles visibles y pesa un 92.9% menos; el PNG original se conserva como fuente fuera de `public` y no se incluye en el artefacto.
 
-Las fechas de Asince siguen provisionales: no desplegar sin aprobacion editorial. [Preparacion y rollback](./docs/RELEASE.md) separa los checks locales de los ajustes pendientes del dashboard. No se consulto ni modifico el dashboard ni se desplego esta version.
+Las fechas de Asince fueron confirmadas y aprobadas por el usuario el 22/10/2026; los valores publicados se conservan. [Preparacion y rollback](./docs/RELEASE.md) separa los checks locales de la verificacion del hosting y la autorizacion de publicacion definitiva.
 
 ## Criterio de evolucion
 

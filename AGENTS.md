@@ -74,7 +74,7 @@ Todo cambio deberia responder al menos una de estas preguntas:
 
 ## Lecturas recomendadas
 
-- [docs/PROFESSIONAL_UPDATE_2026.md](./docs/PROFESSIONAL_UPDATE_2026.md): alcance, fuentes, cronologia provisional y bloqueos de publicacion.
+- [docs/PROFESSIONAL_UPDATE_2026.md](./docs/PROFESSIONAL_UPDATE_2026.md): alcance, fuentes, cronologia confirmada y registro de aprobaciones.
 - [docs/PREPUBLICATION_CORRECTIONS_2026.md](./docs/PREPUBLICATION_CORRECTIONS_2026.md): separacion Git/Firebase, protecciones y validacion del artefacto.
 - [docs/RELEASE.md](./docs/RELEASE.md): estado final, dependencias, mantenimiento local y publicacion/rollback.
 - [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md)

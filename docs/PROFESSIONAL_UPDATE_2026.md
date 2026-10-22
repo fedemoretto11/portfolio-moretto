@@ -1,6 +1,6 @@
 # Actualización profesional del portfolio — 22/10/2026
 
-El cierre técnico posterior está documentado en [RELEASE.md](./RELEASE.md): administrador excluido de producción, herramientas/recursos/SEO/accesibilidad y pruebas finales. Este documento conserva el registro profesional y sus fechas pendientes de aprobación; sus estados Git previos son históricos.
+El cierre técnico posterior está documentado en [RELEASE.md](./RELEASE.md): administrador excluido de producción, herramientas/recursos/SEO/accesibilidad y pruebas finales. Las fechas publicadas de Asince fueron confirmadas y aprobadas expresamente por el usuario el 22/10/2026, sin cambios en el código. Los estados Git previos de este documento son históricos.
 
 Estado de la fase profesional original: implementado localmente, sin commits ni publicación. Este informe registra decisiones y una instantánea del copy; los diccionarios y los módulos de datos siguen siendo la fuente editable. Las correcciones técnicas posteriores adoptaron Git como fuente pública única: ver [registro de correcciones](./PREPUBLICATION_CORRECTIONS_2026.md) y el [cierre actual](./RELEASE.md). Las validaciones y el estado Git de las secciones 8–9 son la instantánea anterior a esas correcciones.
 
@@ -12,15 +12,15 @@ Software Developer | .NET · Backend · Integraciones. Asince ocupa el primer pl
 
 | Empresa / formación | Puesto o programa | Período utilizado | Nivel de confirmación |
 |---|---|---|---|
-| Asince | Software Developer – Integrations | Septiembre 2026 — actualidad | Provisional: transcripción de LinkedIn aportada por el usuario; aprobación pendiente antes de desplegar. |
-| Asince | Technical Support Developer | Abril 2024 — septiembre 2026 | Provisional: misma fuente y condición. |
+| Asince | Software Developer – Integrations | Septiembre 2026 — actualidad | Confirmado y aprobado expresamente por el usuario el 22/10/2026; conservar el valor publicado. |
+| Asince | Technical Support Developer | Abril 2024 — septiembre 2026 | Confirmado y aprobado expresamente por el usuario el 22/10/2026; conservar el valor publicado. |
 | MSL Corporate | Asistente de documentación de importación | Enero 2021 — diciembre 2022 | Aportado por el usuario; sin atribuir tareas de desarrollo. |
 | Rodolfo Isidro Moretto SRL | Supervisor de Ventas | Abril 2019 — enero 2021 | Aportado por el usuario; sin atribuir tareas técnicas. |
 | Proyectos independientes | Formación práctica | Diciembre 2022 — abril 2024 | No se publica como empleo freelance; decisión editorial pendiente. |
 | UTN | Tecnicatura Universitaria en Programación | Marzo 2026 — actualidad | En curso, según el usuario. |
 | UCES | Estudios en Licenciatura en Comercio Exterior | Marzo 2014 — marzo 2019 | Estudios cursados; título obtenido no confirmado. |
 
-Discrepancia abierta: el usuario también mencionó abril de 2022 como ingreso y diciembre de 2022 como transición. La web anterior decía Asince desde 2022 y freelance 2019–2022. La implementación local adopta provisionalmente la cronología de la transcripción del PDF del 22/10/2026, sin dar la contradicción por resuelta. No se incluyó el PDF. Siglo 21 no figura como estudio actual.
+Antecedente resuelto: las referencias anteriores a abril/diciembre de 2022 motivaron una consulta de fechas. El usuario confirmó y aprobó expresamente los períodos actualmente publicados: abril 2024 — septiembre 2026 y septiembre 2026 — actualidad. Esa confirmación del 22/10/2026 cierra la discrepancia; las fechas no son provisionales. No se incluyó el PDF. Siglo 21 no figura como estudio actual.
 
 ## 3. Cambios implementados
 
@@ -338,7 +338,7 @@ Ninguna operación remota de escritura fue ejecutada por esta tarea. No se proba
 
 ## 10. Próxima etapa y bloqueos de publicación
 
-- [ ] Aprobar las fechas provisionales de ambas etapas en Asince.
+- [x] Fechas publicadas de ambas etapas en Asince confirmadas y aprobadas por el usuario el 22/10/2026, sin modificar sus valores en el código.
 - [x] Adoptar Git como fuente única de la galería pública; administrador heredado separado. Validaciones actuales en el informe de correcciones.
 - [ ] Aprobar CV actualizado y acceso sin sesión; no reutilizar el enlace privado.
 - [ ] Confirmar estados/repos de los proyectos históricos y aportar capturas actuales.
@@ -346,4 +346,4 @@ Ninguna operación remota de escritura fue ejecutada por esta tarea. No se proba
 - [ ] Revisar configuración real de Vercel: rama, Node, comando, variables y rollback.
 - [ ] Autorizar publicación por separado.
 
-Las correcciones técnicas posteriores resolvieron la navegación entre 640–1023 px, el foco del menú cerrado y el scroll del header con movimiento reducido. Siguen pendientes reducir el PNG de identidad, revisar dependencias con validación aislada, completar SEO y medir rendimiento. El movimiento reducido del resto del sitio no se auditó integralmente. CV, capturas y credenciales son mejoras pendientes; CV y certificaciones no bloquean por sí solos si permanecen omitidos. Las fechas de Asince y la autorización/configuración de publicación siguen pendientes.
+Estado histórico anterior al cierre técnico: las correcciones resolvieron la navegación entre 640–1023 px, el foco del menú cerrado y el scroll del header con movimiento reducido; quedaban recursos, dependencias, SEO y accesibilidad general. El estado posterior está en [RELEASE.md](./RELEASE.md). CV, capturas y credenciales omitidos no bloquean por sí solos. Las fechas de Asince ya fueron confirmadas y aprobadas por el usuario el 22/10/2026; la publicación definitiva requiere autorización posterior.
